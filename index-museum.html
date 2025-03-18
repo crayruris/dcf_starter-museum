@@ -174,6 +174,68 @@
     transform: rotate(-45deg);
     width: 50px;
 }
+
+@supports (display:grid) {
+    .unl-grid-cols {
+        grid-template-columns: 5.6186556843vw 3.160493824rem 1rem 1fr 1fr 5.6186556843vw;
+    }
+}
+@supports (display:grid) {
+    @media only screen and (min-width: 42.09em) {
+        .unl-grid-cols {
+            grid-template-columns: 5.6186556843vw 3.160493824rem 1rem 1fr 1fr 3.160493824vw 3.160493824rem 1rem 1fr 1fr 5.6186556843vw;
+        }
+    }
+}
+@supports (display:grid) {
+    @media only screen and (min-width: 74.83em) {
+        .unl-grid-cols {
+            grid-template-columns: 5.6186556843vw 3.160493824rem 1rem 2fr 1fr 3.160493824rem 1rem 3.160493824vw 3.160493824rem 1rem 1fr 2fr 3.160493824rem 1rem 5.6186556843vw;
+        }
+    }
+}
+@media (min-width: 42.09em) {
+    .unlcms-display-banner {
+        grid-template-rows: 1fr auto auto .78rem;
+        height: 63vh;
+        max-height: 31.57em;
+    }
+}
+@media (max-width: 42.09em) {
+    .unlcms-display-banner {
+        grid-template-rows: auto auto auto;
+        padding-bottom: 2.37em;
+    }
+}
+@media (min-width: 42.09em) {
+    .unlcms-display-banner-text-c {
+        align-items: center;
+        display: flex
+;
+        flex-direction: column;
+        grid-area: 2 / 2 / 3 / -2;
+        text-align: center;
+    }
+}
+@media (max-width: 42.09em) {
+    .unlcms-display-banner-text {
+        grid-area: 2 / 2 / 3 / -2;
+        padding-top: 1em;
+    }
+}
+@media (min-width: 42.09em) {
+    .unlcms-display-banner-img {
+        grid-area: 1 / 1 / -1 / -1;
+    }
+}
+@media (max-width: 42.09em) {
+    .unlcms-display-banner-img {
+        grid-area: 1 / 1 / 2 / -1;
+    }
+}
+.media-entity {
+    display: grid;
+}
   </style>
   <body class="theme">
 
@@ -240,6 +302,18 @@
     </header>
   <main class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
     
+    <div class="dcf-bleed dcf-mb-7">
+      <div class="dcf-d-grid unl-grid-cols unlcms-display-banner">
+        <div class="dcf-z-1 unlcms-display-banner-text unlcms-display-banner-text-c">
+        </div>
+          <div class="unlcms-display-banner-img dcf-ratio dcf-ratio-16x9 dcf-mb-0">
+    
+            <img class="dcf-ratio-child dcf-obj-fit-cover unlcms-slow-zoom-in unlcms-hero-obj-pos-60-50" src="https://mediahub.unl.edu/uploads/thumbnails/23477/original.jpg?1730902761" alt="Three students work with clay on potter's wheels">
+    
+          </div>
+        </div>
+    </div>
+
 
     <div class="dcf-bleed dcf-wrapper dcf-pt-0 dcf-pb-0">
         <div class="layout layout--dcf-onecol-section unlcms-section-edge-to-edge dcf-bleed dcf-pb-0 dcf-pt-0">
@@ -279,7 +353,7 @@
         </div>
     </div>
 
-    <h1>Slideshow Test</h1>
+    <h1>THIS IS SPINAL TAP Test</h1>
     <div class="dcf-bleed dcf-wrapper dcf-pt-3 dcf-pb-6 unl-bg-lightest-gray">
       <div class="dcf-grid dcf-mb-6">
         <div class="dcf-col-100% dcf-col-33%-start@sm dcf-col-50%-start@lg">
