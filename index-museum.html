@@ -14,6 +14,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <style>
+
+  .dcf-header, #main-museum-nav {
+        z-index: 998;
+        background-color: transparent;
+  }
+  .unl-sm-logo {
+    width: 345px !important;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 998;
+  }
     .Our-Family-Museums-nav {
       font-size: ;
     }
@@ -26,11 +38,15 @@
     .Our-Family-Museums-nav a.trailside-color {
       color:#09406c ;
     }
+    .top-nav-left {
+      z-index: 998;
+    }
     .nav-top-row {
       background-color:#e5e5e5 ;
     }
     .nav-mid-row {
       background-color:#d00000 ;
+      border-bottom: #a3a3a3 solid 1px;
     }
     .nav-bot-row {
       background-color:#d00000 ;
@@ -118,15 +134,14 @@
 }
 .hamburger {
     margin: 0 auto;
-    XXXmargin-top: 30px;
-    width: 40px;
+    width: 27px;
     height: 25px;
     position: relative;
 }
 
 .hamburger .bar {
     padding: 0;
-    width: 40px;
+    width: 27px;
     height: 1.5px;
     background-color: #fff;
     display: block;
@@ -136,12 +151,12 @@
 }
 
 .bar1 {
-    top: 3px;
+    top: 5px;
 }
 
 .bar2,
 .bar3 {
-    top: 13px;
+    top: 12px;
 }
 
 .bar3 {
@@ -149,7 +164,7 @@
 }
 
 .bar4 {
-    bottom: 0;
+    bottom: 4px;
 }
 
 /* HAMBURGER 1 */
@@ -193,6 +208,12 @@
             grid-template-columns: 5.6186556843vw 3.160493824rem 1rem 2fr 1fr 3.160493824rem 1rem 3.160493824vw 3.160493824rem 1rem 1fr 2fr 3.160493824rem 1rem 5.6186556843vw;
         }
     }
+}
+
+.unlcms-display-banner {
+  z-index: 1;
+  position: relative;
+  top: -36px;
 }
 @media (min-width: 42.09em) {
     .unlcms-display-banner {
