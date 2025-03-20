@@ -14,32 +14,101 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <style>
-
-  .dcf-header, #main-museum-nav {
-        z-index: 998;
-        background-color: transparent;
-  }
-  .unl-sm-logo {
-    width: 345px !important;
-    height: auto;
-    position: absolute;
-    top: 0;
-    z-index: 998;
-  }
+    :root {
+      font-size: 1em;
+    }
+    .dcf-header, #main-museum-nav {
+      z-index: 998;
+      background-color: transparent;
+    }
+    .unl-sm-logo {
+      width: 345px !important;
+      height: auto;
+      position: absolute;
+      top: 0;
+      z-index: 998;
+    }
     .Our-Family-Museums-nav {
       font-size: ;
     }
     .Our-Family-Museums-nav a.morrill-color {
       color:#700949;
+      text-decoration: none;
+      position: relative;
     }
     .Our-Family-Museums-nav a.ashfall-color {
       color:#99031e;
+      text-decoration: none;
+      position: relative;
     }
     .Our-Family-Museums-nav a.trailside-color {
-      color:#09406c ;
+      color:#09406c;
+      text-decoration: none;
+      position: relative;
     }
+
+.Our-Family-Museums-nav a.morrill-color::after {
+  content: "";
+  position: absolute; /* Position relative to the parent */
+  width: 0; /* Initially invisible */
+  height: 2px; /* Adjust thickness as desired */
+  bottom: 0; /* Position at the bottom of the text */
+  left: 0; /* Position at the left of the text */
+  background-color: #700949;; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+/* Animate the underline on hover */
+.Our-Family-Museums-nav a.morrill-color:hover::after {
+  width: 100%; /* Expand to full width on hover */
+}
+.Our-Family-Museums-nav a.ashfall-color::after {
+  content: "";
+  position: absolute; /* Position relative to the parent */
+  width: 0; /* Initially invisible */
+  height: 2px; /* Adjust thickness as desired */
+  bottom: 0; /* Position at the bottom of the text */
+  left: 0; /* Position at the left of the text */
+  background-color: #99031e;; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+/* Animate the underline on hover */
+.Our-Family-Museums-nav a.ashfall-color:hover::after {
+  width: 100%; /* Expand to full width on hover */
+}
+.Our-Family-Museums-nav a.trailside-color::after {
+  content: "";
+  position: absolute; /* Position relative to the parent */
+  width: 0; /* Initially invisible */
+  height: 2px; /* Adjust thickness as desired */
+  bottom: 0; /* Position at the bottom of the text */
+  left: 0; /* Position at the left of the text */
+  background-color: #09406c;; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+/* Animate the underline on hover */
+.Our-Family-Museums-nav a.trailside-color:hover::after {
+  width: 100%; /* Expand to full width on hover */
+}
+
     .top-nav-left {
       z-index: 998;
+    }
+    .top-nav-right::before {
+      content: "";
+      background-image: url("images/state-museum-logo4.png");
+      z-index: 999;
+      height: 164px;
+      width: 27%;
+      max-width:337px;
+      display: block;
+      background-repeat: no-repeat;
+      position: absolute;
+      top:0;
+      right: 69%;
+      background-size: contain;
     }
     .nav-top-row {
       background-color:#e5e5e5 ;
@@ -58,12 +127,29 @@
       z-index: 998;
       position: relative;
     }
-    .nav-mid-row .middle-nav li a{
+    .nav-mid-row .middle-nav li a {
       color:#fff ;
+      transition: 0.3s;
     }
-    .nav-bot-row .bottom-nav li a{
+    .nav-bot-row .bottom-nav li a {
       color:#fff ;
+      transition: 0.3s;
     }
+    .nav-mid-row .middle-nav li a:hover {
+      text-shadow: 0px 0px 7px rgba(48, 48, 48, 0.95);
+      
+    }
+    .nav-bot-row .bottom-nav li a:hover {
+      text-shadow: 0px 0px 7px rgba(48, 48, 48, 0.95);
+      
+    }
+    a .UNL-logo {
+      transition: 0.3s;
+    }
+    a .UNL-logo:hover {
+      text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.95);
+    }
+
     .bottom-nav {
       display: -webkit-box;
     display: flex;
@@ -212,7 +298,6 @@
 .unlcms-display-banner {
   z-index: 1;
   position: relative;
-  top: -42px;
 }
 @media (min-width: 42.09em) {
     .unlcms-display-banner {
@@ -260,41 +345,58 @@
   -webkit-box-shadow: 0px 4px 2px -2px rgba(75, 75, 75, 0.25);
   box-shadow: 0px 4px 2px -2px rgba(75, 75, 75, 0.25);
 }
+.nav-wrapper {
+    width: 69vw;
+    max-width: 1282px;
+    padding-left: 10px;
+}
+/* Menu banner/flag shape  */
 
+    .top {
+        clip-path: polygon(0 0,100% 0,100% calc(100% - 1.7em),50% 100%,0 calc(100% - 1.7em));
+        background-color: #3d3a3a;
+         }
   </style>
   <body class="theme">
 
     <header class="dcf-header" id="dcf-header">
       <div id="main-museum-nav" class="nav-bg dcf-d-inline-flex dcf-flex-row dcf-w-100vw">
+        
+        <!-- 
         <div class="top-nav-left dcf-d-block dcf-ml-7" style="width: 457px">
           <img src="images/state-museum-logo.png" alt="top-level-museum-logo" class="dcf-w-100%" style="width: 457px;height: 180px;">
          </div>
-        <div class="top-nav-right dcf-d-block dcf-w-100%">
-            <div class="nav-top-row dcf-col-gap-6 dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-center">
-                
-                <div class="dcf-d-inline-flex dcf-ai-center">
-                    <a class="dcf-d-inline-flex dcf-p-2 dcf-ai-center">
-                        <img src="images/n-logo-2.svg" alt="UNL text logo" style="width: 35px;height:auto;">
-                        <span class="dcf-pl-2 dcf-uppercase lato-regular dcf-txt-sm">University of Nebraska-Lincoln</span>
-                    </a>
+         -->
+        <div class="top-nav-right dcf-d-block dcf-w-100% dcf-relative">
+          <!-- 
+          <div class="XXXtop dcf-absolute" style="z-index: 999;top: 0px;left: 50px;">
+            <div class="XXXtop" style="width: 20em;height: 10em;"></div>
+          </div>
+        -->
+            <div class="nav-top-row">
+                <div class="dcf-col-gap-6 dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-center dcf-js-end nav-wrapper">
+                    <div class="dcf-d-inline-flex dcf-ai-center">
+                        <a href="" class="dcf-d-inline-flex dcf-p-2 dcf-ai-center">
+                            <img src="images/n-logo-2.svg" alt="UNL text logo" style="width: 35px;height:auto;"><span class="dcf-pl-2 dcf-uppercase lato-regular dcf-txt-sm UNL-logo">University of Nebraska-Lincoln</span>
+                        </a>
+                    </div>
+                    <div class="dcf-d-inline-flex dcf-ai-center dcf-pr-7">
+                        <span class="dcf-txt-xs lato-bold">Our Family of Museums:</span> 
+                        <ul class="Our-Family-Museums-nav dcf-d-inline-flex dcf-ai-center dcf-jc-center dcf-col-gap-3 dcf-list-bare dcf-m-0 lato-bold dcf-pr-2">
+                            <li class="dcf-d-flex dcf-pl-2 dcf-m-0 dcf-txt-xs">
+                                <a href="" class="morrill-color">Morrill hall</a>
+                            </li>
+                            <li class="dcf-d-flex dcf-m-0 dcf-txt-lg">|</li>
+                            <li class="dcf-d-flex dcf-m-0 dcf-txt-xs">
+                                <a href="" class="ashfall-color">Ashfall Fossil Beds</a>
+                            </li>
+                            <li class="dcf-d-flex dcf-m-0 dcf-txt-lg">|</li>
+                            <li class="dcf-d-flex dcf-m-0 dcf-txt-xs">
+                                <a href="" class="trailside-color">Trailside Museum</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="dcf-d-inline-flex dcf-ai-center dcf-pr-7">
-                 <span class="dcf-txt-xs lato-bold">Our Family of Museums:</span> 
-                  <ul class="Our-Family-Museums-nav dcf-d-inline-flex dcf-ai-center dcf-jc-center dcf-col-gap-3 dcf-list-bare dcf-m-0 lato-bold dcf-pr-2">
-                    <li class="dcf-d-flex dcf-pl-2 dcf-m-0 dcf-txt-xs">
-                        <a href="" class="morrill-color">Test Morrill hall</a>
-                    </li>
-                    <li class="dcf-d-flex dcf-m-0 dcf-txt-lg">|</li>
-                    <li class="dcf-d-flex dcf-m-0 dcf-txt-xs">
-                        <a href="" class="ashfall-color">Ashfall Fossil Beds</a>
-                    </li>
-                    <li class="dcf-d-flex dcf-m-0 dcf-txt-lg">|</li>
-                    <li class="dcf-d-flex dcf-m-0 dcf-txt-xs">
-                        <a href="" class="trailside-color">Trailside Museum</a>
-                    </li>
-                  </ul>
-                </div>
-
             </div>
             <div class="nav-mid-row dcf-w-100% dcf-d-inline-flex dcf-ai-center dcf-jc-end dcf-pr-7">
                 <ul class="middle-nav dcf-flex-row dcf-d-inline-flex dcf-m-0 dcf-ai-center dcf-jc-center dcf-col-gap-4 dcf-list-bare lato-regular">
@@ -305,7 +407,7 @@
                 </ul>
             </div>
             <div class="nav-bot-row" style="">
-                <ul class="bottom-nav dcf-list-bare lato-regular dcf-m-0 dcf-pr-7" style="">
+                <ul class="bottom-nav dcf-list-bare lato-regular dcf-m-0 dcf-pr-7 dcf-js-end nav-wrapper">
                     <li class="  dcf-m-0 dcf-p-1">
                       <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
                       <label for="checkbox1">
@@ -324,6 +426,7 @@
                 </ul>
             </div>
         </div>
+      </div>
     </div>
     </header>
   <main class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
@@ -337,6 +440,45 @@
             <img class="dcf-ratio-child dcf-obj-fit-cover unlcms-slow-zoom-in unlcms-hero-obj-pos-60-50" src="https://mediahub.unl.edu/uploads/thumbnails/23477/original.jpg?1730902761" alt="Three students work with clay on potter's wheels">
     
           </div>
+        </div>
+    </div>
+
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-0 dcf-pb-0">
+        <div class="layout layout--dcf-onecol-section unlcms-section-edge-to-edge dcf-bleed dcf-pb-0 dcf-pt-0">
+            <div>
+                <div class="dcf-col layout__region layout__region--first">
+                    <div class="scoped-css--block-content-55">
+                        <div>
+                            <div class="dcf-hero dcf-d-flex dcf-relative unl-hero-legacy unl-bg-darkest-gray">
+                                <div class="dcf-hero-group-1 dcf-as-end">
+                                    <header class="dcf-page-title" id="dcf-page-title">
+                                        <p class="dcf-mb-0 dcf-subhead dcf-txt-md dcf-bold unl-cream">Choose a Future in the Arts</p>
+                                        <h1 class="unl-cream" style="text-transform: none;">School of A<span style="letter-spacing: 2px;">rt</span>, A<span style="letter-spacing: 2px;">rt</span> History &amp; Design</h1>
+                                    </header>
+                                            <!--
+                                                <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" href="https://mediahub.unl.edu/media/22390" data-toggles-modal="saahd-home-hero-modal-video" type="button" disabled>Watch Mya’s Story</button>
+                                            -->
+                                </div>
+                                <div class="dcf-hero-group-2 dcf-w-100% dcf-overflow-hidden">
+                                    <div class="dcf-h-100% dcf-w-100% dcf-relative dcf-autoplay-video">
+                                        <video class="dcf-ratio-child dcf-obj-fit-cover" poster="https://unlcms.unl.edu/rdee2/videos/saahd-hero.jpg" autoplay="" loop="" muted="" playsinline="">
+                                            <source src="https://unlcms.unl.edu/rdee2/videos/saahd-hero.mp4" type="video/mp4">
+                                        </video> 
+                                            <button aria-label="pause autoplay video" class="dcf-btn-autoplay-video-toggle dcf-btn dcf-btn-primary dcf-z-1 dcf-absolute dcf-pin-bottom dcf-pin-right dcf-d-flex dcf-ai-center dcf-jc-center dcf-mb-3 dcf-mr-3 dcf-h-7 dcf-w-7 dcf-p-0 dcf-circle">
+                                            <svg aria-hidden="true" class="dcf-h-4 dcf-w-4 dcf-fill-current" height="24" viewBox="0 0 24 24" width="24">
+                                                <path d="M10.5 0h-5C5.224 0 5 .224 5 .5v23C5 23.776 5.224 24 5.5 24h5c.276 0 .5-.224.5-.5v-23C11 .224 10.776 0 10.5 0zM18.5 0h-5C13.224 0 13 .224 13 .5v23c0 .276.224.5.5.5h5c.276 0 .5-.224.5-.5v-23C19 .224 18.776 0 18.5 0z"></path>
+                                            </svg>
+                                            </button>
+                                        <button class="dcf-btn-autoplay-video-toggle dcf-btn dcf-btn-primary dcf-z-1 dcf-absolute dcf-pin-bottom dcf-pin-right dcf-d-flex dcf-ai-center dcf-jc-center dcf-mb-3 dcf-mr-3 dcf-h-7 dcf-w-7 dcf-p-0 dcf-circle" aria-label="pause autoplay video"><svg class="dcf-h-4 dcf-w-4 dcf-fill-current" width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M10.5 0h-5C5.224 0 5 .224 5 .5v23C5 23.776 5.224 24 5.5 24h5c.276 0 .5-.224.5-.5v-23C11 .224 10.776 0 10.5 0zM18.5 0h-5C13.224 0 13 .224 13 .5v23c0 .276.224.5.5.5h5c.276 0 .5-.224.5-.5v-23C19 .224 18.776 0 18.5 0z"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
