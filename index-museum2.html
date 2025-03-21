@@ -28,6 +28,18 @@
       top: 0;
       z-index: 998;
     }
+    .museum {
+      color:#fff ;
+    }
+.background-morrill {
+  background-color: #700949;
+}
+.background-ashfall {
+  background-color: #99031e;
+}
+.background-trailside {
+  background-color: #09406c;
+}
     .Our-Family-Museums-nav {
       font-size: ;
     }
@@ -53,11 +65,10 @@
   width: 0; /* Initially invisible */
   height: 2px; /* Adjust thickness as desired */
   bottom: 0; /* Position at the bottom of the text */
-  left: 0; /* Position at the left of the text */
-  background-color: #700949;; /* Set the underline color */
+  right: 0; /* Position at the left of the text */
+  background-color: #700949; /* Set the underline color */
   transition: width 0.3s ease; /* Smooth animation */
 }
-
 /* Animate the underline on hover */
 .Our-Family-Museums-nav a.morrill-color:hover::after {
   width: 100%; /* Expand to full width on hover */
@@ -68,8 +79,8 @@
   width: 0; /* Initially invisible */
   height: 2px; /* Adjust thickness as desired */
   bottom: 0; /* Position at the bottom of the text */
-  left: 0; /* Position at the left of the text */
-  background-color: #99031e;; /* Set the underline color */
+  right: 0; /* Position at the left of the text */
+  background-color: #99031e; /* Set the underline color */
   transition: width 0.3s ease; /* Smooth animation */
 }
 
@@ -83,7 +94,7 @@
   width: 0; /* Initially invisible */
   height: 2px; /* Adjust thickness as desired */
   bottom: 0; /* Position at the bottom of the text */
-  left: 0; /* Position at the left of the text */
+  right: 0; /* Position at the left of the text */
   background-color: #09406c;; /* Set the underline color */
   transition: width 0.3s ease; /* Smooth animation */
 }
@@ -152,12 +163,12 @@
 
     .bottom-nav {
       display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
     }
 .lato-thin {
   font-family: "Lato", serif;
@@ -350,12 +361,15 @@
     max-width: 1282px;
     padding-left: 10px;
 }
-/* Menu banner/flag shape  */
+.museum-bg {
 
+}
+/* //////Menu banner/flag shape START////// */
     .top {
         clip-path: polygon(0 0,100% 0,100% calc(100% - 1.7em),50% 100%,0 calc(100% - 1.7em));
         background-color: #3d3a3a;
          }
+/* //////Menu banner/flag shape END////// */
   </style>
   <body class="theme">
 
@@ -443,7 +457,7 @@
         </div>
     </div>
 
-
+ <!--
     <div class="dcf-bleed dcf-wrapper dcf-pt-0 dcf-pb-0">
         <div class="layout layout--dcf-onecol-section unlcms-section-edge-to-edge dcf-bleed dcf-pb-0 dcf-pt-0">
             <div>
@@ -456,9 +470,9 @@
                                         <p class="dcf-mb-0 dcf-subhead dcf-txt-md dcf-bold unl-cream">Choose a Future in the Arts</p>
                                         <h1 class="unl-cream" style="text-transform: none;">School of A<span style="letter-spacing: 2px;">rt</span>, A<span style="letter-spacing: 2px;">rt</span> History &amp; Design</h1>
                                     </header>
-                                            <!--
+                                           
                                                 <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" href="https://mediahub.unl.edu/media/22390" data-toggles-modal="saahd-home-hero-modal-video" type="button" disabled>Watch Mya’s Story</button>
-                                            -->
+                                         
                                 </div>
                                 <div class="dcf-hero-group-2 dcf-w-100% dcf-overflow-hidden">
                                     <div class="dcf-h-100% dcf-w-100% dcf-relative dcf-autoplay-video">
@@ -481,57 +495,46 @@
             </div>
         </div>
     </div>
+-->
 
-    <h1>THIS IS SPINAL TAP Test</h1>
-    <div class="dcf-bleed dcf-wrapper dcf-pt-3 dcf-pb-6 unl-bg-lightest-gray">
-      <div class="dcf-grid dcf-mb-6">
-        <div class="dcf-col-100% dcf-col-33%-start@sm dcf-col-50%-start@lg">
-          <div class="dcf-slideshow dcf-slideshow-nojs" role="region" aria-label="slideshow foo" data-shuffle="true" data-play="auto" data-transition="fade" data-rate="2000">
-            <ul>
-              <!-- Slide 1 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!-- Slide 2 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img
-                            class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover"
-                            data-sizes="(min-width: 41.956em) 43vw, 88vw"
-                            data-src="images/150815-commencement-324-sm-min.jpg"
-                            data-srcset="images/150815-commencement-324-sm-min.jpg 284w,
-                         images/150815-commencement-324-md-min.jpg 505w,
-                         images/150815-commencement-324-lg-min.jpg 898w,
-                         images/150815-commencement-324-xl-min.jpg 1596w"
-                            src="data:image/gif;base64,R0lGODlhAQABAAAAADs="
-                            alt="Nilmar Robledo Caicedo from Colombia shakes hands after receiving his masters degree in agricultural economics.">
-                    <noscript>
-                      <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-sm-min.jpg" alt="Nilmar Robledo Caicedo from Colombia shakes hands after receiving his masters degree in agricultural economics.">
-                    </noscript>
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!--Slide 3 with no figcaption-->
-              <li>
-                <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                  <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                </div>
-              </li>
-              <!-- Slide 4  no figure-->
-              <li>
-                <div class="dcf-p-3">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit, ante quis eleifend consectetur, eros tortor aliquam turpis, venenatis blandit est quam ac odio. Curabitur euismod enim ac lobortis condimentum. Cras at vehicula eros.</p>
-                </div>
-              </li>
-            </ul>
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 museum-bg">
+      <ul class="dcf-grid-thirds@sm dcf-list-bare dcf-col-gap-7 dcf-mb-0">
+        <li class="dcf-card dcf-d-flex dcf-flex-col">
+          <div class="dcf-card-block dcf-2nd background-morrill">
+            <h3 class="dcf-h4 dcf-txt-center museum lato-bold dcf-pt-4 dcf-pb-4">Morrill Hall</h3>
+          </div>
+          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+        </li>
+        <li class="dcf-card dcf-d-flex dcf-flex-col">
+          <div class="dcf-card-block dcf-2nd background-ashfall">
+            <h3 class="dcf-h4 dcf-txt-center museum lato-bold dcf-pt-4 dcf-pb-4">Ashfall Fossil Beds</h3>
+            </div>
+          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+        </li>
+        <li class="dcf-card dcf-d-flex dcf-flex-col">
+          <div class="dcf-card-block dcf-2nd background-trailside">
+            <h3 class="dcf-h4 dcf-txt-center museum lato-bold dcf-pt-4 dcf-pb-4">Trailside Museum</h3>
+            </div>
+          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/trailside-main-3-up.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall-main-3-up.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+        </li>
+
+      </ul>
           </div>
         </div>
       </div>
