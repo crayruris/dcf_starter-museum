@@ -30,16 +30,102 @@
     }
     .museum {
       color:#fff ;
+      text-decoration: none;
+      position: relative;
     }
+
 .background-morrill {
   background-color: #700949;
 }
+a.morrill-card {
+  box-shadow: 0px 0px 0px 1em transparent;
+  transition: box-shadow 0.2s linear;
+  text-decoration: none;
+}
+a.morrill-card:hover {
+  box-shadow: 0px 0px 0px 1em #700949;
+  transition: box-shadow 0.2s linear;
+}
+a.morrill-card .museum {
+      text-decoration: none;
+      position: relative;
+    }
+a.morrill-card .museum::after {
+  content: "";
+  position: absolute; /* Position relative to the parent */
+  width: 0; /* Initially invisible */
+  height: 4px; /* Adjust thickness as desired */
+  bottom: -4px; /* Position at the bottom of the text */
+  right: 0; /* Position at the left of the text */
+  background-color: #ffffff; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+/* Animate the underline on hover */
+a.morrill-card .museum:hover::after {
+  width: 100%; /* Expand to full width on hover */
+} 
+
 .background-ashfall {
   background-color: #99031e;
 }
+a.ashfall-card {
+  box-shadow: 0px 0px 0px 1em transparent;
+  transition: box-shadow 0.2s linear;
+  text-decoration: none;
+}
+a.ashfall-card:hover {
+  box-shadow: 0px 0px 0px 1em #99031e;
+  transition: box-shadow 0.2s linear;
+}
+a.ashfall-card .museum {
+      text-decoration: none;
+      position: relative;
+    }
+a.ashfall-card .museum::after {
+  content: "";
+  position: absolute; /* Position relative to the parent */
+  width: 0; /* Initially invisible */
+  height: 4px; /* Adjust thickness as desired */
+  bottom: -4px; /* Position at the bottom of the text */
+  right: 0; /* Position at the left of the text */
+  background-color: #ffffff; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+/* Animate the underline on hover */
+a.ashfall-card .museum:hover::after {
+  width: 100%; /* Expand to full width on hover */
+} 
+
 .background-trailside {
   background-color: #09406c;
 }
+a.trailside-card {
+  box-shadow: 0px 0px 0px 1em transparent;
+  transition: box-shadow 0.2s linear;
+  text-decoration: none;
+}
+a.trailside-card:hover {
+  box-shadow: 0px 0px 0px 1em #09406c;
+  transition: box-shadow 0.2s linear;
+}
+a.trailside-card .museum {
+      text-decoration: none;
+      position: relative;
+    }
+a.trailside-card .museum::after {
+  content: "";
+  position: absolute; /* Position relative to the parent */
+  width: 0; /* Initially invisible */
+  height: 4px; /* Adjust thickness as desired */
+  bottom: -4px; /* Position at the bottom of the text */
+  right: 0; /* Position at the left of the text */
+  background-color: #ffffff; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+/* Animate the underline on hover */
+a.trailside-card .museum:hover::after {
+  width: 100%; /* Expand to full width on hover */
+} 
     .Our-Family-Museums-nav {
       font-size: ;
     }
@@ -229,6 +315,16 @@
   font-weight: 900;
   font-style: italic;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p, ul {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .visuallyHidden {
     position: absolute;
     overflow: hidden;
@@ -267,12 +363,12 @@
     bottom: 0px;
 }
 /* HAMBURGER 1 */
-.checkbox1:checked + label > .hamburger1 > .bar1{
+.checkbox1:checked + label > .hamburger1 > .bar1 {
     transform: rotate(45deg);
     transform-origin: 20%;
-    width: 30px
-    height:30px;
-    line-height: .1;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
 }
 .checkbox1:checked + label > .hamburger1 > .bar2 {
     transform: translateX(-30px);
@@ -362,7 +458,14 @@
     padding-left: 10px;
 }
 .museum-bg {
-
+  background-image: url("/images/bg-wavy-01.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+.cta-bg {
+  background-image: url("/images/bg-CTA-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* //////Menu banner/flag shape START////// */
     .top {
@@ -370,8 +473,21 @@
         background-color: #3d3a3a;
          }
 /* //////Menu banner/flag shape END////// */
+
+.dcf-btn .dcf-btn-secondary:hover {
+  background-color: #3d3a3a;
+  color:#fff;
+} 
+.theme .dcf-btn-secondary:not(:disabled):hover, .theme .dcf-btn-secondary:not(:disabled):active, .theme .dcf-btn-tertiary:not(:disabled):hover, .theme .dcf-btn-tertiary:not(:disabled):active {
+    background-color: var(--bg-btn-secondary-tertiary-hover);
+    color: #fff;
+}
+.edu-block {
+  background-color: #454545;
+}
   </style>
-  <body class="theme">
+
+  <body class="theme museum-bg">
 
     <header class="dcf-header" id="dcf-header">
       <div id="main-museum-nav" class="nav-bg dcf-d-inline-flex dcf-flex-row dcf-w-100vw">
@@ -386,7 +502,7 @@
           <div class="XXXtop dcf-absolute" style="z-index: 999;top: 0px;left: 50px;">
             <div class="XXXtop" style="width: 20em;height: 10em;"></div>
           </div>
-        -->
+          -->
             <div class="nav-top-row">
                 <div class="dcf-col-gap-6 dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-center dcf-js-end nav-wrapper">
                     <div class="dcf-d-inline-flex dcf-ai-center">
@@ -441,9 +557,9 @@
             </div>
         </div>
       </div>
-    </div>
+    
     </header>
-  <main class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
+  <div class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
     
     <div class="dcf-bleed dcf-mb-7">
       <div class="dcf-d-grid unl-grid-cols unlcms-display-banner">
@@ -498,86 +614,163 @@
 -->
 
 
-    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 museum-bg">
-      <ul class="dcf-grid-thirds@sm dcf-list-bare dcf-col-gap-7 dcf-mb-0">
-        <li class="dcf-card dcf-d-flex dcf-flex-col">
-          <div class="dcf-card-block dcf-2nd background-morrill">
-            <h3 class="dcf-h4 dcf-txt-center museum lato-bold dcf-pt-4 dcf-pb-4">Morrill Hall</h3>
-          </div>
-          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
-            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
-            <noscript>
-              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
-            </noscript>
-          </div>
-        </li>
-        <li class="dcf-card dcf-d-flex dcf-flex-col">
-          <div class="dcf-card-block dcf-2nd background-ashfall">
-            <h3 class="dcf-h4 dcf-txt-center museum lato-bold dcf-pt-4 dcf-pb-4">Ashfall Fossil Beds</h3>
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8">
+      <ul class="dcf-grid-thirds@sm dcf-list-bare dcf-col-gap-7 dcf-row-gap-6 dcf-mb-0">
+          <a href="" class="morrill-card">
+          <li class="dcf-card dcf-d-flex dcf-flex-col">
+            <div class="dcf-card-block dcf-2nd background-morrill">
+                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Morrill Hall</span></h3>
             </div>
-          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
-            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
-            <noscript>
-              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
-            </noscript>
-          </div>
-        </li>
-        <li class="dcf-card dcf-d-flex dcf-flex-col">
-          <div class="dcf-card-block dcf-2nd background-trailside">
-            <h3 class="dcf-h4 dcf-txt-center museum lato-bold dcf-pt-4 dcf-pb-4">Trailside Museum</h3>
+            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+              <noscript>
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+              </noscript>
             </div>
-          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
-            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/trailside-main-3-up.jpg" alt="Placeholder image.">
-            <noscript>
-              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall-main-3-up.jpg" alt="Placeholder image.">
-            </noscript>
-          </div>
-        </li>
+          </li>
+        </a>
+        <a href="" class="ashfall-card">
+          <li class="dcf-card dcf-d-flex dcf-flex-col">
+            <div class="dcf-card-block dcf-2nd background-ashfall">
+                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Ashfall Fossil Beds</span></h3>
+              </div>
+            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
 
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
+              <noscript>
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
+              </noscript>
+            </div>
+          </li>
+        </a>
+        <a href="" class="trailside-card">
+          <li class="dcf-card dcf-d-flex dcf-flex-col">
+            <div class="dcf-card-block dcf-2nd background-trailside">
+                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Trailside Museum</span></h3>
+              </div>
+            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/trailside-main-3-up.jpg" alt="Placeholder image.">
+              <noscript>
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall-main-3-up.jpg" alt="Placeholder image.">
+              </noscript>
+            </div>
+          </li>
+        </a>
       </ul>
-          </div>
-        </div>
-      </div>
-      <div class="dcf-grid">
-        <div class="dcf-col-100% dcf-col-33%-start@sm dcf-col-50%-start@lg">
-          <div class="dcf-slideshow dcf-slideshow-nojs" role="region" aria-label="slideshow bar">
-            <ul>
-              <!-- Slide 1  no figure-->
-              <li>
-                <div class="dcf-p-3">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit, ante quis eleifend consectetur, eros tortor aliquam turpis, venenatis blandit est quam ac odio. Curabitur euismod enim ac lobortis condimentum. Cras at vehicula eros.</p>
-                </div>
-              </li>
-              <!-- Slide 2 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
+    </div>
 
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!-- Slide 3 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!--Slide 4 with no figcaption-->
-              <li>
-                <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                  <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                </div>
-              </li>
-            </ul>
-          </div>
+
+    <div class="dcf-bleed dcf-pt-8 dcf-pb-8">
+      <div class="dcf-d-flex dcf-flex-row dcf-jc-flex-end dcf-ai-center">
+        <div class="dcf-p-5 dcf-pt-4 dcf-w-max-sm dcf-relative dcf-pl-7" style="right: -10%;background-color: #F4F3EF;">
+            <div class="dcf-as-center">
+                <h3 class="dcf-pr-3">
+                  Cherish Nebraska
+                </h3>
+                <p>
+                  Where life on Earth is preserved and made accessible for present and future study. We have been Nebraska's University repository for nearly 150 years with over 13 million specimens and artifacts from around the world.
+                </p>
+                <p>
+                    <a class="dcf-btn dcf-btn-primary dcf-float-right" href="https://emastudentwork.unl.edu/Student-Gallery/">Visit</a>
+                </p>
+            </div>
+   
+        </div>
+      <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." style="height:35vw;max-height:550px;min-height:350px;">
+      </div>
+    </div>
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-6 dcf-pb-6 cta-bg">
+      <div class="dcf-grid-halves museum dcf-d-flex">
+        <div class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-pr-6 dcf-pl-6 dcf-w-100% dcf-txt-center">
+          <h3 class="museum dcf-mb-1">We need your support</h3>
+          <p>Your support is vital and helps the museum<br>to share the collection with the world.</p>
+        </div>
+        <div class="dcf-d-flex dcf-flex-row dcf-ai-center dcf-jc-center dcf-w-100%">
+          <a class="dcf-btn dcf-btn-secondary lato-regular dcf-mr-4" href="https://emastudentwork.unl.edu/Student-Gallery/">Make a donation</a>
+          <a class="dcf-btn dcf-btn-secondary lato-regular" href="https://emastudentwork.unl.edu/Student-Gallery/">Become a Member</a>
         </div>
       </div>
+    </div>
+
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-6 dcf-pb-6">
+      <h2>Education</h2>
+      <div class="dcf-grid-halves museum dcf-col-gap-8 dcf-row-gap-6">
+      <a href="" style="text-decoration: none;">
+        <div class="dcf-card dcf-d-flex dcf-flex-row edu-block dcf-jc-between">
+          <div class="dcf-p-6 dcf-w-50%">
+              <h4 class="dcf-h4 lato-bold museum">In-Person Learning</h4>
+              <ul>
+                <li class="museum">Group Visits</li>
+                <li class="museum">Gallery Programs</li>
+                <li class="museum">Planetarium Shows</li>
+                <li class="museum">UNL Class Visits</li>
+              </ul>
+              <div class="dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-flex-end">
+                <div>
+                  <p class="museum">
+                    <span class="dcf-bold">Public Hours</span><br>
+                    Tuesday-Saturday<br>
+                    9:00am - 5:00pm
+                  </p>
+                  <p class="museum">Sunday<br>
+                    12:00am - 5:00pm
+                  </p>
+                </div>
+                <div class="dcf-circle dcf-b-solid dcf-b-3 dcf-txt-center dcf-flex dcf-ac-center dcf-jc-center lato-bold" style="width: 5em;height: 5em;background-color: #e5e5e5;text-decoration: none;border-color: #e5e5e5;">Visit Now</div>
+              </div>
+              
+              
+          </div>
+
+          <div class="dcf-d-block">
+            <img class="dcf-h-100%" src="/images/planetarium-promo.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/planetarium-promo.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+
+        </div>
+      </a>
+      <a href="" style="text-decoration: none;">
+        <div class="dcf-card dcf-d-flex dcf-flex-row edu-block dcf-jc-between">
+          <div class="dcf-p-6 dcf-w-50%">
+              <h4 class="dcf-h4 lato-bold museum">Virtual Learning</h4>
+              <ul>
+                <li class="museum">Museum Kits</li>
+                <li class="museum">Virtual Learning</li>
+                <li class="museum">Educator Resources</li>
+              </ul>
+              <div class="dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-flex-end">
+                <div>
+                  <p class="museum">
+                    <span class="dcf-bold">Program Details</span><br>
+                    9:30 CST<br>
+                    11:00am CST
+                  </p>
+                  <p class="museum">
+                    45 minutes
+                  </p>
+                </div>
+                <div class="dcf-circle dcf-b-solid dcf-b-3 dcf-txt-center dcf-flex dcf-ac-center dcf-jc-center lato-bold" style="width: 5em;height: 5em;background-color: #e5e5e5;text-decoration: none;border-color: #e5e5e5;">Register</div>
+              </div>
+
+          </div>
+
+          <div class="dcf-d-block">
+            <img class="" src="/images/education-promo-2.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/education-promo-2.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+
+        </div>
+      </a>
+      </div>
+    </div>
+
+
     </div>
 
     <h1>Modal Test</h1>
