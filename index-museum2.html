@@ -483,7 +483,20 @@ p, ul {
     color: #fff;
 }
 .edu-block {
+  background-color: transparent;
+}
+.education-button {
+  transition: all 0.3s ease-in-out;
   background-color: #454545;
+  box-shadow: 0px 0px 0px 1em transparent;
+  transition: box-shadow 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.education-button:hover {
+  background-color: #99031e;
+  box-shadow: 0px 0px 0px 1em #99031e;
+  transition: box-shadow 0.5s ease-in-out;
 }
   </style>
 
@@ -697,7 +710,7 @@ p, ul {
     <div class="dcf-bleed dcf-wrapper dcf-pt-6 dcf-pb-6">
       <h2>Education</h2>
       <div class="dcf-grid-halves museum dcf-col-gap-8 dcf-row-gap-6">
-      <a href="" style="text-decoration: none;">
+      <a href="" class="dcf-txt-decor-none education-button">
         <div class="dcf-card dcf-d-flex dcf-flex-row edu-block dcf-jc-between">
           <div class="dcf-p-6 dcf-w-50%">
               <h4 class="dcf-h4 lato-bold museum">In-Person Learning</h4>
@@ -733,7 +746,7 @@ p, ul {
 
         </div>
       </a>
-      <a href="" style="text-decoration: none;">
+      <a href="" class="dcf-txt-decor-none education-button">
         <div class="dcf-card dcf-d-flex dcf-flex-row edu-block dcf-jc-between">
           <div class="dcf-p-6 dcf-w-50%">
               <h4 class="dcf-h4 lato-bold museum">Virtual Learning</h4>
