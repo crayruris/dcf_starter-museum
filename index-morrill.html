@@ -232,7 +232,7 @@ a.trailside-card .museum:hover::after {
 }
 .top-nav-right::before {
   content: "";
-  background-image: url("images/state-museum-logo4.png");
+  background-image: url("images/state-museum-logo5.png");
   z-index: 999;
   height: 164px;
   width: 27%;
@@ -260,6 +260,9 @@ a.trailside-card .museum:hover::after {
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
   z-index: 998;
   position: relative;
+}
+.morrill .nav-bot-row {
+  background-color:#700949 ;
 }
 .nav-mid-row .middle-nav li a {
   color:#fff ;
@@ -492,8 +495,20 @@ p, ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.cta-bg-morrill {
+  background-image: url("/images/bg-CTA-02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .news-bg {
-  border-color:#ccccca;background-color: #f4f3f0;
+  border-color:#ccccca;
+  background-color: #f4f3f0;
+}
+.text-bg {
+  background-image: url("/images/archie-skeleton02.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #f1eee8;
 }
 /* //////Menu banner/flag shape START////// */
 .top {
@@ -619,7 +634,7 @@ p, ul {
 }
   </style>
 
-  <body class="theme museum-bg">
+  <body class="theme museum-bg morrill">
 
     <header class="dcf-header" id="dcf-header">
       <nav id="main-museum-nav dcf-local-navigation" class="nav-bg dcf-d-inline-flex dcf-flex-row dcf-w-100vw dcf-nav-local dcf-d-none@print" role="navigation" aria-label="local navigation">
@@ -691,11 +706,11 @@ p, ul {
                               <span class="bar bar4"></span>
                           </div>
                       </label></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Morrill Hall</a></li>
-                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Ashfall Fossil Beds</a></li>
-                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Trailside Museum</a></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Research Collections</a></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Education</a></li>
+                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Visit</a></li>
+                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Exhibit</a></li>
+                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">For Educators</a></li>
+                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Community</a></li>
+                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Events</a></li>
                 </ul>
             </div>
         </div>
@@ -744,9 +759,12 @@ p, ul {
     
     </header>
     <main>
+
+
+
   <div class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
     
-    <div class="dcf-bleed dcf-mb-7">
+    <div class="dcf-bleed">
       <div class="dcf-d-grid unl-grid-cols unlcms-display-banner">
         <div class="dcf-z-1 unlcms-display-banner-text unlcms-display-banner-text-c">
         </div>
@@ -798,13 +816,24 @@ p, ul {
                 </div>
             -->
 
+            <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 text-bg">
+              <div class="dcf-w-max-xl">
+<h3>Sparking people's interest in the natural world and preserving it for future generations.</h3>
+<p>Established in 1871, the University of Nebraska State Museum is the state's premier museum of natural history. The mission of Museum is to discover and disseminate knowledge about the natural world through research and education. Morrill Hall is known for its paleontological collections, especially its iconic Elephant Hall, where visitors will see the world's largest articulated fossil Columbian mammoth alongside a unique collection of Nebraskan fossil elephants. Also featured are interactive paleontology exhibits including a Jurassic dinosaur gallery. In addition to these iconic paleontology exhibits, the recently renovated fourth floor includes a Smithsonian-inspired Visible Lab, hands-on Science Exploration Zone, and Sustainable Earth gallery with a 5-foot diameter digital globe. The onsite Mueller Planetarium provides visitors with additional opportunities to explore our Universe and our place in it. In addition to the permanent galleries, the museum hosts temporary exhibits on diverse topics.</p>
+<a class="dcf-btn dcf-btn-primary" href="">Plan a Visit</a>
+</div>
+            </div>
 
-    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8">
+    <div class="dcf-pt-8 dcf-pb-8">
+      <h2>Now on View</h2>
       <ul class="dcf-grid-thirds@sm dcf-list-bare dcf-col-gap-7 dcf-row-gap-6 dcf-mb-0">
           <a href="" class="morrill-card">
           <li class="dcf-card dcf-d-flex dcf-flex-col">
-            <div class="dcf-card-block dcf-2nd background-morrill">
-                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Morrill Hall</span></h3>
+            <div class="dcf-card-block dcf-2nd">
+                <h4 class="lato-bold">Cherish nebraska</h4>
+                <p>A whole new floor of exhibits celebrating Nebraska's natural heritage.</p>
+                <p class="dcf-txt-sm"><span class="dcf-d-block floor">4th floor</span><span class="details dcf-d-block">Opening August 27, 2022</span></p>
+                <p class="dcf-txt-right"><u>Permanent Exhibits</u></p>
             </div>
             <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
               <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
@@ -816,57 +845,40 @@ p, ul {
         </a>
         <a href="" class="ashfall-card">
           <li class="dcf-card dcf-d-flex dcf-flex-col">
-            <div class="dcf-card-block dcf-2nd background-ashfall">
-                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Ashfall Fossil Beds</span></h3>
-              </div>
-            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
-
-              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
-              <noscript>
-                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
-              </noscript>
-            </div>
+            <div class="dcf-card-block dcf-2nd">
+              <h4 class="lato-bold">Cherish nebraska</h4>
+              <p>A whole new floor of exhibits celebrating Nebraska's natural heritage.</p>
+              <p class="dcf-txt-sm"><span class="dcf-d-block floor">4th floor</span><span class="details dcf-d-block">Opening August 27, 2022</span></p>
+              <p class="dcf-txt-right"><u>Permanent Exhibits</u></p>
+          </div>
+          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
           </li>
         </a>
         <a href="" class="trailside-card">
           <li class="dcf-card dcf-d-flex dcf-flex-col">
-            <div class="dcf-card-block dcf-2nd background-trailside">
-                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Trailside Museum</span></h3>
-              </div>
-            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
-                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/trailside-main-3-up.jpg" alt="Placeholder image.">
-              <noscript>
-                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall-main-3-up.jpg" alt="Placeholder image.">
-              </noscript>
-            </div>
+            <div class="dcf-card-block dcf-2nd">
+              <h4 class="lato-bold">Cherish nebraska</h4>
+              <p>A whole new floor of exhibits celebrating Nebraska's natural heritage.</p>
+              <p class="dcf-txt-sm"><span class="dcf-d-block floor">4th floor</span><span class="details dcf-d-block">Opening August 27, 2022</span></p>
+              <p class="dcf-txt-right"><u>Permanent Exhibits</u></p>
+          </div>
+          <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+            <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
           </li>
         </a>
       </ul>
     </div>
 
-
-    <div class="dcf-bleed dcf-pt-8 dcf-pb-8">
-      <div class="dcf-d-flex dcf-jc-flex-end dcf-ai-center dcf-pb-8 mus-flex">
-        <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." class="mag-bleed">
-        <div class="dcf-p-6 inset-block" style="">
-            <div class="dcf-as-center">
-                <h3 class="">
-                  Cherish Nebraska
-                </h3>
-                <p>
-                  Where life on Earth is preserved and made accessible for present and future study. We have been Nebraska's University repository for nearly 150 years with over 13 million specimens and artifacts from around the world.
-                </p>
-                <p>
-                    <a class="dcf-btn dcf-btn-primary dcf-float-right" href="https://emastudentwork.unl.edu/Student-Gallery/">Visit</a>
-                </p>
-            </div>
-   
-        </div>
-      
-      </div>
-    </div>
-
-    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 cta-bg">
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 cta-bg-morrill">
       <div class="dcf-grid-halves@md museum dcf-row-gap-6">
         <div class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-pr-6 dcf-pl-4 dcf-w-100% dcf-txt-center">
           <h3 class="museum dcf-mb-1">We need your support</h3>
@@ -880,7 +892,7 @@ p, ul {
     </div>
 
 
-    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8">
+    <div class="dcf-pt-8 dcf-pb-8">
       <h2>Education</h2>
       <div class="dcf-grid-halves@md museum dcf-col-gap-8 dcf-row-gap-6">
       <a href="" class="dcf-txt-decor-none education-button">
@@ -906,8 +918,7 @@ p, ul {
                 </div>
                 <div class="dcf-circle dcf-b-solid dcf-b-3 dcf-txt-center dcf-flex dcf-ac-center dcf-jc-center lato-bold circle-button">Visit Now</div>
               </div>
-              
-              
+
           </div>
 
           <div class="dcf-d-block">
@@ -955,6 +966,29 @@ p, ul {
       </a>
       </div>
     </div>
+
+
+    <div class="dcf-bleed dcf-pt-8 dcf-pb-8">
+      <div class="dcf-d-flex dcf-jc-flex-end dcf-ai-center dcf-pb-8 mus-flex">
+        <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." class="mag-bleed">
+        <div class="dcf-p-6 inset-block" style="">
+            <div class="dcf-as-center">
+                <h3 class="">
+                  Mueller Planetarium
+                </h3>
+                <p>
+                  Where life on Earth is preserved and made accessible for present and future study. We have been Nebraska's University repository for nearly 150 years with over 13 million specimens and artifacts from around the world.
+                </p>
+                <p>
+                    <a class="dcf-btn dcf-btn-primary dcf-float-right" href="https://emastudentwork.unl.edu/Student-Gallery/">Purchase Tickets</a>
+                </p>
+            </div>
+   
+        </div>
+      
+      </div>
+    </div>
+
 
     <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 dcf-bt-3 dcf-bb-3 dcf-bt-solid dcf-bb-solid news-bg">
       <h2>News and Events</h2>
