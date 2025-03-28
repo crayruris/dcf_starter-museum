@@ -538,20 +538,44 @@ p, ul {
   box-shadow: 0px 0px 0px 1em #99031e;
   opacity: 1;
 }
-
+.mus-flex {
+  flex-direction: row;
+}
 .inset-block {
   right: 66%;
   background-color: #F4F3EF;
   width: 350px;
   z-index: 3;
+  position: absolute;
 }
 .mag-bleed {
   height:48vw;max-height:750px;min-height:350px;
 }
+@media screen and (max-width: 1070px) {
+  .inset-block {
+    right: 55%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .inset-block {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .mus-flex {
+  flex-direction: column;
+}
+.mag-bleed {
+  height:48vw;
+  max-height:750px;
+  min-height:350px;
+  width: 100%;
+}
+}
 .event-date {
   background-color:  #454545;
   width: fit-content;
-
 }
 .event-month {
   background-color: #d00000;
@@ -567,6 +591,9 @@ p, ul {
 }
 .dcf-footer {
   background-color: #454545;
+}
+@media screen {
+  
 }
   </style>
 
@@ -615,7 +642,7 @@ p, ul {
                 <ul class="middle-nav dcf-flex-row dcf-d-inline-flex dcf-m-0 dcf-ai-center dcf-jc-center dcf-col-gap-4 dcf-list-bare lato-regular">
                     <li class="dcf-d-flex dcf-m-0 dcf-p-2"><a href="" class="dcf-txt-sm icon-membership">Membership</a></li>
                     <li class="dcf-d-flex dcf-m-0 dcf-p-2"><a href="" class="dcf-txt-sm icon-donate">Donate</a></li>
-                    <li class="dcf-d-flex dcf-m-0 dcf-p-2"><a href="" class="dcf-txt-sm icon-collections">About Us</a></li>
+                    <li class="dcf-d-flex dcf-m-0 dcf-p-2"><a href="" class="dcf-txt-sm icon-collections">Get Involved</a></li>
                     <li class="dcf-d-flex dcf-m-0 dcf-p-2"><a href="" class="dcf-txt-sm icon-search">Search</a></li>
                 </ul>
             </div>
@@ -699,7 +726,7 @@ p, ul {
 
 
     <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8">
-      <ul class="dcf-grid-thirds@md dcf-list-bare dcf-col-gap-7 dcf-row-gap-6 dcf-mb-0">
+      <ul class="dcf-grid-thirds@sm dcf-list-bare dcf-col-gap-7 dcf-row-gap-6 dcf-mb-0">
           <a href="" class="morrill-card">
           <li class="dcf-card dcf-d-flex dcf-flex-col">
             <div class="dcf-card-block dcf-2nd background-morrill">
@@ -745,10 +772,11 @@ p, ul {
 
 
     <div class="dcf-bleed dcf-pt-8 dcf-pb-8">
-      <div class="dcf-d-flex dcf-flex-row dcf-jc-flex-end dcf-ai-center dcf-pb-8">
-        <div class="dcf-p-6 dcf-absolute inset-block" style="">
+      <div class="dcf-d-flex dcf-jc-flex-end dcf-ai-center dcf-pb-8 mus-flex">
+        <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." class="mag-bleed">
+        <div class="dcf-p-6 inset-block" style="">
             <div class="dcf-as-center">
-                <h3 class=" ">
+                <h3 class="">
                   Cherish Nebraska
                 </h3>
                 <p>
@@ -760,7 +788,7 @@ p, ul {
             </div>
    
         </div>
-      <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." class="mag-bleed">
+      
       </div>
     </div>
 
@@ -901,8 +929,8 @@ p, ul {
         </div>
 
           <div class="dcf-col-100% dcf-col-33%-start@md">
-            <p class="dcf-txt-h6 lato-bold dcf-float-right">
-              <a class="dcf-btn dcf-btn-primary dcf-float-right lato-regular museum">All News</a>
+            <p Xclass="dcf-txt-h6 lato-bold dcf-float-right">
+              <a class="dcf-btn dcf-btn-primary dcf-float-right">All News</a>
             </p>
           </div>   
           <div class="dcf-col-100% dcf-col-67%-end@md">
@@ -910,7 +938,7 @@ p, ul {
           </div>
         </div>
         <div class="dcf-grid dcf-col-gap-6">
-          <div class="dcf-col-100% dcf-col-33%-start@md dcf-d-flex dcf-jc-end">
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
             <div>
               <p class="lato-bold dcf-txt-center event-date museum">
                 <span class="dcf-txt-sm dcf-p-7">JUN</span>
@@ -918,14 +946,14 @@ p, ul {
               </p>
             </div>
           </div>   
-          <div class="dcf-col-100% dcf-col-67%-end@md">
+          <div class="dcf-col-67%-end">
                   <p>
                     <span class="dcf-bold">Cosmos $ Cocktails - Sold Out</span><br>
                     8:00PM<br>
                     Morrill Hall                    
                   </p>
           </div>
-          <div class="dcf-col-100% dcf-col-33%-start@md dcf-d-flex dcf-jc-end">
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
             <div>
               <p class="lato-bold dcf-txt-center event-date museum">
                 <span class="dcf-txt-sm dcf-p-7">JUN</span>
@@ -933,14 +961,14 @@ p, ul {
               </p>
             </div>
           </div>  
-          <div class="dcf-col-100% dcf-col-67%-end@md">
+          <div class="dcf-col-67%-end">
             <p>
               <span class="dcf-bold">Investigate</span><br>
               2:00 pm – 3:30 pm<br>
               Morrill Hall                    
             </p>
           </div>
-          <div class="dcf-col-100% dcf-col-33%-start@md dcf-d-flex dcf-jc-end">
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
             <div>
               <p class="lato-bold dcf-txt-center event-date museum">
                 <span class="dcf-txt-sm dcf-p-7">JUN</span>
@@ -948,14 +976,14 @@ p, ul {
               </p>
             </div>
           </div>  
-          <div class="dcf-col-100% dcf-col-67%-end@md">
+          <div class="dcf-col-67%-end">
             <p>
               <span class="dcf-bold">Pop in Storytime</span><br>
               6:00 pm – 7:30 pm<br>
               Morrill Hall                    
             </p>
           </div>
-          <div class="dcf-col-100% dcf-col-33%-start@md dcf-d-flex dcf-jc-end">
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
             <div>
               <p class="lato-bold dcf-txt-center event-date museum">
                 <span class="dcf-txt-sm dcf-p-7">JUN</span>
@@ -963,19 +991,20 @@ p, ul {
               </p>
             </div>
           </div>   
-          <div class="dcf-col-100% dcf-col-67%-end@md">
+          <div class="dcf-col-67%-end">
             <p>
               <span class="dcf-bold">Shareholders Meeting</span><br>
               12:00 am – 1:30 am<br>
               Morrill Hall                    
             </p>
           </div>
+
           <div class="dcf-col-100% dcf-col-33%-start@md">
             <p class="dcf-txt-h6 lato-bold dcf-float-right">
-              <a class="dcf-btn dcf-btn-primary lato-regular">All Events</a>
+              <a class="dcf-btn dcf-btn-primary dcf-float-right lato-regular">All Events</a>
             </p>
           </div>   
-          <div class="dcf-col-100% dcf-col-67%-end@md">
+          <div class="dcf-col-67%-end@md">
 
           </div>
         </div>
@@ -1033,7 +1062,7 @@ p, ul {
           <div><a class="dcf-d-inline-block dcf-relative" href="http://www.facebook.com/"><img src="/images/footer-trailside-button.jpg" alt="Trailside museum button"></a></div>
         </div>
         <p class="dcf-txt-center dcf-txt-h3 dcf-pt-6">Our Affiliate Partners</p>
-        <div class="dcf-grid-fifths@md dcf-col-gap-4 dcf-row-gap-4 dcf-ai-center dcf-jc-center dcf-pl-6 dcf-pr-6">
+        <div class="dcf-grid-halves dcf-grid-fifths@md dcf-col-gap-4 dcf-row-gap-4 dcf-ai-center dcf-jc-center dcf-pl-6 dcf-pr-6">
           <div><a class="dcf-d-inline-block dcf-relative" href="http://www.facebook.com/"><img src="/images/aam-logo.jpg" alt="AAM Logo"></a></div>
           <div><a class="dcf-d-inline-block dcf-relative" href="http://www.facebook.com/"><img src="/images/Smiths-logo.png" alt="Smithsonian Logo"></a></div>
           <div><a class="dcf-d-inline-block dcf-relative" href="http://www.facebook.com/"><img src="/images/ASTC_PASSPORT_RED.png" alt="Trailside museum button"></a></div>
@@ -1046,7 +1075,7 @@ p, ul {
         </div>
         
       </div>
-      <div class="dcf-col-100% dcf-col-25%-end@md dcf-d-flex dcf-flex-col dcf-pt-4">
+      <div class="dcf-col-100% dcf-col-25%-end@md dcf-d-flex dcf-flex-col dcf-pt-4 dcf-pb-4">
         <form class="dcf-form" action="?" method="post">
             <legend class="dcf-txt-h5 lato-regular">Sign up for E-news</legend>
             <div class="dcf-form-group">
