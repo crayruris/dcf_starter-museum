@@ -811,11 +811,15 @@ p, ul {
     }
     }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
+.morrill-planetarium {
+  background-image: url("/images/planetarium_bg_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
   </style>
 
-  <body class="theme museum-bg morrill">
+  <body class="theme museum-bg">
 
     <header class="dcf-header" id="dcf-header">
       <nav id="main-museum-nav dcf-local-navigation" class="nav-bg dcf-d-inline-flex dcf-flex-row dcf-w-100vw dcf-nav-local dcf-d-none@print" role="navigation" aria-label="local navigation">
@@ -950,7 +954,7 @@ p, ul {
         <div class="dcf-z-1 unlcms-display-banner-text unlcms-display-banner-text-c">
         </div>
         <div class="unlcms-display-banner-img dcf-ratio dcf-ratio-16x9 dcf-mb-0">
-          <img class="dcf-ratio-child dcf-obj-fit-cover unlcms-slow-zoom-in unlcms-hero-obj-pos-60-50" src="https://mediahub.unl.edu/uploads/thumbnails/23477/original.jpg?1730902761" alt="Three students work with clay on potter's wheels">
+          <img class="dcf-ratio-child dcf-obj-fit-cover unlcms-slow-zoom-in unlcms-hero-obj-pos-60-50" src="/images/morrill-hall-interior-01.jpg" alt="A group looks at a mastadon sekelton in the interior of Morrill Hall">
         </div>
       </div>
     </div>
@@ -1208,23 +1212,29 @@ p, ul {
     </div>
 
 
-    <div class="dcf-bleed dcf-pt-8 dcf-pb-8">
-      <div class="dcf-d-flex dcf-jc-flex-end dcf-ai-center dcf-pb-8 mus-flex">
-        <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." class="mag-bleed">
-        <div class="dcf-p-6 inset-block" style="">
-            <div class="dcf-as-center">
-                <h3 class="">
+    <div class="dcf-bleed dcf-pt-8 dcf-pb-8 morrill-planetarium">
+      <div class="dcf-wrapper dcf-pt-8 dcf-pb-8">
+          <div class="dcf-grid-halves@md museum dcf-col-gap-8 dcf-row-gap-6">
+              <div class="dcf-d-block">
+                <img class="dcf-obj-fit-cover" src="/images/Mueller_Planetarium_01.jpg" alt="nebula.">
+
+              </div>
+              <div class="dcf-d-block dcf-bg-overlay-dark dcf-p-6">
+                <h3 class="museum">
                   Mueller Planetarium
                 </h3>
                 <p>
-                  Where life on Earth is preserved and made accessible for present and future study. We have been Nebraska's University repository for nearly 150 years with over 13 million specimens and artifacts from around the world.
+                  Mueller Planetarium is located inside Morrill Hall. Shows are available to the public on Fridays, Saturdays, and Sundays, with the exception of home football gamedays. Tickets may be purchased on site at Morrill Hall.
                 </p>
+                <h3 class="museum">Planetarium Ticket Prices</h3>
                 <p>
-                    <a class="dcf-btn dcf-btn-primary dcf-float-right" href="https://emastudentwork.unl.edu/Student-Gallery/">Purchase Tickets</a>
+                  Planetarium ticket prices do not include Morrill Hall admission. Museum admission is required for planetarium access. Please note that planetarium ticket sales end 10 minutes prior to the beginning of the show. Admission to the planetarium will not be allowed once the show has begun.
+                </p>
+                <p class="dcf-txt-center">
+                    <a class="dcf-btn dcf-btn-primary" href="https://emastudentwork.unl.edu/Student-Gallery/">Purchase Tickets</a>
                 </p>
             </div>
-   
-        </div>
+          </div>
       
       </div>
     </div>
@@ -1365,6 +1375,18 @@ p, ul {
 
     </div>
   </div>
+
+
+  <div class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
+    <div class="dcf-bleed">
+      <div class="dcf-d-grid unl-grid-cols unlcms-display-banner">
+        <div class="dcf-z-1 unlcms-display-banner-text unlcms-display-banner-text-c">
+        </div>
+        <div class="unlcms-display-banner-img dcf-ratio dcf-ratio-16x9 dcf-mb-0">
+          <img class="dcf-ratio-child dcf-obj-fit-cover" src="/images/morrill-hall-archie.jpg" alt="Statue of Archie the mastadon in front of Morrill Hall.">
+        </div>
+      </div>
+    </div>
 
 
   </main>
