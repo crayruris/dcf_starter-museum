@@ -858,3 +858,28 @@ a .research-overlay h4:hover::after {
   text-decoration: none;
   color:#99031e;
 }
+.research-btn {
+    display: block;
+    background-color: rgba(0, 0, 0, .45);
+    transition-behavior: normal;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out;
+      transition-delay: 0s;
+      transition-property: background-color;
+  }
+
+.research-btn:hover {
+    background-color: rgba(0, 0, 0, .75)
+  }
+  /*
+a.research-btn {
+    display: block;
+    background: rgb(77, 76, 76);
+    transition: background-color 0.5s;
+
+}
+a.research-btn:hover {
+    background: rgb(27, 27, 27);
+
+}
+    */
