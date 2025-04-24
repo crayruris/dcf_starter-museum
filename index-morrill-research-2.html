@@ -17,16 +17,7 @@
 
 </head>
 <style>
-  a.research-btn {
-    display: block;
-    background: rgb(77, 76, 76);
-    transition: background-color 5s;
 
-}
-a.research-btn:hover {
-    background: rgb(109, 5, 5);
-
-}
 </style>
 
   <body class="theme museum-bg top-level morrill">
@@ -61,6 +52,8 @@ a.research-btn:hover {
                     </div>
                 </div>
             </div>
+
+            
             <div class="nav-mid-row dcf-w-100% dcf-d-inline-flex dcf-ai-center dcf-jc-end dcf-pr-7">
                 <ul class="middle-nav dcf-flex-row dcf-d-inline-flex dcf-m-0 dcf-ai-center dcf-jc-center dcf-col-gap-4 dcf-list-bare lato-regular">
                   <li class="dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center dcf-m-0 dcf-p-2">
@@ -89,7 +82,9 @@ a.research-btn:hover {
                   </li>
                 </ul>
             </div>
-            <div class="nav-bot-row" style="">
+
+
+            <div class="nav-bot-row dcf-nav-local dcf-d-none@print" id="dcf-local-navigation" role="navigation" aria-label="local navigation">
                 <ul class="bottom-nav dcf-list-bare lato-regular dcf-m-0 dcf-pr-7 dcf-js-end nav-wrapper">
                     <li class="  dcf-m-0 dcf-p-1">
                       <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
@@ -101,15 +96,67 @@ a.research-btn:hover {
                               <span class="bar bar4"></span>
                           </div>
                       </label></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Morrill Hall</a></li>
-                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Ashfall Fossil Beds</a></li>
-                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Trailside Museum</a></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Research Collections</a></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Education</a></li>
+                    <li class="  dcf-m-0 dcf-p-2">
+                      <a href="" class="">Morrill Hall</a>
+                        <ul>
+                          <li><a href="#">Cras Pellentesque Nullam</a></li>
+                          <li><a href="#">Sem Aenean</a></li>
+                          <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                          <li><a href="#">Ullamcorper</a></li>
+                          <li><a href="#">Consectetur Nibh</a></li>
+                          <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                        </ul>
+                    </li>
+                    <li class=" dcf-m-0 dcf-p-2">
+                      <a href="" class="">Ashfall Fossil Beds</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class=" dcf-m-0 dcf-p-2">
+                      <a href="" class="">XXXTrailside Museum</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class="  dcf-m-0 dcf-p-2">
+                      <a href="" class="">Research Collections</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class="  dcf-m-0 dcf-p-2">
+                      <a href="" class="">Education</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
                 </ul>
             </div>
         </div>
       </nav>
+
+      <!--  -->
       <nav class="dcf-nav-toggle-group dcf-fixed dcf-pin-bottom dcf-h-9 dcf-w-100% dcf-bg-white dcf-d-none@print" role="navigation" aria-label="Navigate, search, or log in">
         <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-menu" aria-expanded="false">
           <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
@@ -151,7 +198,7 @@ a.research-btn:hover {
           <div class="dcf-idm-status-logged-in dcf-relative dcf-h-100% dcf-w-100%" hidden=""></div>
         </div>
       </nav>
-    
+   
     </header>
     <main>
   <div class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
@@ -180,72 +227,97 @@ a.research-btn:hover {
 
     <div class="dcf-bleed tan-mid dcf-wrapper dcf-pb-8">
       
-      <div class="dcf-grid-thirds dcf-col-gap-8 dcf-row-gap-8">
-        
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/explore-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-              <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">Explore the Collection</h4>
+      <div class="dcf-grid-full dcf-grid-halves@sm dcf-grid-thirds@md dcf-grid-fourths@lg dcf-col-gap-8 dcf-row-gap-8">
+
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/explore-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">Explore the Collection</h4>
+              </div>
             </a>
-          </div>
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/first-nation-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-            <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">First peoples of the plains</h4>
+          
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/first-nation-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">First peoples of the plains</h4>
+              </div>
           </a>
-          </div>
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/luella-buros-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-            <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">luella buros collection</h4>
+          
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/luella-buros-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">luella buros collection</h4>
+              </div>
           </a>
-          </div>
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/researchers-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-            <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">meet our researchers</h4>
+          
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/researchers-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">meet our researchers</h4>
+              </div>
           </a>
-          </div>
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/miss-mie-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-            <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">miss mie: historic japanese friendship doll</h4>  
+         
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/miss-mie-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">miss mie: historic japanese friendship doll</h4>  
+              </div>
           </a>
-        </div>
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/featured-video-buttons.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-            <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">Featured videos</h4>
+        
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/featured-video-buttons.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">Featured videos</h4>
+              </div>
           </a>
-        </div>
-          <div class="">
-            <a href="" class="museum research-btn">
-              <img style="margin: 0!important;" src="/images/nagpra-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
-            <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">NAGPRA</h4>
+        
+            <a href="" class="museum">
+              <div class="research-btn dcf-h-100%">
+                <img src="/images/nagpra-button.jpg" alt="Pottery from indigenous peoples" class="dcf-d-block dcf-w-100%">
+                <h4 class="museum dcf-txt-center dcf-m-0 dcf-uppercase dcf-p-4">NAGPRA</h4>
+              </div>
           </a>
-        </div>
+        
       
       </div>
     
     </div>
     
-    <div class="dcf-bleed">
+    <div class="dcf-bleed tan-mid dcf-wrapper dcf-pb-8">
       <div class="dcf-grid-halves">
-        <a href="" class="membership-bg dcf-txt-decor-none">
-          <div class="dcf-d-flex dcf-ai-center dcf-jc-center dcf-p-9 research-overlay">
-            <div class="dcf-p-6 dcf-m-6">
-            <h4 class="museum dcf-txt-center dcf-mb-0">Contacts</h4>
+        
+          <div class="">
+            <h4 class="">Contacts</h4>
+            <p>Curator: Alan Osborn<br>
+              Collections Manager/NAGPRA<br>
+              Assistant: Katelyn McMullin</p>
+              <p><span class="dcf-bold dcf-d-block">Anthropology Division Phone:</span>402-472-5044</p>
           </div>
+      
+        <div class="">
+            <h4 class="">Research Links</h4>
+            <p>
+              <a href="">Hubbard Lecture Series</a><br>
+              <a href="">Luella Buros Collection</a><br>
+              <a href="">Andersen Collection</a><br>
+              <a href="">Omaha Indian Heritage Project</a><br>
+              <a href="">Plains Tribes Comparative Collection</a>
+            </p>
         </div>
-      </a>
-      <a href="" class="membership-bg dcf-txt-decor-none">
-        <div class="dcf-d-flex dcf-ai-center dcf-jc-center dcf-p-9 research-overlay">
-          <div class="dcf-p-6 dcf-m-6">
-            <h4 class="museum dcf-txt-center dcf-mb-0">Research Links</h4>
-          </div>
-        </div>
-      </a>
+      
       </div>
+
+      <div class="dcf-d-flex dcf-jc-center dcf-pt-6">
+
+          <div class="dcf-w-max-lg dcf-flex-grow-1 tan-dark dcf-p-6">
+            <p class="dcf-m-0">The University of Nebraska State Museum acknowledges that w e are
+              part of the land-grant institution University of Nebraska with museum
+              campuses and program on the past, present and future homelands of
+              the Ownee, Panca, Oto-Missiuriam Omaha, Dakota, Lakota, Arapaho,
+              Cheyenne, and Kaw Peoples, a s well a s the relocated Ho-Chunk, lowa, and Sac and Fox Peoples.</p>
+          </div>
+      </div>
+        
     </div>
 
    

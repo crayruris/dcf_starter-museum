@@ -860,7 +860,7 @@ a .research-overlay h4:hover::after {
 }
 .research-btn {
     display: block;
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .65);
     transition-behavior: normal;
       transition-duration: 0.4s;
       transition-timing-function: ease-out;
@@ -869,7 +869,7 @@ a .research-overlay h4:hover::after {
   }
 
 .research-btn:hover {
-    background-color: rgba(0, 0, 0, .75)
+    background-color: rgba(0, 0, 0, 1)
   }
   /*
 a.research-btn {
