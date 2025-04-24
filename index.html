@@ -11,33 +11,207 @@
     <script src="js/vendor/require.js"></script>
   </head>
   <body class="theme">
-  <header class="dcf-header" id="dcf-header">
-    Header markup here
-  </header>
+
+
+  <header class="dcf-header" id="dcf-header" role="banner">
+      <div class="dcf-header-global dcf-wrapper dcf-d-flex dcf-flex-row dcf-flex-nowrap dcf-ai-center dcf-jc-between dcf-relative">
+        <a class="dcf-institution-title dcf-flex-shrink-0 dcf-pt-3 dcf-pb-3 dcf-txt-xs example-ls-1" href="#">
+          <span class="dcf-uppercase">University of DCF</span>
+        </a>
+        <nav class="dcf-nav-global dcf-header-global-child dcf-d-flex dcf-jc-flex-end dcf-txt-xs" role="navigation" aria-label="global navigation">
+          <ul class="dcf-list-bare dcf-d-flex dcf-mb-0">
+            <li class="dcf-d-flex dcf-mb-0"><a class="dcf-pt-4 dcf-pb-4" href="#">Visit</a></li>
+            <li class="dcf-d-flex dcf-mb-0"><a class="dcf-pt-4 dcf-pb-4" href="#">Apply</a></li>
+            <li class="dcf-d-flex dcf-mb-0"><a class="dcf-pt-4 dcf-pb-4" href="#">Give</a></li>
+          </ul>
+        </nav>
+  
+        <nav class="dcf-idm dcf-header-global-child dcf-flex-grow-1 dcf-jc-flex-end dcf-h-100% dcf-w-min-0 dcf-d-none@print" id="dcf-idm" role="navigation" aria-labelledby="dcf-idm-username">
+          <a class="dcf-idm-login dcf-mobile-nav-toggle dcf-idm-toggle" id="dcf-idm-username" href="#">
+            <span class="dcf-d-flex dcf-ai-center dcf-jc-center dcf-h-100%">
+              <svg class="dcf-icon dcf-fill-current dcf-h-3 dcf-w-3" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 48 48"><path d="M24 48A24 24 0 1 0 0 24a24 24 0 0 0 24 24zm0-38a8 8 0 0 1 4.14 14.84l1.85 12A1 1 0 0 1 29 38H19a1 1 0 0 1-1-1.15l1.85-12A8 8 0 0 1 24 10z"></path></svg>
+              <span class="dcf-pl-2 dcf-txt-xs">Log In</span>
+            </span>
+          </a>
+          <div id="dcf-idm-notice-container" hidden="">
+            <button class="dcf-p-0 dcf-b-0 dcf-bg-transparent dcf-mobile-nav-toggle dcf-idm-toggle" id="dcf-idm-toggle" aria-haspopup="true" aria-pressed="false" aria-controls="dcf-idm-options">
+              <span class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-100%">
+                <img class="dcf-d-block dcf-circle dcf-h-6 dcf-w-6 example-bg-brand-alpha" src="#" alt="">
+                <span class="dcf-sr-only">View your account, </span><span class="dcf-txt-xs">Ryan</span>
+              </span>
+            </button>
+            <nav class="dcf-d-none dcf-overlay-dark dcf-idm-options" id="dcf-idm-options" aria-hidden="true">
+              <ul class="dcf-list-bare">
+                <li><a id="dcf-idm-profile" href="#">View Profile</a></li>
+                <li><a id="dcf-idm-logout" href="#">Log Out</a></li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+  
+        <div class="dcf-search dcf-header-global-child dcf-flex-grow-1 dcf-jc-flex-end dcf-modal-parent dcf-d-none@print" id="dcf-search" role="search">
+          <button class="dcf-p-0 dcf-b-0 dcf-bg-transparent dcf-mobile-nav-toggle dcf-search-toggle example-brand-alpha" id="dcf-search-toggle" aria-pressed="false" aria-controls="dcf-search-form" aria-haspopup="true">
+            <span class="dcf-d-flex dcf-jc-center dcf-ai-center dcf-h-100%">
+              <svg class="dcf-icon dcf-fill-current dcf-h-3 dcf-w-3" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 48 48"><path d="M18 36a17.9 17.9 0 0 0 11.27-4l15.31 15.41a2 2 0 0 0 2.84-2.82L32.08 29.18A18 18 0 1 0 18 36zm0-32A14 14 0 1 1 4 18 14 14 0 0 1 18 4z"></path></svg>
+              <span class="dcf-pl-2 dcf-txt-xs">Search</span>
+            </span>
+          </button>
+          <form class="dcf-input-group dcf-sr-only" id="dcf-search-form" action="#" method="get">
+            <label class="dcf-mr-4" for="dcf-search_query">Search</label>
+              <input class="dcf-input-text dcf-search-input" id="dcf-search_query" name="q" type="search" required="">
+                <button class="dcf-btn dcf-btn-primary dcf-txt-md" type="submit">
+                  <span class="dcf-d-flex dcf-ai-center dcf-jc-center">
+                    <svg class="dcf-icon" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 48 48"><path fill="#fff" d="M18 36a17.9 17.9 0 0 0 11.27-4l15.31 15.41a2 2 0 0 0 2.84-2.82L32.08 29.18A18 18 0 1 0 18 36zm0-32A14 14 0 1 1 4 18 14 14 0 0 1 18 4z"></path></svg>
+                  </span>
+                  <span class="dcf-sr-only">Submit</span>
+                </button>
+          </form>
+        </div>
+  
+      </div>
+  
+      <div class="dcf-logo-lockup dcf-wrapper dcf-d-flex dcf-ai-flex-end dcf-relative dcf-overflow-hidden dcf-pt-5" id="dcf-logo-lockup">
+          <a id="dcf-header-logo" href="#" aria-label="Go to home page">
+            <!-- Logo SVG goes here -->
+          </a>
+          <div class="dcf-d-flex dcf-flex-col dcf-jc-center">
+        
+              <div class="dcf-uppercase dcf-txt-h3 dcf-lh-4 dcf-regular example-ls-2" id="dcf-site-affiliation">
+                <!-- InstanceBeginEditable name="affiliation" -->
+                  <a href="#">College of Business</a>
+                <!-- InstanceEndEditable -->
+              </div>
+        
+                  <div class="dcf-txt-xs dcf-italic" id="dcf-site-title">
+                    <!-- InstanceBeginEditable name="titlegraphic" -->
+                        <!--<a href="#"> Jane Doe Department of Accounting </a>-->
+                        <!--<abbr title="Jane Doe Department of Accounting">JDDoA</abbr>-->
+                    <!-- InstanceEndEditable -->
+                  </div>
+        
+          </div>
+        </div>
+  
+        <div class="dcf-nav-toggle-group dcf-fixed dcf-pin-bottom dcf-h-9 dcf-w-100% dcf-bg-white dcf-d-none@print" role="navigation" aria-label="Navigate, search, or log in">
+          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-menu" aria-expanded="false">
+            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
+              <path d="M23.5 12.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 4.5H.5C.2 4.5 0 4.3 0 4s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 20.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5z"></path>
+            </svg>
+            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current dcf-d-none" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
+              <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
+              <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
+            </svg>
+            <span class="dcf-sr-only">Open </span>
+            <span class="dcf-mt-1 dcf-txt-2xs">Menu</span>
+          </button>
+
+          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-search dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-search" aria-pressed="false" aria-haspopup="dialog">
+            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 24 24">
+              <path d="M22.5 21.8L15 14.3c1.2-1.4 2-3.3 2-5.3 0-4.4-3.6-8-8-8S1 4.6 1 9s3.6 8 8 8c2 0 3.9-.8 5.3-2l7.5 7.5c.2.2.5.2.7 0 .2-.2.2-.5 0-.7zM9 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"></path>
+            </svg>
+            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current dcf-d-none" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
+              <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
+              <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
+            </svg>
+            <span class="dcf-mt-1 dcf-txt-2xs">Search</span>
+          </button>
+
+            <div class="dcf-nav-toggle-btn dcf-nav-toggle-btn-idm dcf-idm dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9">
+              <div class="dcf-idm-status-logged-out dcf-h-100% dcf-w-100%">
+                <a class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-100% dcf-w-100% example-brand-alpha" href="">
+                  <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 24 24">
+                    <path d="M12 0C5.4 0 0 5.4 0 12c0 6.2 5 12 12 12 3.2 0 6.3-1.3 8.5-3.6S24 15.1 24 12c0-6.6-5.4-12-12-12zM4.7 20.2c1-.6 2.5-1.1 4-1.6l1.5-.6c.2-.1.3-.3.3-.5V15c0-.2-.1-.4-.3-.5 0 0-1.2-.5-1.2-2.5 0-.3-.2-.5-.5-.5 0 0-.1-.2-.1-.5s.1-.5.1-.5c.3 0 .5-.2.5-.5 0-.1 0-.3-.1-.5-.2-.5-.6-2-.2-2.4.1-.2.5-.2.7-.1.3 0 .5-.1.6-.4.2-.6 1.3-1.1 2.8-1.1s2.6.5 2.8 1.1c.2.9-.2 2.2-.4 2.8-.2.3-.2.5-.2.6 0 .3.2.5.5.5 0 0 .1.2.1.5s-.1.5-.1.5c-.3 0-.5.2-.5.5 0 2.1-1.1 2.5-1.2 2.5-.2.1-.3.3-.3.5v2.5c0 .2.1.4.3.5.5.2 1.1.4 1.6.6 1.5.5 2.9 1.1 3.9 1.6-2 1.8-4.5 2.8-7.3 2.8-2.7 0-5.3-1-7.3-2.8zm15.4-.8c-1-.6-2.6-1.2-4.3-1.8-.4-.2-.8-.3-1.3-.5v-1.8c.5-.3 1.4-1.1 1.5-2.9.4-.2.6-.7.6-1.4 0-.6-.2-1-.5-1.3.2-.8.7-2.1.4-3.3-.3-1.4-2.2-1.9-3.7-1.9-1.3 0-3 .4-3.6 1.5-.5-.1-.9.1-1.2.4-.8.8-.3 2.4-.1 3.3-.3.2-.5.7-.5 1.3 0 .6.2 1.1.6 1.4.1 1.8 1 2.6 1.5 2.9v1.8c-.4.1-.8.3-1.2.4-1.6.6-3.3 1.2-4.4 1.9C2 17.4 1 14.8 1 12 1 5.9 5.9 1 12 1s11 4.9 11 11c0 2.8-1 5.4-2.9 7.4z"></path>
+                  </svg>
+                  <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current dcf-d-none" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
+                    <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
+                    <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
+                  </svg>
+                  <span class="dcf-mt-1 dcf-txt-2xs">Log In</span>
+                </a>
+              </div>
+              <div class="dcf-idm-status-logged-in dcf-relative dcf-h-100% dcf-w-100%" hidden=""></div>
+            </div>
+
+        </div>
+  
+        <nav class="dcf-nav-menu dcf-nav-local dcf-modal-parent dcf-d-none@print" id="dcf-local-navigation" role="navigation" aria-label="primary">
+          <!-- <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-flex-shrink-0 dcf-ai-center dcf-w-9 dcf-p-0 dcf-b-0 dcf-bg-transparent unl-cream" id="dcf-menu-toggle" aria-label="open menu">
+            <svg>
+            </svg>
+          </button> -->
+      
+          <div id="dcf-nav-menu-child" class="dcf-nav-menu-child dcf-nav-local dcf-w-100%">
+            <!-- InstanceBeginEditable name="navlinks" -->
+              <ul>
+                  <li><a href="#">About</a>
+                    <ul>
+                      <li><a href="#">Cras Pellentesque Nullam</a></li>
+                      <li><a href="#">Sem Aenean</a></li>
+                      <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                      <li><a href="#">Ullamcorper</a></li>
+                      <li><a href="#">Consectetur Nibh</a></li>
+                      <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Admissions</a>
+                    <ul>
+                      <li><a href="#">Fringilla</a></li>
+                      <li><a href="#">Purus Mollis</a></li>
+                      <li><a href="#">Ullamcorper</a></li>
+                      <li><a href="#">Nullam Aenean</a></li>
+                      <li><a href="#">Condimentum Nibh</a></li>
+                      <li><a href="#">Lorem Condimentum Egestas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Campus Life</a>
+                    <ul>
+                      <li><a href="#">Sem Ipsum</a></li>
+                      <li><a href="#">Sem Fringilla</a></li>
+                      <li><a href="#">Fusce Ligula</a></li>
+                      <li><a href="#">Porta Tortor Purus</a></li>
+                      <li><a href="#">Aenean</a></li>
+                      <li><a href="#">Commodo Nibh Malesuada</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Academics</a>
+                    <ul>
+                      <li><a href="#">Ullamcorper Mattis</a></li>
+                      <li><a href="#">Ipsum Inceptos Pellentesque</a></li>
+                      <li><a href="#">Vestibulum</a></li>
+                      <li><a href="#">Tellus</a></li>
+                      <li><a href="#">Nullam Cras Tortor</a></li>
+                      <li><a href="#">Sollicitudin Tortor</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Research</a>
+                    <ul>
+                      <li><a href="#">Fusce Parturient</a></li>
+                      <li><a href="#">Justo Egestas</a></li>
+                      <li><a href="#">Magna Porta</a></li>
+                      <li><a href="#">Purus Sollicitudin Tellus</a></li>
+                      <li><a href="#">Vehicula Sem</a></li>
+                      <li><a href="#">Malesuada</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Outreach</a>
+                    <ul>
+                      <li><a href="#">Fermentum Ultricies</a></li>
+                      <li><a href="#">Cursus Sollicitudin</a></li>
+                      <li><a href="#">Adipiscing</a></li>
+                      <li><a href="#">Consectetur</a></li>
+                      <li><a href="#">Mattis Nibh</a></li>
+                      <li><a href="#">Sem Consectetur Dapibus</a></li>
+                    </ul>
+                  </li>
+                </ul>
+      
+            <!-- InstanceEndEditable -->
+          </div>
+        </nav>
+  
+    </header>
   <main class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
-    <div id="example-code">
-      <div class="dcf-notice dcf-notice-success" hidden>
-        <h2>Great Success!</h2>
-        <div>This is my content. <a href="#">This is some link text</a></div>
-      </div>
-      <div class="dcf-notice dcf-notice-warning" hidden id="custom-notice-id">
-        <h2>Denial Notice!</h2>
-        <div>This is my content. <a href="#">This is some link text</a></div>
-      </div>
-      <div class="dcf-notice dcf-notice-danger" hidden>
-        <h2>Important Alert!</h2>
-        <div>This is my content. <a href="#">This is some link text</a></div>
-      </div>
-      <div class="dcf-notice dcf-notice-info" hidden data-overlay="dcf-header">
-        <h2>I'm Floating!</h2>
-        <div>This notice overlays the header.</div>
-      </div>
-      <div class="dcf-notice dcf-notice-success" hidden data-overlay="dcf-main">
-        <h2>Success!</h2>
-        <div>This notice overlays the maincontent.</div>
-      </div>
-    </div>
-    <div id="errorContainer">Error listed here.</div>
+    
 
     <div class="dcf-bleed dcf-wrapper dcf-pt-9 dcf-pb-9">
       <div class="dcf-tabs" id="tab-group-1">

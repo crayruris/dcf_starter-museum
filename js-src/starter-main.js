@@ -23,6 +23,13 @@ require(['js/dcf-modal'], function(DCFModalModule) {
   modal.initialize();
 });
 
+// Navigation Example
+require(['js/dcf-navMenuToggle'], function(DCFnavMenuToggleModule) {
+  let nav = document.querySelectorAll('.dcf-nav-menu');
+  let nav = new DCFnavMenuToggleModule.DCFnavMenuToggleModule(nav);
+  nav.initialize();
+});
+
 // Pagination Example
 require(['js/dcf-pagination'], function(DCFPaginationModule) {
   const paginationNavs = document.querySelectorAll('.dcf-pagination');
