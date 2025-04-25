@@ -93,16 +93,17 @@
         </div>
   
         <div class="dcf-nav-toggle-group dcf-fixed dcf-pin-bottom dcf-h-9 dcf-w-100% dcf-bg-white dcf-d-none@print" role="navigation" aria-label="Navigate, search, or log in">
-          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-menu" aria-expanded="false">
+          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-menu" aria-haspopup="true" aria-expanded="false" aria-label="Open menu">
             <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
-              <path d="M23.5 12.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 4.5H.5C.2 4.5 0 4.3 0 4s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 20.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5z"></path>
+              <g id="dcf-nav-toggle-icon-open-menu" class="">
+                <path d="M23.5 12.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 4.5H.5C.2 4.5 0 4.3 0 4s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 20.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5z"></path>
+              </g>
+              <g id="dcf-nav-toggle-icon-close-menu" class="dcf-d-none">
+                <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
+                <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
+              </g>
             </svg>
-            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current dcf-d-none" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
-              <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
-              <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
-            </svg>
-            <span class="dcf-sr-only">Open </span>
-            <span class="dcf-mt-1 dcf-txt-2xs">Menu</span>
+            <span class="dcf-nav-toggle-label-menu dcf-mt-1 dcf-txt-2xs">Menu</span>
           </button>
 
           <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-search dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-search" aria-pressed="false" aria-haspopup="dialog">
@@ -134,12 +135,18 @@
 
         </div>
   
-        <nav class="dcf-nav-menu dcf-nav-local dcf-modal-parent dcf-d-none@print" id="dcf-local-navigation" role="navigation" aria-label="primary">
-          <!-- <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-flex-shrink-0 dcf-ai-center dcf-w-9 dcf-p-0 dcf-b-0 dcf-bg-transparent unl-cream" id="dcf-menu-toggle" aria-label="open menu">
-            <svg>
+        <nav class="dcf-nav-menu dcf-modal-parent dcf-d-none@print" id="dcf-navigation" role="navigation" aria-label="primary">
+          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-flex-shrink-0 dcf-ai-center dcf-w-9 dcf-p-0 dcf-b-0 dcf-bg-transparent" id="dcf-menu-toggle" hidden="">
+            <svg class="dcf-h-5 dcf-w-5 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 48 48">
+              <g>
+                <path d="M45.5 22.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 7.5h-43C1.7 7.5 1 8.2 1 9s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 37.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"></path>
+              </g>
+              <g class="dcf-d-none">
+                <path d="M38.1 7.7L7.7 38.1c-.6.6-.6 1.5 0 2.1.6.6 1.5.6 2.1 0L40.3 9.9c.6-.6.6-1.5 0-2.1-.6-.6-1.6-.6-2.2-.1z"></path>
+                <path d="M7.7 7.7c-.6.6-.6 1.5 0 2.1l30.4 30.4c.6.6 1.5.6 2.1 0 .6-.6.6-1.5 0-2.1L9.9 7.7c-.6-.5-1.6-.5-2.2 0z"></path>
+              </g>
             </svg>
-          </button> -->
-      
+          </button>
           <div id="dcf-nav-menu-child" class="dcf-nav-menu-child dcf-nav-local dcf-w-100%">
             <!-- InstanceBeginEditable name="navlinks" -->
               <ul>
