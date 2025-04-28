@@ -7,9 +7,9 @@
     <title>Digital Campus Framework &middot; Starter Theme</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/print.css" media="print">
-    <link rel="stylesheet" href="museum.css">
     <script src="js/vendor/bodyScrollLock.min.js"></script>
     <script src="js/vendor/require.js"></script>
+    <link rel="stylesheet" href="museum.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,12 +17,12 @@
 
   <body class="theme museum-bg top-level morrill">
 
-    <header class="dcf-header" id="dcf-header">
-      <nav id="main-museum-nav dcf-local-navigation" class="nav-bg dcf-d-inline-flex dcf-flex-row dcf-w-100vw dcf-nav-local dcf-d-none@print" role="navigation" aria-label="local navigation">
+    <header class="dcf-header lato-regular" id="dcf-header" role="banner">
+      <nav id="main-museum-nav dcf-local-navigation" class="nav-bg dcf-header-global dcf-d-inline-flex dcf-flex-row dcf-w-100vw">
         
         <div class="top-nav-right dcf-d-block dcf-w-100% dcf-relative">
 
-            <div class="nav-top-row">
+            <nav class="nav-top-row dcf-nav-global dcf-header-global-child" role="navigation" aria-label="global navigation">
                 <div class="dcf-col-gap-6 dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-center dcf-js-end nav-wrapper">
                     <div class="dcf-d-inline-flex dcf-ai-center">
                         <a href="" class="dcf-d-inline-flex dcf-p-2 dcf-ai-center">
@@ -46,7 +46,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
             <div class="nav-mid-row dcf-w-100% dcf-d-inline-flex dcf-ai-center dcf-jc-end dcf-pr-7">
                 <ul class="middle-nav dcf-flex-row dcf-d-inline-flex dcf-m-0 dcf-ai-center dcf-jc-center dcf-col-gap-4 dcf-list-bare lato-regular">
                   <li class="dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center dcf-m-0 dcf-p-2">
@@ -76,26 +76,82 @@
                 </ul>
             </div>
             <div class="nav-bot-row" style="">
+              <nav class="dcf-nav-menu dcf-modal-parent dcf-d-none@print" id="dcf-navigation" role="navigation" aria-label="primary">
+                <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-flex-shrink-0 dcf-ai-center dcf-w-9 dcf-p-0 dcf-b-0 dcf-bg-transparent" id="dcf-menu-toggle" hidden="">
+                  <svg class="dcf-h-5 dcf-w-5 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 48 48">
+                    <g>
+                      <path d="M45.5 22.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 7.5h-43C1.7 7.5 1 8.2 1 9s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 37.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"></path>
+                    </g>
+                    <g class="dcf-d-none">
+                      <path d="M38.1 7.7L7.7 38.1c-.6.6-.6 1.5 0 2.1.6.6 1.5.6 2.1 0L40.3 9.9c.6-.6.6-1.5 0-2.1-.6-.6-1.6-.6-2.2-.1z"></path>
+                      <path d="M7.7 7.7c-.6.6-.6 1.5 0 2.1l30.4 30.4c.6.6 1.5.6 2.1 0 .6-.6.6-1.5 0-2.1L9.9 7.7c-.6-.5-1.6-.5-2.2 0z"></path>
+                    </g>
+                  </svg>
+                </button>
+                <div id="dcf-nav-menu-child" class="dcf-nav-menu-child dcf-nav-local">
                 <ul class="bottom-nav dcf-list-bare lato-regular dcf-m-0 dcf-pr-7 dcf-js-end nav-wrapper">
-                    <li class="  dcf-m-0 dcf-p-1">
-                      <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
-                      <label for="checkbox1">
-                          <div class="hamburger hamburger1">
-                              <span class="bar bar1"></span>
-                              <span class="bar bar2"></span>
-                              <span class="bar bar3"></span>
-                              <span class="bar bar4"></span>
-                          </div>
-                      </label></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Morrill Hall</a></li>
-                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Ashfall Fossil Beds</a></li>
-                    <li class=" dcf-m-0 dcf-p-2"><a href="" class="">Trailside Museum</a></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Research Collections</a></li>
-                    <li class="  dcf-m-0 dcf-p-2"><a href="" class="">Education</a></li>
+                    <li class="  dcf-m-0 dcf-p-2">
+                      <a href="" class="">Morrill Hall</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class=" dcf-m-0 dcf-p-2">
+                      <a href="" class="">Ashfall Fossil Beds</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class=" dcf-m-0 dcf-p-2">
+                      <a href="" class="">Trailside Museum</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class="  dcf-m-0 dcf-p-2">
+                      <a href="" class="">Research Collections</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
+                    <li class="  dcf-m-0 dcf-p-2">
+                      <a href="" class="">Education</a>
+                      <ul>
+                        <li><a href="#">Cras Pellentesque Nullam</a></li>
+                        <li><a href="#">Sem Aenean</a></li>
+                        <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
+                        <li><a href="#">Ullamcorper</a></li>
+                        <li><a href="#">Consectetur Nibh</a></li>
+                        <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
+                      </ul>
+                    </li>
                 </ul>
+              </div>
+              </nav>
             </div>
         </div>
       </nav>
+<!--  BOTTOM MENU FOR MOBILE START   --> 
       <nav class="dcf-nav-toggle-group dcf-fixed dcf-pin-bottom dcf-h-9 dcf-w-100% dcf-bg-white dcf-d-none@print" role="navigation" aria-label="Navigate, search, or log in">
         <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-menu" aria-expanded="false">
           <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
@@ -137,10 +193,12 @@
           <div class="dcf-idm-status-logged-in dcf-relative dcf-h-100% dcf-w-100%" hidden=""></div>
         </div>
       </nav>
-    
+<!--  MOBILE BOTTOM MENU FOR  -->
+
+
     </header>
-    <main>
-  <div class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
+ 
+  <main class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
     
     <div class="dcf-bleed dcf-wrapper membership-bg">
       <div class="dcf-grid-halves dcf-col-gap-4 dcf-row-gap-4 dcf-pt-8 dcf-pb-8">

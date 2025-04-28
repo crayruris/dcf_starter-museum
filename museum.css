@@ -871,15 +871,8 @@ a .research-overlay h4:hover::after {
 .research-btn:hover {
     background-color: rgba(0, 0, 0, 1)
   }
-  /*
-a.research-btn {
-    display: block;
-    background: rgb(77, 76, 76);
-    transition: background-color 0.5s;
-
+  @media only screen and (min-width: 56.12em) {
+    .dcf-header-global-child {
+        margin-left:0;
+    }
 }
-a.research-btn:hover {
-    background: rgb(27, 27, 27);
-
-}
-    */
