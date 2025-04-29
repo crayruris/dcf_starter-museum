@@ -287,6 +287,10 @@ a .UNL-logo:hover {
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
+.nav-bot-row.dcf-nav-menu ul li ul {
+  padding-left: 0;
+
+}
 .lato-thin {
   font-family: "Lato", serif;
   font-weight: 100;
@@ -875,4 +879,20 @@ a .research-overlay h4:hover::after {
     .dcf-header-global-child {
         margin-left:0;
     }
+}
+@media only screen and (min-width: 56.12em) {
+    .dcf-nav-menu {
+        display: inherit;
+        /* flex-wrap: nowrap; */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.dcf-nav-menu-child a, .dcf-nav-menu-child button {
+  line-height: 1.333333333;
+  display: inherit;
+  padding: 0;
+}
+.dcf-nav-menu-child .dcf-nav-local ul {
+
 }
