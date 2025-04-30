@@ -13,7 +13,7 @@
       top: 0;
       z-index: 998;
     }
-    .museum {
+    .museum, .morrill .museum {
       color:#fff ;
       text-decoration: none;
       position: relative;
@@ -895,4 +895,7 @@ a .research-overlay h4:hover::after {
 }
 .dcf-nav-menu-child .dcf-nav-local ul {
 
+}
+.theme .dcf-nav-toggle-btn {
+  flex-basis: inherit;
 }
