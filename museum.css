@@ -254,9 +254,17 @@ a.trailside-card .museum:hover::after {
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
   z-index: 998;
   position: relative;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: inherit;
 }
 .morrill .nav-bot-row {
   background-color:#700949 ;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: inherit;
 }
 .nav-mid-row .middle-nav li a {
   color:#fff ;
@@ -481,7 +489,6 @@ p, ul {
 .nav-wrapper {
     width: 69vw;
     max-width: 1282px;
-    padding-left: 10px;
 }
 .museum-bg {
   background-image: url("/images/bg-wavy-01.jpg");
@@ -888,14 +895,44 @@ a .research-overlay h4:hover::after {
         padding-right: 0;
     }
 }
+.morrill .nav-bot-row .dcf-nav-menu {
+  background-color:#700949 ;
+}
+
 .dcf-nav-menu-child a, .dcf-nav-menu-child button {
   line-height: 1.333333333;
   display: inherit;
   padding: 0;
 }
-.dcf-nav-menu-child .dcf-nav-local ul {
-
+.morrill .dcf-nav-menu-child .dcf-nav-local ul {
+  background-color:#700949 ;
+}
+.dcf-nav-local ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+.dcf-nav-local ul ul li {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 .theme .dcf-nav-toggle-btn {
   flex-basis: inherit;
+}
+.theme .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+  background-color:#700949 ;
+}
+@media only screen and (min-width: 56.12em) {
+  .morrill .dcf-nav-local ul ul:before {
+      background-color: #700949;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 200vw;
+      z-index: -1;
+  }
 }
