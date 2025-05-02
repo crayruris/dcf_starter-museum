@@ -224,9 +224,51 @@ a.trailside-card .museum:hover::after {
 .top-nav-left {
   z-index: 998;
 }
-.top-nav-right::before {
+.top-level .top-nav-right::before {
+  content: "";
+  background-image: url("images/state-museum-logo4.png");
+  z-index: 999;
+  height: 164px;
+  width: 27%;
+  max-width:337px;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0;
+  right: 69%;
+  background-size: contain;
+}
+.morrill .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo5.png");
+  z-index: 999;
+  height: 164px;
+  width: 27%;
+  max-width:337px;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0;
+  right: 69%;
+  background-size: contain;
+}
+.trailside .top-nav-right::before {
+  content: "";
+  background-image: url("images/state-museum-logo3.png");
+  z-index: 999;
+  height: 164px;
+  width: 27%;
+  max-width:337px;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0;
+  right: 69%;
+  background-size: contain;
+}
+.ashfall .top-nav-right::before {
+  content: "";
+  background-image: url("images/state-museum-logo6.png");
   z-index: 999;
   height: 164px;
   width: 27%;
@@ -259,6 +301,13 @@ a.trailside-card .museum:hover::after {
   justify-content: flex-end;
   width: inherit;
 }
+.top-level .nav-bot-row {
+  background-color:#d00000 ;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: inherit;
+}
 .morrill .nav-bot-row {
   background-color:#700949 ;
   display: inline-flex;
@@ -266,19 +315,35 @@ a.trailside-card .museum:hover::after {
   justify-content: flex-end;
   width: inherit;
 }
+.trailside .nav-bot-row {
+  background-color:#08406b ;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: inherit;
+}
+.ashfall .nav-bot-row {
+  background-color:#9a031e ;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: inherit;
+}
 .nav-mid-row .middle-nav li a {
   color:#fff ;
+  border-bottom: 1px solid transparent;
   transition: 0.3s;
 }
 .nav-bot-row .bottom-nav li a {
   color:#fff ;
+  border-bottom: 1px solid transparent;
   transition: 0.3s;
 }
-.nav-mid-row .middle-nav li a:hover {
-  text-shadow: 0px 0px 7px rgba(48, 48, 48, 0.95);    
+.nav-mid-row .middle-nav li a:hover {   
+  text-decoration: underline;
 }
 .nav-bot-row .bottom-nav li a:hover {
-  text-shadow: 0px 0px 7px rgba(48, 48, 48, 0.95);    
+  text-decoration: underline;  
 }
 a .UNL-logo {
   transition: 0.3s;
@@ -898,6 +963,12 @@ a .research-overlay h4:hover::after {
 .morrill .nav-bot-row .dcf-nav-menu {
   background-color:#700949 ;
 }
+.ashfall .nav-bot-row .dcf-nav-menu {
+  background-color:#9a031e ;
+}
+.trailside .nav-bot-row .dcf-nav-menu {
+  background-color:#08406b ;
+}
 
 .dcf-nav-menu-child a, .dcf-nav-menu-child button {
   line-height: 1.333333333;
@@ -907,6 +978,12 @@ a .research-overlay h4:hover::after {
 .morrill .dcf-nav-menu-child .dcf-nav-local ul {
   background-color:#700949 ;
 }
+.ashfall .dcf-nav-menu-child .dcf-nav-local ul {
+  background-color:#9a031e ;
+}
+.trailside .dcf-nav-menu-child .dcf-nav-local ul {
+  background-color:#08406b ;
+}
 .dcf-nav-local ul ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -915,14 +992,37 @@ a .research-overlay h4:hover::after {
 .dcf-nav-local ul ul li {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  padding-right: 0.8em;
 }
 .theme .dcf-nav-toggle-btn {
   flex-basis: inherit;
 }
-.theme .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+.theme.morrill .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
   background-color:#700949 ;
 }
+.theme.trailside .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+  background-color:#08406b ;
+}
+.theme.ashfall .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+  background-color:#9a031e ;
+}
 @media only screen and (min-width: 56.12em) {
+  .theme .dcf-nav-local>ul>li {
+    position: relative;
+    width: 100%;
+  }
+  .top-level .dcf-nav-local ul ul:before {
+    background-color: #d00000;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 200vw;
+    z-index: -1;
+  }
   .morrill .dcf-nav-local ul ul:before {
       background-color: #700949;
       content: "";
@@ -934,5 +1034,29 @@ a .research-overlay h4:hover::after {
       transform: translateX(-50%);
       width: 200vw;
       z-index: -1;
+  }
+  .ashfall .dcf-nav-local ul ul:before {
+    background-color: #9a031e;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 200vw;
+    z-index: -1;
+  }
+  .trailside .dcf-nav-local ul ul:before {
+    background-color: #08406b;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 200vw;
+    z-index: -1;
   }
 }
