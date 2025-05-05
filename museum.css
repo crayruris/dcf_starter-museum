@@ -1059,4 +1059,41 @@ a .research-overlay h4:hover::after {
     width: 200vw;
     z-index: -1;
   }
+  .nav-top-row-mobile, .morrill .nav-bot-row-mobile {
+    display: none;
+  }
 }
+@media only screen and (max-width: 56.12em) {
+  .dcf-nav-menu {
+      opacity: 0;
+      pointer-events: none;
+      position: fixed;
+      transition: opacity 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0ms .4s;
+      visibility: hidden;
+      width: 100%;
+      z-index: 998;
+  }
+ .dcf-header-global, .morrill .nav-bot-row, .nav-mid-row  {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .theme .dcf-nav-toggle-btn {
+    flex-basis: 25%;
+}
+.morrill .nav-top-row-mobile {
+  background-color: #e5e5e5;
+  box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+}
+.morrill .nav-bot-row-mobile {
+  background-color: #700949;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+}
+
