@@ -1005,8 +1005,24 @@ a .research-overlay h4:hover::after {
 }
 .theme.ashfall .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
   background-color:#9a031e ;
+}  
+.dcf-nav-local>ul:first-child {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (min-width: 42.09em) {
+  .dcf-nav-local>ul:first-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media only screen and (min-width: 56.12em) {
+  .dcf-nav-local>ul:first-child {
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+    width: 100%;
+}
   .theme .dcf-nav-local>ul>li {
     position: relative;
     width: 100%;
@@ -1064,36 +1080,65 @@ a .research-overlay h4:hover::after {
   }
 }
 @media only screen and (max-width: 56.12em) {
-  .dcf-nav-menu {
-      opacity: 0;
-      pointer-events: none;
-      position: fixed;
-      transition: opacity 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0ms .4s;
-      visibility: hidden;
-      width: 100%;
-      z-index: 998;
+  .dcf-nav-menu a, .dcf-nav-menu button {
+    margin-left: 0;
+}
+
+  .top-level .nav-bot-row, .morrill .nav-bot-row {
+    justify-content: flex-start;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
   }
- .dcf-header-global, .morrill .nav-bot-row, .nav-mid-row  {
+  .nav-wrapper {
+    width: 100vw;
+    max-width: 1282px;
+}
+ .top-level .top-nav-right::before, .morrill .top-nav-right::before, .ashfall .top-nav-right::before, .trailside .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display: none!important;
   }
   .theme .dcf-nav-toggle-btn {
     flex-basis: 25%;
-}
+  }
+
 .morrill .nav-top-row-mobile {
   background-color: #e5e5e5;
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
   z-index: 998;
   display: flex;
   justify-content: center;
-}
+  position: relative;
+  }
 .morrill .nav-bot-row-mobile {
   background-color: #700949;
-  display: flex;
-  justify-content: center;
- 
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    height: 134px;
+    position: relative;
+  }
+  .dcf-nav-menu {
+    height: 0;
+    opacity: 0;
+    pointer-events: visible;
+    position: fixed;
+    transition: opacity 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0ms .4s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 998;
 }
-
+  .morrill .dcf-nav-menu-child {
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--bg-brand-alpha);
+    bottom: 4.2139917643em;
+    height: 57vh;
+    overflow-y: auto;
+    padding-left: 5.6186556843vw;
+    padding-right: 5.6186556843vw;
+    position: fixed;
+    padding-top: 1em;;
+}
 }
 
