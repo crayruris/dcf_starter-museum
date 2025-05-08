@@ -1087,8 +1087,8 @@ a .research-overlay h4:hover::after {
   .top-level .nav-bot-row, .morrill .nav-bot-row {
     justify-content: flex-start;
     width: 100%;
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
   }
   .nav-wrapper {
     width: 100vw;
