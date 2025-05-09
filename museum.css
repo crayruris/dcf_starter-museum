@@ -280,6 +280,14 @@ a.trailside-card .museum:hover::after {
   right: 69%;
   background-size: contain;
 }
+.nav-block-logo {
+  position: absolute;
+  right: calc(69vw);
+  top: 0;
+  width: 337px;
+  height: 164px;
+  z-index: 998;
+}
 .nav-top-row {
   background-color:#e5e5e5 ;
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
@@ -1011,7 +1019,7 @@ a .research-overlay h4:hover::after {
   grid-template-columns: repeat(1, 1fr);
 }
 .dcf-header-global {
-  display: block;
+  display: block!important;
 }
 @media only screen and (min-width: 42.09em) {
   .dcf-nav-local>ul:first-child {
@@ -1100,7 +1108,7 @@ a .research-overlay h4:hover::after {
     width: 100vw;
     max-width: 1282px;
 }
-.nav-bot-row, .museum-button-catch, .Button-menu-holder, .top-level .top-nav-right::before, .morrill .top-nav-right::before, .ashfall .top-nav-right::before, .trailside .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
+.mobile-logo-hide,.nav-block-logo, .nav-bot-row, .museum-button-catch, .Button-menu-holder, .top-level .top-nav-right::before, .morrill .top-nav-right::before, .ashfall .top-nav-right::before, .trailside .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
     opacity: 0;
     visibility: hidden;
     display: none!important;
