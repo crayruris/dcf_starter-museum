@@ -25,6 +25,9 @@
 .morrill-card .dcf-card {
   background-color: #700949;
 }
+a.morrill-card .dcf-card:hover {
+  box-shadow: none;
+}
 a.morrill-card {
   text-decoration: none;
   position:relative;
@@ -224,7 +227,7 @@ a.trailside-card .museum:hover::after {
 .top-nav-left {
   z-index: 998;
 }
-.top-level .top-nav-right::before {
+/* .top-level .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo4.png");
   z-index: 999;
@@ -237,8 +240,8 @@ a.trailside-card .museum:hover::after {
   top:0;
   right: 69%;
   background-size: contain;
-}
-.morrill .top-nav-right::before {
+} */
+/* .morrill .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo5.png");
   z-index: 999;
@@ -251,8 +254,8 @@ a.trailside-card .museum:hover::after {
   top:0;
   right: 69%;
   background-size: contain;
-}
-.trailside .top-nav-right::before {
+} */
+/* .trailside .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo3.png");
   z-index: 999;
@@ -279,14 +282,16 @@ a.trailside-card .museum:hover::after {
   top:0;
   right: 69%;
   background-size: contain;
-}
+} */
 .nav-block-logo {
-  position: absolute;
-  right: calc(69vw);
-  top: 0;
-  width: 337px;
-  height: 164px;
-  z-index: 998;
+    position: absolute;
+    right: calc(69vw);
+    top: 0;
+    width: auto;
+    max-width: 337px;
+    height: auto;
+    max-height: 164px;
+    z-index: 999;
 }
 .nav-top-row {
   background-color:#e5e5e5 ;
@@ -1089,7 +1094,7 @@ a .research-overlay h4:hover::after {
     width: 200vw;
     z-index: -1;
   }
-  .nav-top-row-mobile, .morrill .nav-bot-row-mobile {
+  .nav-top-row-mobile, .morrill .nav-bot-row-mobile, .ashfall .nav-bot-row-mobile, .trailside .nav-bot-row-mobile {
     display: none;
   }
 }
@@ -1117,7 +1122,7 @@ a .research-overlay h4:hover::after {
     flex-basis: 25%;
   }
 
-.morrill .nav-top-row-mobile {
+.morrill .nav-top-row-mobile, .ashfall .nav-top-row-mobile, .trailside .nav-top-row-mobile {
   background-color: #e5e5e5;
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
   z-index: 998;
@@ -1127,6 +1132,22 @@ a .research-overlay h4:hover::after {
   }
 .morrill .nav-bot-row-mobile {
   background-color: #700949;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    height: 134px;
+    position: relative;
+  }
+.trailside .nav-bot-row-mobile {
+  background-color: #08406B;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    height: 134px;
+    position: relative;
+  }
+  .ashfall .nav-bot-row-mobile {
+  background-color: #9A041E;
     display: flex;
     justify-content: center;
     overflow: visible;
