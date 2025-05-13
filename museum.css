@@ -24,8 +24,12 @@
 }
 .morrill-card .dcf-card {
   background-color: #700949;
+  color: #fff;
 }
 a.morrill-card .dcf-card:hover {
+  box-shadow: none;
+}
+.theme .dcf-card.edu-block:hover {
   box-shadow: none;
 }
 a.morrill-card {
@@ -73,6 +77,10 @@ a.morrill-card .museum:hover::after {
 }
 .ashfall-card .dcf-card {
   background-color: #99031e;
+  color: #fff;
+}
+a.ashfall-card .dcf-card:hover {
+  box-shadow: none;
 }
 a.ashfall-card {
   text-decoration: none;
@@ -119,6 +127,10 @@ a.ashfall-card .museum:hover::after {
 }
 .trailside-card .dcf-card {
   background-color: #09406c;
+  color: #fff;
+}
+a.trailside-card .dcf-card:hover {
+  box-shadow: none;
 }
 a.trailside-card {
   text-decoration: none;
@@ -1026,6 +1038,17 @@ a .research-overlay h4:hover::after {
 .dcf-header-global {
   display: block!important;
 }
+/* Button hover issue */
+.theme .dcf-btn-primary:not(:disabled):hover, .theme .dcf-btn-primary:not(:disabled):active {
+  background-color: var(--bg-btn-primary-hover);
+  border-color: var(--b-btn-primary-hover);
+  color: var(--btn-primary);
+}
+.dcf-btn-secondary, .dcf-btn-secondary:link {
+  background-color: var(--bg-btn-secondary);
+  border-color: var(--bg-btn-secondary);
+  color: var(--btn-secondary);
+}
 @media only screen and (min-width: 42.09em) {
   .dcf-nav-local>ul:first-child {
     display: grid;
@@ -1094,10 +1117,11 @@ a .research-overlay h4:hover::after {
     width: 200vw;
     z-index: -1;
   }
-  .nav-top-row-mobile, .morrill .nav-bot-row-mobile, .ashfall .nav-bot-row-mobile, .trailside .nav-bot-row-mobile {
+.umbrella .nav-top-row-mobile, .morrill .nav-bot-row-mobile, .ashfall .nav-bot-row-mobile, .trailside .nav-bot-row-mobile, .museum-mobile-menu {
     display: none;
   }
 }
+
 @media only screen and (max-width: 56.12em) {
   .dcf-nav-menu a, .dcf-nav-menu button {
     margin-left: 0;
@@ -1113,7 +1137,7 @@ a .research-overlay h4:hover::after {
     width: 100vw;
     max-width: 1282px;
 }
-.mobile-logo-hide,.nav-block-logo, .nav-bot-row, .museum-button-catch, .Button-menu-holder, .top-level .top-nav-right::before, .morrill .top-nav-right::before, .ashfall .top-nav-right::before, .trailside .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
+.mobile-logo-hide, .nav-block-logo, .nav-bot-row, .museum-button-catch, .Button-menu-holder, .top-level .top-nav-right::before, .morrill .top-nav-right::before, .ashfall .top-nav-right::before, .trailside .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
     opacity: 0;
     visibility: hidden;
     display: none!important;
@@ -1122,7 +1146,7 @@ a .research-overlay h4:hover::after {
     flex-basis: 25%;
   }
 
-.morrill .nav-top-row-mobile, .ashfall .nav-top-row-mobile, .trailside .nav-top-row-mobile {
+  .umbrella .nav-top-row-mobile, .morrill .nav-top-row-mobile, .ashfall .nav-top-row-mobile, .trailside .nav-top-row-mobile {
   background-color: #e5e5e5;
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
   z-index: 998;
@@ -1130,6 +1154,14 @@ a .research-overlay h4:hover::after {
   justify-content: center;
   position: relative;
   }
+.umbrella .nav-bot-row-mobile {
+    background-color: #d00000;
+      display: flex;
+      justify-content: center;
+      overflow: visible;
+      height: 134px;
+      position: relative;
+    }
 .morrill .nav-bot-row-mobile {
   background-color: #700949;
     display: flex;
