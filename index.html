@@ -7,506 +7,690 @@
     <title>Digital Campus Framework &middot; Starter Theme</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="museum.css">
     <script src="js/vendor/bodyScrollLock.min.js"></script>
     <script src="js/vendor/require.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   </head>
-<body class="theme">
 
+  <body class="theme museum-bg top-level umbrella">
 
-  <header class="dcf-header" id="dcf-header" role="banner">
-      <div class="dcf-header-global dcf-wrapper dcf-d-flex dcf-flex-row dcf-flex-nowrap dcf-ai-center dcf-jc-between dcf-relative">
-        <a class="dcf-institution-title dcf-flex-shrink-0 dcf-pt-3 dcf-pb-3 dcf-txt-xs example-ls-1" href="#">
-          <span class="dcf-uppercase">University of DCF</span>
-        </a>
-        <nav class="dcf-nav-global dcf-header-global-child dcf-d-flex dcf-jc-flex-end dcf-txt-xs" role="navigation" aria-label="global navigation">
-          <ul class="dcf-list-bare dcf-d-flex dcf-mb-0">
-            <li class="dcf-d-flex dcf-mb-0"><a class="dcf-pt-4 dcf-pb-4" href="#">Visit</a></li>
-            <li class="dcf-d-flex dcf-mb-0"><a class="dcf-pt-4 dcf-pb-4" href="#">Apply</a></li>
-            <li class="dcf-d-flex dcf-mb-0"><a class="dcf-pt-4 dcf-pb-4" href="#">Give</a></li>
-          </ul>
-        </nav>
-  
-        <nav class="dcf-idm dcf-header-global-child dcf-flex-grow-1 dcf-jc-flex-end dcf-h-100% dcf-w-min-0 dcf-d-none@print" id="dcf-idm" role="navigation" aria-labelledby="dcf-idm-username">
-          <a class="dcf-idm-login dcf-mobile-nav-toggle dcf-idm-toggle" id="dcf-idm-username" href="#">
-            <span class="dcf-d-flex dcf-ai-center dcf-jc-center dcf-h-100%">
-              <svg class="dcf-icon dcf-fill-current dcf-h-3 dcf-w-3" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 48 48"><path d="M24 48A24 24 0 1 0 0 24a24 24 0 0 0 24 24zm0-38a8 8 0 0 1 4.14 14.84l1.85 12A1 1 0 0 1 29 38H19a1 1 0 0 1-1-1.15l1.85-12A8 8 0 0 1 24 10z"></path></svg>
-              <span class="dcf-pl-2 dcf-txt-xs">Log In</span>
-            </span>
-          </a>
-          <div id="dcf-idm-notice-container" hidden="">
-            <button class="dcf-p-0 dcf-b-0 dcf-bg-transparent dcf-mobile-nav-toggle dcf-idm-toggle" id="dcf-idm-toggle" aria-haspopup="true" aria-pressed="false" aria-controls="dcf-idm-options">
-              <span class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-100%">
-                <img class="dcf-d-block dcf-circle dcf-h-6 dcf-w-6 example-bg-brand-alpha" src="#" alt="">
-                <span class="dcf-sr-only">View your account, </span><span class="dcf-txt-xs">Ryan</span>
-              </span>
-            </button>
-            <nav class="dcf-d-none dcf-overlay-dark dcf-idm-options" id="dcf-idm-options" aria-hidden="true">
-              <ul class="dcf-list-bare">
-                <li><a id="dcf-idm-profile" href="#">View Profile</a></li>
-                <li><a id="dcf-idm-logout" href="#">Log Out</a></li>
-              </ul>
-            </nav>
+ 
+    <div class="dcf-absolute dcf-pin-top dcf-pin-left dcf-mt-1 dcf-ml-1 dcf-z-1" id="dcf-skip-nav">
+      <a class="dcf-show-on-focus dcf-btn dcf-btn-primary" href="#dcf-main">Skip to main content</a>
+    </div>
+
+    <header class="dcf-header" id="dcf-header" role="banner">
+      <!--  TOP MOBILE MENU START   -->
+        <div class="museum-mobile-menu">
+          <div class="nav-top-row-mobile">
+            <a href="" class="dcf-d-inline-flex dcf-p-2 dcf-ai-center">
+              <img src="images/n-logo-2.svg" alt="UNL text logo" style="width: 35px;height:auto;">
+                <span class="dcf-pl-2 dcf-uppercase lato-regular dcf-txt-sm UNL-logo">
+                  University of Nebraska-Lincoln
+                </span>
+            </a>
           </div>
-        </nav>
-  
-        <div class="dcf-search dcf-header-global-child dcf-flex-grow-1 dcf-jc-flex-end dcf-modal-parent dcf-d-none@print" id="dcf-search" role="search">
-          <button class="dcf-p-0 dcf-b-0 dcf-bg-transparent dcf-mobile-nav-toggle dcf-search-toggle example-brand-alpha" id="dcf-search-toggle" aria-pressed="false" aria-controls="dcf-search-form" aria-haspopup="true">
-            <span class="dcf-d-flex dcf-jc-center dcf-ai-center dcf-h-100%">
-              <svg class="dcf-icon dcf-fill-current dcf-h-3 dcf-w-3" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 48 48"><path d="M18 36a17.9 17.9 0 0 0 11.27-4l15.31 15.41a2 2 0 0 0 2.84-2.82L32.08 29.18A18 18 0 1 0 18 36zm0-32A14 14 0 1 1 4 18 14 14 0 0 1 18 4z"></path></svg>
-              <span class="dcf-pl-2 dcf-txt-xs">Search</span>
-            </span>
-          </button>
-          <form class="dcf-input-group dcf-sr-only" id="dcf-search-form" action="#" method="get">
-            <label class="dcf-mr-4" for="dcf-search_query">Search</label>
-              <input class="dcf-input-text dcf-search-input" id="dcf-search_query" name="q" type="search" required="">
-                <button class="dcf-btn dcf-btn-primary dcf-txt-md" type="submit">
-                  <span class="dcf-d-flex dcf-ai-center dcf-jc-center">
-                    <svg class="dcf-icon" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 48 48"><path fill="#fff" d="M18 36a17.9 17.9 0 0 0 11.27-4l15.31 15.41a2 2 0 0 0 2.84-2.82L32.08 29.18A18 18 0 1 0 18 36zm0-32A14 14 0 1 1 4 18 14 14 0 0 1 18 4z"></path></svg>
-                  </span>
-                  <span class="dcf-sr-only">Submit</span>
-                </button>
-          </form>
+          <div class="nav-bot-row-mobile">
+             <a href="index-museum2.html" class="dcf-header-logo">
+            <img src="images/state-museum-logo4.png" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 337px;
+            height: 164px;
+            margin-top: -67px; /* Half the height */
+            margin-left: -168.5px; /* Half the width */
+            z-index: 988;">
+            </a>
+          </div>
         </div>
-  
-      </div>
-  
-      <div class="dcf-logo-lockup dcf-wrapper dcf-d-flex dcf-ai-flex-end dcf-relative dcf-overflow-hidden dcf-pt-5" id="dcf-logo-lockup">
-          <a id="dcf-header-logo" href="#" aria-label="Go to home page">
-            <!-- Logo SVG goes here -->
-          </a>
-          <div class="dcf-d-flex dcf-flex-col dcf-jc-center">
-        
-              <div class="dcf-uppercase dcf-txt-h3 dcf-lh-4 dcf-regular example-ls-2" id="dcf-site-affiliation">
-                <!-- InstanceBeginEditable name="affiliation" -->
-                  <a href="#">College of Business</a>
-                <!-- InstanceEndEditable -->
-              </div>
-        
-                  <div class="dcf-txt-xs dcf-italic" id="dcf-site-title">
-                    <!-- InstanceBeginEditable name="titlegraphic" -->
-                        <!--<a href="#"> Jane Doe Department of Accounting </a>-->
-                        <!--<abbr title="Jane Doe Department of Accounting">JDDoA</abbr>-->
-                    <!-- InstanceEndEditable -->
+      <!--  TOP MOBILE MENU END   -->
+
+      <!--  TOP MENU START   -->
+      <div class="nav-bg dcf-d-inline-flex dcf-flex-row dcf-w-100vw dcf-header-global" id="main-museum-nav">
+
+        <div class="top-nav-right dcf-d-block dcf-w-100% dcf-relative" id="dcf-logo-lockup">
+
+                <div role="navigation" aria-label="global navigation" class="nav-top-row dcf-nav-global dcf-header-global-child dcf-d-grid">
+
+                  <div class="dcf-col-gap-6 dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-center dcf-js-end nav-wrapper">
+                      <div class="dcf-d-inline-flex dcf-ai-center">
+                          <a href="" class="dcf-d-inline-flex dcf-p-2 dcf-ai-center" id="dcf-institution-title">
+                              <img src="images/n-logo-2.svg" alt="UNL text logo" style="width: 35px;height:auto;"><span class="dcf-pl-2 dcf-uppercase lato-regular dcf-txt-sm UNL-logo">University of Nebraska-Lincoln</span>
+                          </a>
+                      </div>
+                      <div class="dcf-d-inline-flex dcf-ai-center dcf-pr-7">
+                          <span class="dcf-txt-xs lato-bold">Visit Our Museums:</span>
+                          <ul class="Our-Family-Museums-nav dcf-d-inline-flex dcf-ai-center dcf-jc-center dcf-col-gap-3 dcf-list-bare dcf-m-0 lato-bold dcf-pr-2">
+                              <li class="dcf-d-flex dcf-pl-2 dcf-m-0 dcf-txt-xs">
+                                  <a href="index-morrill.html" class="morrill-color">Morrill Hall</a>
+                              </li>
+                              <li class="dcf-d-flex dcf-m-0 dcf-txt-lg">|</li>
+                              <li class="dcf-d-flex dcf-m-0 dcf-txt-xs">
+                                  <a href="index-ashfallbeds.html" class="ashfall-color">Ashfall Fossil Beds</a>
+                              </li>
+                              <li class="dcf-d-flex dcf-m-0 dcf-txt-lg">|</li>
+                              <li class="dcf-d-flex dcf-m-0 dcf-txt-xs">
+                                  <a href="index-trailside.html" class="trailside-color">Trailside Museum</a>
+                              </li>
+                          </ul>
+                      </div>
                   </div>
-        
-          </div>
-        </div>
+              </div>
+              <div class="dcf-d-block dcf-logo-lockup nav-block-logo mobile-logo-hide" id="dcf-logo-lockup" aria-hidden="false">
+                <a href="index-morrill.html" class="dcf-header-logo" id="dcf-header-logo">
+                  <img src="images/state-museum-logo4.png" alt="State Museum: Morrill Hall" style="width: 100%;height:auto;">
+                </a>
+              </div>
+
+              <!--  MIDDLE MENU START   -->
+                <div class="nav-mid-row dcf-w-100% dcf-d-inline-flex dcf-ai-center dcf-jc-end dcf-pr-7">
+                  <ul class="middle-nav dcf-flex-row dcf-d-inline-flex dcf-m-0 dcf-ai-center dcf-jc-center dcf-col-gap-4 dcf-list-bare lato-regular">
+                    <li class="dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center dcf-m-0 dcf-p-2">
+                      <a href="" class="dcf-txt-sm dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center">
+                        <svg class="museum" aria-hidden="true" fill="currentcolor" height="20" width="20" viewBox="0 0 24 24" aria-labelledby="outline-group-add-2-users-actions-title"><path d="M18.5,13c-3.033,0-5.5,2.468-5.5,5.5s2.467,5.5,5.5,5.5s5.5-2.468,5.5-5.5S21.533,13,18.5,13z M18.5,23 c-2.481,0-4.5-2.019-4.5-4.5s2.019-4.5,4.5-4.5s4.5,2.019,4.5,4.5S20.981,23,18.5,23z"></path><path d="M21 18h-2v-2c0-.276-.224-.5-.5-.5S18 15.724 18 16v2h-2c-.276 0-.5.224-.5.5S15.724 19 16 19h2v2c0 .276.224.5.5.5S19 21.276 19 21v-2h2c.276 0 .5-.224.5-.5S21.276 18 21 18zM13.468 13.61c.093-.26-.042-.547-.302-.64L10.5 12.016v-1.45c1.174-.944 1.947-2.532 1.947-4.33C12.447 3.631 10.632 1 8 1 5.388 1 3.553 3.572 3.553 6.236c0 1.797.773 3.385 1.947 4.33v1.45l-3.61 1.293C.76 13.714 0 14.8 0 16.012V17.5C0 17.776.224 18 .5 18H11c.276 0 .5-.224.5-.5S11.276 17 11 17H1v-.988c0-.791.493-1.499 1.227-1.762l3.941-1.412c.199-.071.332-.26.332-.471v-1.219c.471.2.971.328 1.5.328s1.029-.128 1.5-.328v1.219c0 .211.133.399.332.471.135.049 3.022 1.104 3.166 1.104C13.203 13.941 13.395 13.814 13.468 13.61zM8 2c1.657 0 3.043 1.445 3.372 3.363C10.314 5.547 9.668 5.191 9.027 4.07 8.936 3.911 8.765 3.815 8.583 3.818 8.4 3.822 8.234 3.925 8.149 4.087 7.807 4.745 6.602 5.344 5.621 5.344c-.348 0-.648-.07-.943-.177C5.066 3.35 6.401 2 8 2zM4.553 6.236c0-.015.003-.028.003-.042.336.097.685.15 1.065.15 1.064 0 2.228-.487 2.935-1.17C9.19 6.012 9.937 6.411 10.88 6.411c.176 0 .367-.029.558-.057C11.385 8.637 9.868 10.477 8 10.477 6.099 10.477 4.553 8.574 4.553 6.236zM14.5 10.477c-.276 0-.5.224-.5.5s.224.5.5.5c.529 0 1.029-.128 1.5-.328V12c0 .276.224.5.5.5S17 12.276 17 12v-1.435c1.174-.944 1.947-2.532 1.947-4.33C18.947 3.628 17.13 1 14.5 1 14.224 1 14 1.224 14 1.5S14.224 2 14.5 2c1.657 0 3.043 1.445 3.372 3.363-1.057.184-1.705-.172-2.345-1.292-.137-.24-.443-.324-.682-.186-.24.137-.323.442-.186.682.717 1.254 1.574 1.845 2.721 1.845.176 0 .367-.029.558-.057C17.885 8.637 16.368 10.477 14.5 10.477z"></path><g><path fill="none" d="M0 0H24V24H0z"></path></g></svg>
+                          <span class="dcf-ml-3">Membership</span>
+                      </a>
+                    </li>
+                    <li class="dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center dcf-m-0 dcf-p-2">
+                      <a href="" class="dcf-txt-sm dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center">
+                        <svg class="museum" aria-hidden="true" fill="currentcolor" height="20" width="20" viewBox="0 0 24 24" aria-labelledby="outline-coins-1-money-title"><path d="M16,0c-4.411,0-8,3.589-8,8c0,0.006,0.001,0.011,0.001,0.017c-2.039-0.002-3.969,0.741-5.462,2.136 C0.926,11.662,0,13.792,0,16c0,4.411,3.589,8,8,8c2.207,0,4.338-0.925,5.847-2.538c1.396-1.492,2.137-3.416,2.136-5.463 C15.988,15.999,15.994,16,16,16c4.411,0,8-3.589,8-8S20.411,0,16,0z M13.116,20.779C11.796,22.19,9.932,23,8,23 c-3.859,0-7-3.14-7-7c0-1.932,0.81-3.796,2.222-5.116C4.544,9.647,6.261,9,8.072,9.018c0.46,3.597,3.312,6.45,6.91,6.91 C15.001,17.747,14.353,19.457,13.116,20.779z M16,15c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S19.859,15,16,15z"/><path d="M15.5 5.5c.552 0 1 .449 1 1C16.5 6.776 16.724 7 17 7s.5-.224.5-.5c0-.929-.64-1.706-1.5-1.929V4c0-.276-.224-.5-.5-.5S15 3.724 15 4v.571c-.86.223-1.5 1-1.5 1.929 0 1.103.897 2 2 2 .552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1C14.5 9.224 14.276 9 14 9s-.5.224-.5.5c0 .929.64 1.706 1.5 1.929V12c0 .276.224.5.5.5S16 12.276 16 12v-.571c.86-.223 1.5-1 1.5-1.929 0-1.103-.897-2-2-2-.552 0-1-.449-1-1S14.948 5.5 15.5 5.5zM7.5 13.5c.552 0 1 .449 1 1C8.5 14.776 8.724 15 9 15s.5-.224.5-.5c0-.929-.64-1.706-1.5-1.929V12c0-.276-.224-.5-.5-.5S7 11.724 7 12v.571c-.86.223-1.5 1-1.5 1.929 0 1.103.897 2 2 2 .552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1C6.5 17.224 6.276 17 6 17s-.5.224-.5.5c0 .929.64 1.706 1.5 1.929V20c0 .276.224.5.5.5S8 20.276 8 20v-.571c.86-.223 1.5-1 1.5-1.929 0-1.103-.897-2-2-2-.552 0-1-.449-1-1S6.948 13.5 7.5 13.5z"/><g><path fill="none" d="M0 0H24V24H0z"/></g></svg>
+                          <span class="dcf-ml-3">Donate</span>
+                      </a>
+                    </li>
+                    <li class="dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center dcf-m-0 dcf-p-2">
+                      <a href="" class="dcf-txt-sm dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center">
+                        <svg class="museum" aria-hidden="true" fill="currentcolor" height="20" width="20" viewBox="0 0 24 24" aria-labelledby="outline-location-user-locations-title"><path d="M12 7c1.93 0 3.5-1.57 3.5-3.5S13.93 0 12 0 8.5 1.57 8.5 3.5 10.07 7 12 7zM12 1c1.378 0 2.5 1.122 2.5 2.5S13.378 6 12 6 9.5 4.878 9.5 3.5 10.622 1 12 1zM10 14.534V18.5c0 .276.224.5.5.5h3c.276 0 .5-.224.5-.5v-3.966c1.952-.934 3-3.735 3-6.034C17 8.224 16.776 8 16.5 8h-9C7.224 8 7 8.224 7 8.5 7 10.798 8.048 13.6 10 14.534zM15.981 9c-.146 1.963-1.13 4.198-2.646 4.729C13.134 13.798 13 13.988 13 14.2V18h-2v-3.8c0-.212-.134-.402-.335-.472C9.149 13.198 8.166 10.963 8.019 9H15.981z"/><path d="M12,20.5c-4.015,0-6.366-0.821-6.501-1.239c0.035-0.111,0.575-0.602,2.581-0.953c0.272-0.047,0.454-0.307,0.406-0.58 c-0.048-0.271-0.306-0.452-0.579-0.406C5.646,17.719,4.5,18.367,4.5,19.25c0,1.776,4.714,2.25,7.5,2.25s7.5-0.474,7.5-2.25 c0-0.882-1.142-1.53-3.394-1.926c-0.271-0.046-0.531,0.134-0.579,0.406c-0.047,0.272,0.134,0.531,0.406,0.579 c1.997,0.352,2.534,0.84,2.568,0.93C18.366,19.679,16.015,20.5,12,20.5z"/><path d="M16.067,15.252c-0.274-0.027-0.524,0.158-0.56,0.433c-0.035,0.273,0.158,0.524,0.432,0.56 C20.575,16.843,23,18.335,23,19.5c0,1.655-4.518,3.5-11,3.5S1,21.155,1,19.5c0-1.165,2.426-2.657,7.063-3.255 c0.274-0.036,0.467-0.287,0.432-0.56c-0.036-0.274-0.289-0.465-0.56-0.433C4.099,15.748,0,17.124,0,19.5C0,22.423,6.183,24,12,24 s12-1.577,12-4.5C24,17.124,19.902,15.748,16.067,15.252z"/><g><path fill="none" d="M0 0H24V24H0z"/></g></svg>
+                          <span class="dcf-ml-3">Get Involved</span>
+                      </a>
+                    </li>
+                    <li class="dcf-search dcf-header-global-child dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center dcf-m-0 dcf-p-2">
+                      <a href="" class="dcf-txt-sm dcf-d-flex dcf-flex-row dcf-m-0 dcf-ai-center dcf-jc-center">
+                        <svg class="museum" aria-hidden="true" fill="currentcolor" height="20" width="20" viewBox="0 0 24 24" aria-labelledby="filled-search-content-edition-title"><path d="M9,18c2.131,0,4.089-0.749,5.633-1.992l7.658,7.697c0.389,0.392,1.021,0.393,1.414,0.003 c0.392-0.39,0.393-1.023,0.004-1.414l-7.668-7.706C17.264,13.052,18,11.111,18,9c0-4.963-4.037-9-9-9S0,4.037,0,9 C0,13.962,4.037,18,9,18z M9,2c3.859,0,7,3.14,7,7c0,3.859-3.141,7-7,7c-3.86,0-7-3.141-7-7C2,5.14,5.14,2,9,2z"/><g><path fill="none" d="M0 0H24V24H0z"/></g></svg>
+                          <span class="dcf-ml-3">Search</span>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+          <!--  MIDDLE MENU END   -->
+  
 
         <!--  BOTTOM MENU FOR MOBILE START   -->
         <div class="dcf-nav-toggle-group dcf-fixed dcf-pin-bottom dcf-h-9 dcf-w-100% dcf-bg-white dcf-d-none@print" role="navigation" aria-label="Navigate, search, or log in">
           <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-menu" aria-haspopup="true" aria-expanded="false" aria-label="Open menu">
-            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
-              <g id="dcf-nav-toggle-icon-open-menu" class="">
+            <svg class="dcf-h-5 dcf-w-5 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
+              <g id="dcf-nav-toggle-icon-open-menu" class="dcf-d-none">
                 <path d="M23.5 12.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 4.5H.5C.2 4.5 0 4.3 0 4s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5zM23.5 20.5H.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h23c.3 0 .5.2.5.5s-.2.5-.5.5z"></path>
               </g>
-              <g id="dcf-nav-toggle-icon-close-menu" class="dcf-d-none">
+              <g id="dcf-nav-toggle-icon-close-menu" class="">
                 <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
                 <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
               </g>
             </svg>
-            <span class="dcf-nav-toggle-label-menu dcf-mt-1 dcf-txt-2xs">Menu</span>
+            <span class="dcf-nav-toggle-label-menu dcf-mt-2 dcf-txt-xs lato-regular">Close</span>
+          </button>
+    
+    
+          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-search dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-search" aria-pressed="false" aria-haspopup="dialog">
+            <svg class="" aria-hidden="true" fill="currentcolor" height="20" width="20" viewBox="0 0 24 24" aria-labelledby="outline-group-add-2-users-actions-title"><path d="M18.5,13c-3.033,0-5.5,2.468-5.5,5.5s2.467,5.5,5.5,5.5s5.5-2.468,5.5-5.5S21.533,13,18.5,13z M18.5,23 c-2.481,0-4.5-2.019-4.5-4.5s2.019-4.5,4.5-4.5s4.5,2.019,4.5,4.5S20.981,23,18.5,23z"></path><path d="M21 18h-2v-2c0-.276-.224-.5-.5-.5S18 15.724 18 16v2h-2c-.276 0-.5.224-.5.5S15.724 19 16 19h2v2c0 .276.224.5.5.5S19 21.276 19 21v-2h2c.276 0 .5-.224.5-.5S21.276 18 21 18zM13.468 13.61c.093-.26-.042-.547-.302-.64L10.5 12.016v-1.45c1.174-.944 1.947-2.532 1.947-4.33C12.447 3.631 10.632 1 8 1 5.388 1 3.553 3.572 3.553 6.236c0 1.797.773 3.385 1.947 4.33v1.45l-3.61 1.293C.76 13.714 0 14.8 0 16.012V17.5C0 17.776.224 18 .5 18H11c.276 0 .5-.224.5-.5S11.276 17 11 17H1v-.988c0-.791.493-1.499 1.227-1.762l3.941-1.412c.199-.071.332-.26.332-.471v-1.219c.471.2.971.328 1.5.328s1.029-.128 1.5-.328v1.219c0 .211.133.399.332.471.135.049 3.022 1.104 3.166 1.104C13.203 13.941 13.395 13.814 13.468 13.61zM8 2c1.657 0 3.043 1.445 3.372 3.363C10.314 5.547 9.668 5.191 9.027 4.07 8.936 3.911 8.765 3.815 8.583 3.818 8.4 3.822 8.234 3.925 8.149 4.087 7.807 4.745 6.602 5.344 5.621 5.344c-.348 0-.648-.07-.943-.177C5.066 3.35 6.401 2 8 2zM4.553 6.236c0-.015.003-.028.003-.042.336.097.685.15 1.065.15 1.064 0 2.228-.487 2.935-1.17C9.19 6.012 9.937 6.411 10.88 6.411c.176 0 .367-.029.558-.057C11.385 8.637 9.868 10.477 8 10.477 6.099 10.477 4.553 8.574 4.553 6.236zM14.5 10.477c-.276 0-.5.224-.5.5s.224.5.5.5c.529 0 1.029-.128 1.5-.328V12c0 .276.224.5.5.5S17 12.276 17 12v-1.435c1.174-.944 1.947-2.532 1.947-4.33C18.947 3.628 17.13 1 14.5 1 14.224 1 14 1.224 14 1.5S14.224 2 14.5 2c1.657 0 3.043 1.445 3.372 3.363-1.057.184-1.705-.172-2.345-1.292-.137-.24-.443-.324-.682-.186-.24.137-.323.442-.186.682.717 1.254 1.574 1.845 2.721 1.845.176 0 .367-.029.558-.057C17.885 8.637 16.368 10.477 14.5 10.477z"></path><g><path fill="none" d="M0 0H24V24H0z"></path></g></svg>
+            <span class="dcf-mt-2 dcf-txt-xs lato-regular">Membership</span>
+          </button>
+    
+          <a class="dcf-nav-toggle-btn dcf-nav-toggle-btn-search dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-flex-grow-1 dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent unl-scarlet" id="dcf-mobile-search-link" href="https://search.unl.edu/" aria-label="Open search" hidden="">
+            <svg class="dcf-h-5 dcf-w-5 dcf-fill-current" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 24 24">
+              <g class="dcf-nav-toggle-icon-open">
+                <path d="M22.5 21.8L15 14.3c1.2-1.4 2-3.3 2-5.3 0-4.4-3.6-8-8-8S1 4.6 1 9s3.6 8 8 8c2 0 3.9-.8 5.3-2l7.5 7.5c.2.2.5.2.7 0 .2-.2.2-.5 0-.7zM9 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"></path>
+              </g>
+              <g class="dcf-nav-toggle-icon-close dcf-d-none">
+                <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
+                <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
+              </g>
+            </svg>
+            <span class="dcf-nav-toggle-label dcf-mt-2 dcf-txt-xs lato-regular">Search</span>
+          </a>
+          <button class="dcf-mobile-search-button dcf-nav-toggle-btn dcf-btn-toggle-modal dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-flex-grow-1 dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent unl-scarlet" data-toggles-modal="dcf-search-results" data-with-nav-toggle-group="true" data-nav-toggle-label-open="Search" data-nav-toggle-label-closed="Close" type="button" id="80c4850b-da1d-473c-9afe-e0e99af58dc4" aria-expanded="false" aria-label="Open search">
+            <svg class="dcf-h-5 dcf-w-5 dcf-fill-current" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 24 24">
+              <g class="dcf-nav-toggle-icon-open">
+                <path d="M22.5 21.8L15 14.3c1.2-1.4 2-3.3 2-5.3 0-4.4-3.6-8-8-8S1 4.6 1 9s3.6 8 8 8c2 0 3.9-.8 5.3-2l7.5 7.5c.2.2.5.2.7 0 .2-.2.2-.5 0-.7zM9 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"></path>
+              </g>
+              <g class="dcf-nav-toggle-icon-close dcf-d-none">
+                <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
+                <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
+              </g>
+            </svg>
+            <span class="dcf-nav-toggle-label dcf-mt-2 dcf-txt-xs lato-regular">Search</span>
           </button>
 
           <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-search dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9 dcf-p-0 dcf-b-0 dcf-bg-transparent example-brand-alpha" id="dcf-mobile-toggle-search" aria-pressed="false" aria-haspopup="dialog">
-            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 24 24">
-              <path d="M22.5 21.8L15 14.3c1.2-1.4 2-3.3 2-5.3 0-4.4-3.6-8-8-8S1 4.6 1 9s3.6 8 8 8c2 0 3.9-.8 5.3-2l7.5 7.5c.2.2.5.2.7 0 .2-.2.2-.5 0-.7zM9 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"></path>
-            </svg>
-            <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current dcf-d-none" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
-              <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
-              <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
-            </svg>
-            <span class="dcf-mt-1 dcf-txt-2xs">Search</span>
+            <svg class="" aria-hidden="true" fill="currentcolor" height="20" width="20" viewBox="0 0 24 24" aria-labelledby="outline-coins-1-money-title"><path d="M16,0c-4.411,0-8,3.589-8,8c0,0.006,0.001,0.011,0.001,0.017c-2.039-0.002-3.969,0.741-5.462,2.136 C0.926,11.662,0,13.792,0,16c0,4.411,3.589,8,8,8c2.207,0,4.338-0.925,5.847-2.538c1.396-1.492,2.137-3.416,2.136-5.463 C15.988,15.999,15.994,16,16,16c4.411,0,8-3.589,8-8S20.411,0,16,0z M13.116,20.779C11.796,22.19,9.932,23,8,23 c-3.859,0-7-3.14-7-7c0-1.932,0.81-3.796,2.222-5.116C4.544,9.647,6.261,9,8.072,9.018c0.46,3.597,3.312,6.45,6.91,6.91 C15.001,17.747,14.353,19.457,13.116,20.779z M16,15c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S19.859,15,16,15z"/><path d="M15.5 5.5c.552 0 1 .449 1 1C16.5 6.776 16.724 7 17 7s.5-.224.5-.5c0-.929-.64-1.706-1.5-1.929V4c0-.276-.224-.5-.5-.5S15 3.724 15 4v.571c-.86.223-1.5 1-1.5 1.929 0 1.103.897 2 2 2 .552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1C14.5 9.224 14.276 9 14 9s-.5.224-.5.5c0 .929.64 1.706 1.5 1.929V12c0 .276.224.5.5.5S16 12.276 16 12v-.571c.86-.223 1.5-1 1.5-1.929 0-1.103-.897-2-2-2-.552 0-1-.449-1-1S14.948 5.5 15.5 5.5zM7.5 13.5c.552 0 1 .449 1 1C8.5 14.776 8.724 15 9 15s.5-.224.5-.5c0-.929-.64-1.706-1.5-1.929V12c0-.276-.224-.5-.5-.5S7 11.724 7 12v.571c-.86.223-1.5 1-1.5 1.929 0 1.103.897 2 2 2 .552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1C6.5 17.224 6.276 17 6 17s-.5.224-.5.5c0 .929.64 1.706 1.5 1.929V20c0 .276.224.5.5.5S8 20.276 8 20v-.571c.86-.223 1.5-1 1.5-1.929 0-1.103-.897-2-2-2-.552 0-1-.449-1-1S6.948 13.5 7.5 13.5z"/><g><path fill="none" d="M0 0H24V24H0z"/></g></svg>
+            <span class="dcf-mt-2 dcf-txt-xs lato-regular">Donate</span>
           </button>
 
-            <div class="dcf-nav-toggle-btn dcf-nav-toggle-btn-idm dcf-idm dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-9">
-              <div class="dcf-idm-status-logged-out dcf-h-100% dcf-w-100%">
-                <a class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-jc-center dcf-h-100% dcf-w-100% example-brand-alpha" href="">
-                  <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 24 24">
-                    <path d="M12 0C5.4 0 0 5.4 0 12c0 6.2 5 12 12 12 3.2 0 6.3-1.3 8.5-3.6S24 15.1 24 12c0-6.6-5.4-12-12-12zM4.7 20.2c1-.6 2.5-1.1 4-1.6l1.5-.6c.2-.1.3-.3.3-.5V15c0-.2-.1-.4-.3-.5 0 0-1.2-.5-1.2-2.5 0-.3-.2-.5-.5-.5 0 0-.1-.2-.1-.5s.1-.5.1-.5c.3 0 .5-.2.5-.5 0-.1 0-.3-.1-.5-.2-.5-.6-2-.2-2.4.1-.2.5-.2.7-.1.3 0 .5-.1.6-.4.2-.6 1.3-1.1 2.8-1.1s2.6.5 2.8 1.1c.2.9-.2 2.2-.4 2.8-.2.3-.2.5-.2.6 0 .3.2.5.5.5 0 0 .1.2.1.5s-.1.5-.1.5c-.3 0-.5.2-.5.5 0 2.1-1.1 2.5-1.2 2.5-.2.1-.3.3-.3.5v2.5c0 .2.1.4.3.5.5.2 1.1.4 1.6.6 1.5.5 2.9 1.1 3.9 1.6-2 1.8-4.5 2.8-7.3 2.8-2.7 0-5.3-1-7.3-2.8zm15.4-.8c-1-.6-2.6-1.2-4.3-1.8-.4-.2-.8-.3-1.3-.5v-1.8c.5-.3 1.4-1.1 1.5-2.9.4-.2.6-.7.6-1.4 0-.6-.2-1-.5-1.3.2-.8.7-2.1.4-3.3-.3-1.4-2.2-1.9-3.7-1.9-1.3 0-3 .4-3.6 1.5-.5-.1-.9.1-1.2.4-.8.8-.3 2.4-.1 3.3-.3.2-.5.7-.5 1.3 0 .6.2 1.1.6 1.4.1 1.8 1 2.6 1.5 2.9v1.8c-.4.1-.8.3-1.2.4-1.6.6-3.3 1.2-4.4 1.9C2 17.4 1 14.8 1 12 1 5.9 5.9 1 12 1s11 4.9 11 11c0 2.8-1 5.4-2.9 7.4z"></path>
-                  </svg>
-                  <svg class="dcf-txt-sm dcf-h-6 dcf-w-6 dcf-fill-current dcf-d-none" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24">
-                    <path d="M20.5 4.2L4.2 20.5c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7L19.8 3.5c.2-.2.5-.2.7 0 .2.2.2.5 0 .7z"></path>
-                    <path d="M3.5 4.2l16.3 16.3c.2.2.5.2.7 0s.2-.5 0-.7L4.2 3.5c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7z"></path>
-                  </svg>
-                  <span class="dcf-mt-1 dcf-txt-2xs">Log In</span>
-                </a>
-              </div>
-              <div class="dcf-idm-status-logged-in dcf-relative dcf-h-100% dcf-w-100%" hidden=""></div>
-            </div>
+            <div class="dcf-idm-status-logged-in dcf-relative dcf-h-100% dcf-w-100%" hidden=""></div>
 
         </div>
-        <!--  MOBILE BOTTOM MENU FOR  -->
+          <!--  MOBILE BOTTOM MENU FOR  -->
 
-        <!--  DROPDOWN MENU START   -->
-        <nav class="dcf-nav-menu dcf-modal-parent dcf-d-none@print" id="dcf-navigation" role="navigation" aria-label="primary">
-          <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-flex-shrink-0 dcf-ai-center dcf-w-9 dcf-p-0 dcf-b-0 dcf-bg-transparent" id="dcf-menu-toggle" hidden="">
-            <svg class="dcf-h-5 dcf-w-5 dcf-fill-current" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 48 48">
-              <g>
-                <path d="M45.5 22.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 7.5h-43C1.7 7.5 1 8.2 1 9s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 37.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"></path>
-              </g>
-              <g class="dcf-d-none">
-                <path d="M38.1 7.7L7.7 38.1c-.6.6-.6 1.5 0 2.1.6.6 1.5.6 2.1 0L40.3 9.9c.6-.6.6-1.5 0-2.1-.6-.6-1.6-.6-2.2-.1z"></path>
-                <path d="M7.7 7.7c-.6.6-.6 1.5 0 2.1l30.4 30.4c.6.6 1.5.6 2.1 0 .6-.6.6-1.5 0-2.1L9.9 7.7c-.6-.5-1.6-.5-2.2 0z"></path>
-              </g>
-            </svg>
-          </button>
+          <!--  DROPDOWN MENU START   -->
+        <nav class="nav-bot-row dcf-nav-menu dcf-modal-parent dcf-d-none@print museum" id="dcf-navigation" role="navigation" aria-label="primary">
+          <!-- BUTTON MENU FRAME TOP -->
+          <div class="Button-menu-holder dcf-d-inline-flex nav-wrapper">
+            <button class="dcf-nav-toggle-btn dcf-nav-toggle-btn-menu dcf-flex-shrink-0 dcf-ai-center dcf-b-0 dcf-bg-transparent museum-button-catch" id="dcf-menu-toggle" hidden="">
+              <svg class="dcf-h-5 dcf-w-5 dcf-fill-current museum" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 48 48">
+                <g>
+                  <path d="M45.5 22.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 7.5h-43C1.7 7.5 1 8.2 1 9s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5zM45.5 37.5h-43c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h43c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"></path>
+                </g>
+                <g class="dcf-d-none">
+                  <path d="M38.1 7.7L7.7 38.1c-.6.6-.6 1.5 0 2.1.6.6 1.5.6 2.1 0L40.3 9.9c.6-.6.6-1.5 0-2.1-.6-.6-1.6-.6-2.2-.1z"></path>
+                  <path d="M7.7 7.7c-.6.6-.6 1.5 0 2.1l30.4 30.4c.6.6 1.5.6 2.1 0 .6-.6.6-1.5 0-2.1L9.9 7.7c-.6-.5-1.6-.5-2.2 0z"></path>
+                </g>
+              </svg>
+            </button>
           
-          <div id="dcf-nav-menu-child" class="dcf-nav-menu-child dcf-nav-local dcf-w-100%">
+          <div id="dcf-nav-menu-child" class="dcf-nav-menu-child dcf-nav-local dcf-w-100% museum">
             <!-- InstanceBeginEditable name="navlinks" -->
-              <ul>
-                <li class="dcf-m-0 dcf-p-2">
-                  <a href="" class="">Morrill Hall</a>
-                    <ul>
-                      <li><a href="#">Cras Pellentesque Nullam</a></li>
-                      <li><a href="#">Sem Aenean</a></li>
-                      <li><a href="#">Nullam Malesuada Nibh Lorem</a></li>
-                      <li><a href="#">Ullamcorper</a></li>
-                      <li><a href="#">Consectetur Nibh</a></li>
-                      <li><a href="#">Magna Adipiscing Ullamcorper</a></li>
-                    </ul>
-                  </li>
+            
+              <ul class="museum bottom-nav dcf-list-bare dcf-m-0 dcf-pr-7 dcf-js-end dcf-w-100%">
+                
+                <!-- <li class="dcf-m-0 dcf-p-2">
+                  <div class="museum " style="height: 25px;width: 25px;background-color: aqua;">
+                    
+                    
+
+                  </div>
+                </li> -->
                   <li class="dcf-m-0 dcf-p-2">
-                    <a href="" class="">Ashfall Fossil Beds</a>
-                    <ul>
-                      <li><a href="#">Fringilla</a></li>
-                      <li><a href="#">Purus Mollis</a></li>
-                      <li><a href="#">Ullamcorper</a></li>
-                      <li><a href="#">Nullam Aenean</a></li>
-                      <li><a href="#">Condimentum Nibh</a></li>
-                      <li><a href="#">Lorem Condimentum Egestas</a></li>
-                    </ul>
-                  </li>
-                  <li class="dcf-m-0 dcf-p-2">
-                    <a href="" class="">Trailside Museum</a>
-                    <ul>
-                      <li><a href="#">Sem Ipsum</a></li>
-                      <li><a href="#">Sem Fringilla</a></li>
-                      <li><a href="#">Fusce Ligula</a></li>
-                      <li><a href="#">Porta Tortor Purus</a></li>
-                      <li><a href="#">Aenean</a></li>
-                      <li><a href="#">Commodo Nibh Malesuada</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Academics</a>
-                    <ul>
-                      <li><a href="#">Ullamcorper Mattis</a></li>
-                      <li><a href="#">Ipsum Inceptos Pellentesque</a></li>
-                      <li><a href="#">Vestibulum</a></li>
-                      <li><a href="#">Tellus</a></li>
-                      <li><a href="#">Nullam Cras Tortor</a></li>
-                      <li><a href="#">Sollicitudin Tortor</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Research</a>
-                    <ul>
-                      <li><a href="#">Fusce Parturient</a></li>
-                      <li><a href="#">Justo Egestas</a></li>
-                      <li><a href="#">Magna Porta</a></li>
-                      <li><a href="#">Purus Sollicitudin Tellus</a></li>
-                      <li><a href="#">Vehicula Sem</a></li>
-                      <li><a href="#">Malesuada</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Outreach</a>
-                    <ul>
-                      <li><a href="#">Fermentum Ultricies</a></li>
-                      <li><a href="#">Cursus Sollicitudin</a></li>
-                      <li><a href="#">Adipiscing</a></li>
-                      <li><a href="#">Consectetur</a></li>
-                      <li><a href="#">Mattis Nibh</a></li>
-                      <li><a href="#">Sem Consectetur Dapibus</a></li>
-                    </ul>
-                  </li>
-                </ul>
+                    <a href="index-morrill.html" class="lato-bold museum">Morrill Hall</a>
+                      <ul>
+                        <li><a href="#" class="museum">Plan my Visit</a></li>
+                        <li><a href="#" class="museum">Planetarium</a></li>
+                        <li><a href="#" class="museum">Exhibits</a></li>
+                        <li><a href="#" class="museum">Rent the Museum</a></li>
+                        <li><a href="#" class="museum">Birthday Parties</a></li>
+                        <li><a href="#" class="museum">Events</a></li>
+                        <li><a href="#" class="museum">Gift Shop</a></li>
+                        <li><a href="#" class="museum">For Educators</a></li>
+                        <li><a href="#" class="museum">Community Access Program</a></li>
+                      </ul>
+                    </li>
+                    <li class="dcf-m-0 dcf-p-2">
+                      <a href="index-ashfallbeds.html" class="lato-bold museum">Ashfall Fossil Beds</a>
+                      <ul>
+                        <li><a href="#" class="museum">Plan my Visit</a></li>
+                        <li><a href="#" class="museum">Gift Shop</a></li>
+                        <li><a href="#" class="museum">For Educators</a></li>
+                        <li><a href="#" class="museum">History</a></li>
+                        <li><a href="#" class="museum">Active Research</a></li>
+                      </ul>
+                    </li>
+                    <li class="dcf-m-0 dcf-p-2">
+                      <a href="index-trailside.html" class="lato-bold museum">Trailside Museum</a>
+                      <ul>
+                        <li><a href="#" class="museum">Plan my Visit</a></li>
+                        <li><a href="#" class="museum">Exhibits</a></li>
+                        <li><a href="#" class="museum">Gift Shop</a></li>
+                        <li><a href="#" class="museum">History</a></li>
+                      </ul>
+                    </li>
+                    <li class="dcf-m-0 dcf-p-2">
+                      <a href="#" class="lato-bold museum">Research Collections</a>
+                      <ul>
+                        <li><a href="#" class="museum">Community Access Program</a></li>
+                        <li><a href="#" class="museum">Use the Collection</a></li>
+                        <li><a href="#" class="museum">Volunteer</a></li>
+                        <li><a href="#" class="museum">Become a Member</a></li>
+                      </ul>
+                    </li>
+                    <li class="dcf-m-0 dcf-p-2">
+                      <a href="#" class="lato-bold museum">Education</a>
+                      <ul>
+                        <li><a href="#" class="museum">Vertebrate Paleontology</a></li>
+                        <li><a href="#" class="museum">Entomology</a></li>
+                        <li><a href="#" class="museum">Anthropology</a></li>
+                        <li><a href="#" class="museum">Parasitology</a></li>
+                        <li><a href="#" class="museum">Zoology</a></li>
+                        <li><a href="#" class="museum">Invertebrate Paleontology</a></li>
+                        <li><a href="#" class="museum">Botany</a></li>
+                        <li><a href="#" class="museum">Geology</a></li>
+                        <li><a href="#" class="museum">Collection Policies</a></li>
+                        <li><a href="#" class="museum">Publications</a></li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
       
-            <!-- InstanceEndEditable -->
-          </div>
-        </nav>
-    <!--  DROPDOWN MENU END   -->
-  </header>
-
-
-
-  <main class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
+                  <!-- InstanceEndEditable -->
+                </div>
+      
+              </div>
+                <!-- BUTTON MENU FRAME BOTTOM -->
+              </nav>
+              <!--  DROPDOWN MENU END   -->
+          </header>
+    <main>
+  <div class="dcf-wrapper" id="dcf-main" tabindex="-1" role="main">
     
-
-    <div class="dcf-bleed dcf-wrapper dcf-pt-9 dcf-pb-9">
-      <div class="dcf-tabs" id="tab-group-1">
-        <h2>Tab Group</h2>
-        <ol>
-          <li><a href="#tab1" id="tab-group-1-tab-1">Tab 1</a></li>
-          <li><a href="#tab2" id="tab-group-1-tab-2">Tab 2</a></li>
-          <li><a href="#tab3" id="tab-group-1-tab-3">Tab 3</a></li>
-        </ol>
-        <section id="tab3">
-          <p>Tab 3: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </section>
-        <section id="tab2">
-          <p>Tab 2: Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
-          <div class="dcf-tabs">
-            <h2>Tab2 SubGroup</h2>
-            <ol>
-              <li><a href="#tab2a">Tab 2a</a></li>
-              <li><a href="#tab2b">Tab 2b</a></li>
-              <li><a href="#tab2c">Tab 2c</a></li>
-            </ol>
-            <section id="tab2a">
-              <p>Tab 2a: Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
-            </section>
-            <section id="tab2b">
-              <p>Tab 2b: Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
-            </section>
-            <section id="tab2c">
-              <p>Tab 2c: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </section>
-          </div>
-        </section>
-        <section id="tab1">
-          <p>Tab 1: Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
-        </section>
-      </div>
-      <div class="dcf-tabs">
-        <h2>Tab Group 2</h2>
-        <ol>
-          <li><a href="#tab4">Tab 4</a></li>
-          <li><a href="#tab5">Tab 5</a></li>
-          <li><a href="#tab6">Tab 6</a></li>
-        </ol>
-        <section id="tab4">
-          <p>Tab 4: Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
-        </section>
-        <section id="tab5">
-          <p>Tab 5: Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
-        </section>
-        <section id="tab6">
-          <p>Tab 6: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </section>
-      </div>
-    </div>
-
-    <h1>Pagination</h1>
-    <nav class="dcf-pagination">
-      <ol class="dcf-list-bare dcf-list-inline">
-        <li><a class="dcf-pagination-first" href="#">First</a></li>
-        <li><a class="dcf-pagination-prev" href="#">Prev</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><span class="dcf-pagination-selected">3</span></li>
-        <li><span class="dcf-pagination-ellipsis">…</span></li>
-        <li><a class="dcf-pagination-next" href="#">Next</a></li>
-        <li><a class="dcf-pagination-last" href="#">Last</a></li>
-      </ol>
-    </nav>
-
-    <h1>Slideshow Test</h1>
-    <div class="dcf-bleed dcf-wrapper dcf-pt-3 dcf-pb-6 unl-bg-lightest-gray">
-      <div class="dcf-grid dcf-mb-6">
-        <div class="dcf-col-100% dcf-col-33%-start@sm dcf-col-50%-start@lg">
-          <div class="dcf-slideshow dcf-slideshow-nojs" role="region" aria-label="slideshow foo" data-shuffle="true" data-play="auto" data-transition="fade" data-rate="2000">
-            <ul>
-              <!-- Slide 1 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!-- Slide 2 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img
-                            class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover"
-                            data-sizes="(min-width: 41.956em) 43vw, 88vw"
-                            data-src="images/150815-commencement-324-sm-min.jpg"
-                            data-srcset="images/150815-commencement-324-sm-min.jpg 284w,
-                         images/150815-commencement-324-md-min.jpg 505w,
-                         images/150815-commencement-324-lg-min.jpg 898w,
-                         images/150815-commencement-324-xl-min.jpg 1596w"
-                            src="data:image/gif;base64,R0lGODlhAQABAAAAADs="
-                            alt="Nilmar Robledo Caicedo from Colombia shakes hands after receiving his masters degree in agricultural economics.">
-                    <noscript>
-                      <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-sm-min.jpg" alt="Nilmar Robledo Caicedo from Colombia shakes hands after receiving his masters degree in agricultural economics.">
-                    </noscript>
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!--Slide 3 with no figcaption-->
-              <li>
-                <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                  <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                </div>
-              </li>
-              <!-- Slide 4  no figure-->
-              <li>
-                <div class="dcf-p-3">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit, ante quis eleifend consectetur, eros tortor aliquam turpis, venenatis blandit est quam ac odio. Curabitur euismod enim ac lobortis condimentum. Cras at vehicula eros.</p>
-                </div>
-              </li>
-            </ul>
+    <div class="dcf-bleed dcf-mb-7">
+      <div class="dcf-d-grid unl-grid-cols unlcms-display-banner">
+        <div class="dcf-z-1 unlcms-display-banner-text unlcms-display-banner-text-c">
+        </div>
+          <div class="unlcms-display-banner-img dcf-ratio dcf-ratio-16x9 dcf-mb-0">
+    
+            <img class="dcf-ratio-child dcf-obj-fit-cover unlcms-slow-zoom-in unlcms-hero-obj-pos-60-50" src="https://mediahub.unl.edu/uploads/thumbnails/23477/original.jpg?1730902761" alt="Three students work with clay on potter's wheels">
+    
           </div>
         </div>
-      </div>
-      <div class="dcf-grid">
-        <div class="dcf-col-100% dcf-col-33%-start@sm dcf-col-50%-start@lg">
-          <div class="dcf-slideshow dcf-slideshow-nojs" role="region" aria-label="slideshow bar">
-            <ul>
-              <!-- Slide 1  no figure-->
-              <li>
-                <div class="dcf-p-3">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit, ante quis eleifend consectetur, eros tortor aliquam turpis, venenatis blandit est quam ac odio. Curabitur euismod enim ac lobortis condimentum. Cras at vehicula eros.</p>
-                </div>
-              </li>
-              <!-- Slide 2 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
+    </div>
 
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!-- Slide 3 -->
-              <li>
-                <figure>
-                  <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                    <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
-                  </div>
-                  <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
-                </figure>
-              </li>
-              <!--Slide 4 with no figcaption-->
-              <li>
-                <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
-                  <img class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover" src="images/150815-commencement-324-xl-min.jpg" alt="">
+            <!--
+                <div class="dcf-bleed dcf-wrapper dcf-pt-0 dcf-pb-0">
+                    <div class="layout layout--dcf-onecol-section unlcms-section-edge-to-edge dcf-bleed dcf-pb-0 dcf-pt-0">
+                        <div>
+                            <div class="dcf-col layout__region layout__region--first">
+                                <div class="scoped-css--block-content-55">
+                                    <div>
+                                        <div class="dcf-hero dcf-d-flex dcf-relative unl-hero-legacy unl-bg-darkest-gray">
+                                            <div class="dcf-hero-group-1 dcf-as-end">
+                                                <header class="dcf-page-title" id="dcf-page-title">
+                                                    <p class="dcf-mb-0 dcf-subhead dcf-txt-md dcf-bold unl-cream">Choose a Future in the Arts</p>
+                                                    <h1 class="unl-cream" style="text-transform: none;">School of A<span style="letter-spacing: 2px;">rt</span>, A<span style="letter-spacing: 2px;">rt</span> History &amp; Design</h1>
+                                                </header>
+                                                      
+                                                            <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" href="https://mediahub.unl.edu/media/22390" data-toggles-modal="saahd-home-hero-modal-video" type="button" disabled>Watch Mya’s Story</button>
+                                                    
+                                            </div>
+                                            <div class="dcf-hero-group-2 dcf-w-100% dcf-overflow-hidden">
+                                                <div class="dcf-h-100% dcf-w-100% dcf-relative dcf-autoplay-video">
+                                                    <video class="dcf-ratio-child dcf-obj-fit-cover" poster="https://unlcms.unl.edu/rdee2/videos/saahd-hero.jpg" autoplay="" loop="" muted="" playsinline="">
+                                                        <source src="https://unlcms.unl.edu/rdee2/videos/saahd-hero.mp4" type="video/mp4">
+                                                    </video> 
+                                                        <button aria-label="pause autoplay video" class="dcf-btn-autoplay-video-toggle dcf-btn dcf-btn-primary dcf-z-1 dcf-absolute dcf-pin-bottom dcf-pin-right dcf-d-flex dcf-ai-center dcf-jc-center dcf-mb-3 dcf-mr-3 dcf-h-7 dcf-w-7 dcf-p-0 dcf-circle">
+                                                        <svg aria-hidden="true" class="dcf-h-4 dcf-w-4 dcf-fill-current" height="24" viewBox="0 0 24 24" width="24">
+                                                            <path d="M10.5 0h-5C5.224 0 5 .224 5 .5v23C5 23.776 5.224 24 5.5 24h5c.276 0 .5-.224.5-.5v-23C11 .224 10.776 0 10.5 0zM18.5 0h-5C13.224 0 13 .224 13 .5v23c0 .276.224.5.5.5h5c.276 0 .5-.224.5-.5v-23C19 .224 18.776 0 18.5 0z"></path>
+                                                        </svg>
+                                                        </button>
+                                                    <button class="dcf-btn-autoplay-video-toggle dcf-btn dcf-btn-primary dcf-z-1 dcf-absolute dcf-pin-bottom dcf-pin-right dcf-d-flex dcf-ai-center dcf-jc-center dcf-mb-3 dcf-mr-3 dcf-h-7 dcf-w-7 dcf-p-0 dcf-circle" aria-label="pause autoplay video"><svg class="dcf-h-4 dcf-w-4 dcf-fill-current" width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M10.5 0h-5C5.224 0 5 .224 5 .5v23C5 23.776 5.224 24 5.5 24h5c.276 0 .5-.224.5-.5v-23C11 .224 10.776 0 10.5 0zM18.5 0h-5C13.224 0 13 .224 13 .5v23c0 .276.224.5.5.5h5c.276 0 .5-.224.5-.5v-23C19 .224 18.776 0 18.5 0z"></path></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </li>
-            </ul>
+            -->
+
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8">
+      <ul class="dcf-grid-thirds@sm dcf-list-bare dcf-col-gap-7 dcf-row-gap-6 dcf-mb-0">
+          <a href="index-morrill.html" class="morrill-card">
+          <li class="dcf-card dcf-d-flex dcf-flex-col">
+            <div class="dcf-card-block dcf-2nd background-morrill">
+                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Morrill Hall</span></h3>
+            </div>
+            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+              <noscript>
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/morrill-main-3-up.jpg" alt="Placeholder image.">
+              </noscript>
+            </div>
+          </li>
+        </a>
+        <a href="index-ashfallbeds.html" class="ashfall-card">
+          <li class="dcf-card dcf-d-flex dcf-flex-col">
+            <div class="dcf-card-block dcf-2nd background-ashfall">
+                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Ashfall Fossil Beds</span></h3>
+              </div>
+            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
+              <noscript>
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall2-main-3-up.jpg" alt="Placeholder image.">
+              </noscript>
+            </div>
+          </li>
+        </a>
+        <a href="index-trailside.html" class="trailside-card">
+          <li class="dcf-card dcf-d-flex dcf-flex-col">
+            <div class="dcf-card-block dcf-2nd background-trailside">
+                <h3 class="dcf-h4 dcf-txt-center lato-bold dcf-pt-4 dcf-pb-4"><span class="museum">Trailside Museum</span></h3>
+              </div>
+            <div class="dcf-1st dcf-ratio dcf-ratio-4x3">
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load dcf-lazy-loaded " src="/images/trailside-main-3-up.jpg" alt="Placeholder image.">
+              <noscript>
+                <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/ashfall-main-3-up.jpg" alt="Placeholder image.">
+              </noscript>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+
+    <div class="dcf-bleed dcf-pt-8 dcf-pb-8">
+      <div class="dcf-d-flex dcf-jc-flex-end dcf-ai-center dcf-pb-8 mus-flex">
+        <img src="/images/pollenator-promo.jpg" alt="A bee gathering nectar." class="mag-bleed">
+        <div class="dcf-p-6 inset-block" style="">
+            <div class="dcf-as-center">
+                <h3 class="">
+                  Cherish Nebraska
+                </h3>
+                <p>
+                  Where life on Earth is preserved and made accessible for present and future study. We have been Nebraska's University repository for nearly 150 years with over 13 million specimens and artifacts from around the world.
+                </p>
+                <p>
+                    <a class="dcf-btn dcf-btn-primary dcf-float-right" href="https://emastudentwork.unl.edu/Student-Gallery/">Visit</a>
+                </p>
+            </div>
+   
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 cta-bg">
+      <div class="dcf-grid-halves@md museum dcf-row-gap-6">
+        <div class="dcf-d-flex dcf-flex-col dcf-ai-center dcf-pr-6 dcf-pl-4 dcf-w-100% dcf-txt-center">
+          <h3 class="museum dcf-mb-1">We need your support</h3>
+          <p>Your support is vital and helps the museum<br>to share the collection with the world.</p>
+        </div>
+        <div class="dcf-d-flex dcf-flex-row dcf-ai-center dcf-jc-center dcf-w-100%">
+          <a class="dcf-btn dcf-btn-secondary lato-regular dcf-mr-4" href="https://emastudentwork.unl.edu/Student-Gallery/">Make a donation</a>
+          <a class="dcf-btn dcf-btn-secondary lato-regular" href="https://emastudentwork.unl.edu/Student-Gallery/">Become a Member</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8">
+      <h2>Education</h2>
+      <div class="dcf-grid-halves@md museum dcf-col-gap-8 dcf-row-gap-6">
+      <a href="" class="dcf-txt-decor-none education-button">
+        <div class="dcf-card dcf-d-flex dcf-flex-row edu-block dcf-jc-between">
+          <div class="dcf-p-6 dcf-w-50%">
+              <h4 class="dcf-h4 lato-bold museum">In-Person Learning</h4>
+              <ul>
+                <li class="museum">Group Visits</li>
+                <li class="museum">Gallery Programs</li>
+                <li class="museum">Planetarium Shows</li>
+                <li class="museum">UNL Class Visits</li>
+              </ul>
+              <div class="dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-flex-end">
+                <div>
+                  <p class="museum">
+                    <span class="dcf-bold">Public Hours</span><br>
+                    Tuesday-Saturday<br>
+                    9:00am - 5:00pm
+                  </p>
+                  <p class="museum">Sunday<br>
+                    12:00am - 5:00pm
+                  </p>
+                </div>
+                <div class="dcf-circle dcf-b-solid dcf-b-3 dcf-txt-center dcf-flex dcf-ac-center dcf-jc-center lato-bold circle-button">Visit Now</div>
+              </div>
+              
+              
+          </div>
+
+          <div class="dcf-d-block">
+            <img class="dcf-h-100%" src="/images/planetarium-promo.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/planetarium-promo.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+
+        </div>
+      </a>
+      <a href="" class="dcf-txt-decor-none education-button">
+        <div class="dcf-card dcf-d-flex dcf-flex-row edu-block dcf-jc-between">
+          <div class="dcf-p-6 dcf-w-50%">
+              <h4 class="dcf-h4 lato-bold museum">Virtual Learning</h4>
+              <ul>
+                <li class="museum">Museum Kits</li>
+                <li class="museum">Virtual Learning</li>
+                <li class="museum">Educator Resources</li>
+              </ul>
+              <div class="dcf-d-flex dcf-flex-row dcf-jc-between dcf-ai-flex-end">
+                <div>
+                  <p class="museum">
+                    <span class="dcf-bold">Program Details</span><br>
+                    9:30 CST<br>
+                    11:00am CST
+                  </p>
+                  <p class="museum">
+                    45 minutes
+                  </p>
+                </div>
+                <div class="dcf-circle dcf-b-solid dcf-b-3 dcf-txt-center dcf-flex dcf-ac-center dcf-jc-center lato-bold circle-button">Register</div>
+              </div>
+
+          </div>
+
+          <div class="dcf-d-block">
+            <img class="" src="/images/education-promo-2.jpg" alt="Placeholder image.">
+            <noscript>
+              <img class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%" src="/images/education-promo-2.jpg" alt="Placeholder image.">
+            </noscript>
+          </div>
+
+        </div>
+      </a>
+      </div>
+    </div>
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-8 dcf-pb-8 dcf-bt-3 dcf-bb-3 dcf-bt-solid dcf-bb-solid news-bg">
+      <h2>News and Events</h2>
+      <div class="dcf-grid-halves@md dcf-col-gap-8 dcf-row-gap-9 dcf-pt-4">
+
+        <div class="dcf-grid dcf-col-gap-6">
+        <div class="dcf-col-100% dcf-grid dcf-col-gap-6">
+          <div class="dcf-col-100% dcf-col-33%-start@md">
+              <p class="dcf-txt-h6 lato-bold dcf-txt-center">JUN 1, 2025</p>
+          </div>   
+          <div class="dcf-col-100% dcf-col-67%-end@md">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                  </p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <h1>Modal Test</h1>
-    <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" data-toggles-modal="test-modal-1" type="button" disabled>Toggle Modal 1</button>
-    <div class="dcf-modal" id="test-modal-1" hidden>
-      <div class="dcf-modal-wrapper" style="background-color: #fff">
-        <header class="dcf-modal-header">
-          <h2>Example Modal 1</h2>
-          <button class="dcf-btn-close-modal">Close</button>
-        </header>
-        <div class="dcf-modal-content">
-          <p>This is my modal content. <a href="#">Fusce</a> dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit <a href="#">tempus porttitor</a>. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-          <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" data-toggles-modal="test-modal-1" type="button" disabled>Toggle Modal 1</button>
-          <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" data-toggles-modal="test-modal-2" type="button" disabled>Toggle Modal 2</button>
+        <div class="dcf-col-100% dcf-grid dcf-col-gap-6">
+          <div class="dcf-col-100% dcf-col-33%-start@md">
+            <p class="dcf-txt-h6 lato-bold dcf-txt-center">JUN 2, 2025</p>
+          </div>   
+          <div class="dcf-col-100% dcf-col-67%-end@md">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                </p>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" data-toggles-modal="test-modal-2" type="button" disabled>Toggle Modal 2</button>
-    <div class="dcf-modal" id="test-modal-2" hidden>
-      <div class="dcf-modal-wrapper" style="background-color: #fff">
-        <header class="dcf-modal-header">
-          <h2>Example Modal 2</h2>
-          <button class="dcf-btn-close-modal">Close</button>
-        </header>
-        <div class="dcf-modal-content">
-          <p>This is my modal content. <a href="#">Fusce</a> dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit <a href="#">tempus porttitor</a>. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-          <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" data-toggles-modal="test-modal-1" type="button" disabled>Toggle Modal 1</button>
-          <button class="dcf-btn dcf-btn-primary dcf-btn-toggle-modal" data-toggles-modal="test-modal-2" type="button" disabled>Toggle Modal 2</button>
+        <div class="dcf-col-100% dcf-grid dcf-col-gap-6">
+          <div class="dcf-col-100% dcf-col-33%-start@md">
+            <p class="dcf-txt-h6 lato-bold dcf-txt-center">JUN 3, 2025</p>
+          </div>   
+          <div class="dcf-col-100% dcf-col-67%-end@md">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
+              </p>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="dcf-m-6 dcf-as-center">
-      <div class="dcf-ratio dcf-ratio-16x9 unl-frame-quad unl-bg-light-gray">
-        <img
-                loading="lazy"
-                class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load"
-                data-sizes="(min-width: 41.956em) 43vw, 88vw"
-                data-src="images/150815-commencement-324-sm-min.jpg"
-                data-srcset="images/150815-commencement-324-sm-min.jpg 284w,
-                           images/150815-commencement-324-md-min.jpg 505w,
-                           images/150815-commencement-324-lg-min.jpg 898w,
-                           images/150815-commencement-324-xl-min.jpg 1596w"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAADs="
-                alt="Nilmar Robledo Caicedo from Colombia shakes hands after receiving his masters degree in agricultural economics.">
-        <noscript>
-          <img class="dcf-ratio-child dcf-obj-fit-contain" src="images/150815-commencement-324-sm-min.jpg" alt="Nilmar Robledo Caicedo from Colombia shakes hands after receiving his masters degree in agricultural economics.">
-        </noscript>
-      </div>
-    </div>
-
-    <div class="dcf-m-6 dcf-as-center">
-      <div class="dcf-ratio dcf-ratio-16x9 unl-frame-quad unl-bg-light-gray">
-        <video class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100% dcf-lazy-load" autoplay muted loop playsinline data-poster="videos/small-video-poster.png">
-          <source data-src="videos/small.webm" type="video/webm">
-          <source data-src="videos/small.ogv" type="video/ogg">
-          <source data-src="videos/small.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    <div class="dcf-overflow-x-auto">
-      <table class="dcf-table dcf-table-bordered dcf-table-striped dcf-w-100%">
-        <caption>Scrollable Table</caption>
-        <thead>
-        <tr>
-          <th data-label="foo" scope="col">Lorem ipsum dolor</th>
-          <th data-label="bar" scope="col">Lorem ipsum dolor sit</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td data-label="foo" scope="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget.</td>
-          <td data-label="bar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus.</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div id="datepicker-example1" class="dcf-mt-6 dcf-mb-6">
-      <form class="dcf-form">
-        <div class="dcf-datepicker">
-          <label for="sample-date1">Date 1</label>
-          <input id="sample-date1" type="text" name="sample_date1">
+        <div class="dcf-col-100% dcf-grid dcf-col-gap-6">
+          <div class="dcf-col-100% dcf-col-33%-start@md">
+            <p class="dcf-txt-h6 lato-bold dcf-txt-center">JUN 4, 2025</p>
+          </div>   
+          <div class="dcf-col-100% dcf-col-67%-end@md">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                  </p>
+          </div>
         </div>
 
-        <div class="dcf-datepicker">
-          <label for="sample-date2">Date 2</label>
-          <input id="sample-date2" type="text" name="sample_date2">
-        </div>
-      </form>
-    </div>
+          <div class="dcf-col-100% dcf-col-33%-start@md">
+            <p Xclass="dcf-txt-h6 lato-bold dcf-float-right">
+              <a class="dcf-btn dcf-btn-primary dcf-float-right">All News</a>
+            </p>
+          </div>   
+          <div class="dcf-col-100% dcf-col-67%-end@md">
 
-    <div class="dcf-bleed dcf-wrapper dcf-pt-10 dcf-pb-10 dcf-mb-10 dcf-grid-thirds unl-bg-lighter-gray">
-      <div class="dcf-card dcf-card-as-link dcf-d-flex dcf-flex-col">
-        <div class="dcf-card-block dcf-2nd">
-          <h2><a class="dcf-card-link" href="https://www.unl.edu/">Church-key ennui gastropub</a></h2>
-          <p>Sriracha Etsy XOXO street art, chillwave 8-bit hoodie <abbr>VHS</abbr> blog Pitchfork authentic paleo ethical messenger bag. Raw denim Blue Bottle flannel Carles Williamsburg narwhal, cray drinking vinegar messenger bag gluten-free twee ugh. <a href="https://www.google.com/">Here's another link</a></p>
+          </div>
         </div>
-        <div class="dcf-ratio dcf-ratio-16x9 dcf-1st">
-          <img
-                  class="dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%"
-                  sizes="(min-width: 41.956em) 43vw, 88vw"
-                  srcset="images/150821-tunnel-325-sm-min.jpg 284w,
-                  images/150821-tunnel-325-md-min.jpg 505w,
-                  images/150821-tunnel-325-lg-min.jpg 898w,
-                  images/150821-tunnel-325-xl-min.jpg 1596w"
-                  src="data:image/gif;base64,R0lGODlhAQABAAAAADs="
-                  alt="">
+        <div class="dcf-grid dcf-col-gap-6">
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
+            <div>
+              <p class="lato-bold dcf-txt-center event-date museum">
+                <span class="dcf-txt-sm dcf-p-7">JUN</span>
+                <span class="dcf-txt-h5 event-month dcf-d-block dcf-lh-1 dcf-pt-3 dcf-pr-4 dcf-pl-4 dcf-pb-3">11</span>
+              </p>
+            </div>
+          </div>   
+          <div class="dcf-col-67%-end">
+                  <p>
+                    <span class="dcf-bold">Cosmos $ Cocktails - Sold Out</span><br>
+                    8:00PM<br>
+                    Morrill Hall                    
+                  </p>
+          </div>
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
+            <div>
+              <p class="lato-bold dcf-txt-center event-date museum">
+                <span class="dcf-txt-sm dcf-p-7">JUN</span>
+                <span class="dcf-txt-h5 event-month dcf-d-block dcf-lh-1 dcf-pt-3 dcf-pr-4 dcf-pl-4 dcf-pb-3">12</span>
+              </p>
+            </div>
+          </div>  
+          <div class="dcf-col-67%-end">
+            <p>
+              <span class="dcf-bold">Investigate</span><br>
+              2:00 pm – 3:30 pm<br>
+              Morrill Hall                    
+            </p>
+          </div>
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
+            <div>
+              <p class="lato-bold dcf-txt-center event-date museum">
+                <span class="dcf-txt-sm dcf-p-7">JUN</span>
+                <span class="dcf-txt-h5 event-month dcf-d-block dcf-lh-1 dcf-pt-3 dcf-pr-4 dcf-pl-4 dcf-pb-3">13</span>
+              </p>
+            </div>
+          </div>  
+          <div class="dcf-col-67%-end">
+            <p>
+              <span class="dcf-bold">Pop in Storytime</span><br>
+              6:00 pm – 7:30 pm<br>
+              Morrill Hall                    
+            </p>
+          </div>
+          <div class="dcf-col-33%-start dcf-d-flex dcf-jc-end">
+            <div>
+              <p class="lato-bold dcf-txt-center event-date museum">
+                <span class="dcf-txt-sm dcf-p-7">JUN</span>
+                <span class="dcf-txt-h5 event-month dcf-d-block dcf-lh-1 dcf-pt-3 dcf-pr-4 dcf-pl-4 dcf-pb-3">14</span>
+              </p>
+            </div>
+          </div>   
+          <div class="dcf-col-67%-end">
+            <p>
+              <span class="dcf-bold">Shareholders Meeting</span><br>
+              12:00 am – 1:30 am<br>
+              Morrill Hall                    
+            </p>
+          </div>
+
+          <div class="dcf-col-100% dcf-col-33%-start@md">
+            <p class="dcf-txt-h6 lato-bold dcf-float-right">
+              <a class="dcf-btn dcf-btn-primary dcf-float-right lato-regular">All Events</a>
+            </p>
+          </div>   
+          <div class="dcf-col-67%-end@md">
+
+          </div>
         </div>
+
       </div>
+          
     </div>
+  </div>
+
+
   </main>
-  <footer class="dcf-footer" id="dcf-footer">
-    Footer markup here
+  <footer class="dcf-footer museum dcf-wrapper" id="dcf-footer">
+    <div class="dcf-grid dcf-col-gap-4 dcf-row-gap-4">
+      <div class="dcf-col-100% dcf-col-25%-start@md dcf-d-flex dcf-flex-col dcf-pt-4">
+        <p class="dcf-txt-h5">Connect with us</p>
+          <dl aria-labelledby="dcf-footer-group-1-heading">
+            <a class="dcf-d-inline-block dcf-relative" href="http://www.facebook.com/"><svg class="dcf-icon dcf-icon-inline dcf-icon-hang museum" aria-hidden="true" height="48" width="48" viewBox="0 0 48 48"><path d="M48 24.1c0-13.3-10.7-24-24-24S0 10.9 0 24.1c0 12 8.8 21.9 20.2 23.7V31.1h-6.1v-6.9h6.1v-5.3c0-6 3.6-9.3 9.1-9.3 2.6 0 5.4.5 5.4.5V16h-3c-3 0-3.9 1.9-3.9 3.7v4.5h6.7l-1.1 6.9h-5.6v16.8C39.2 46.1 48 36.1 48 24.1z"></path></svg></a>
+            <a class="dcf-d-inline-block dcf-relative dcf-pl-4" href="https://twitter.com/"><svg class="dcf-icon dcf-icon-inline dcf-icon-hang museum" aria-hidden="true" focusable="false" height="48" width="48" viewBox="0 0 48 48"><path d="M15.1 43.5c18.11 0 28-15 28-28v-1.27A20 20 0 0 0 48 9.11a19.66 19.66 0 0 1-5.66 1.55 9.88 9.88 0 0 0 4.33-5.45 19.74 19.74 0 0 1-6.25 2.39 9.86 9.86 0 0 0-16.78 9A28 28 0 0 1 3.34 6.3a9.86 9.86 0 0 0 3 13.15 9.77 9.77 0 0 1-4.47-1.23v.12A9.85 9.85 0 0 0 9.82 28a9.83 9.83 0 0 1-4.45.17 9.86 9.86 0 0 0 9.2 6.83 19.76 19.76 0 0 1-12.23 4.22A20 20 0 0 1 0 39.08a27.88 27.88 0 0 0 15.1 4.42"></path></svg></a>
+            <a class="dcf-d-inline-block dcf-relative dcf-pl-6" href="https://www.youtube.com/"><svg class="dcf-icon dcf-icon-inline dcf-icon-hang museum" aria-hidden="true" focusable="false" height="48" width="48" viewBox="0 0 48 48"><path d="M47 12.37a6 6 0 0 0-4.25-4.27C39 7.09 24 7.09 24 7.09s-15 0-18.75 1A6 6 0 0 0 1 12.37C0 16.14 0 24 0 24s0 7.86 1 11.63a6 6 0 0 0 4.25 4.27c3.74 1 18.75 1 18.75 1s15 0 18.75-1A6 6 0 0 0 47 35.63C48 31.86 48 24 48 24s0-7.86-1-11.63zM19.09 31.14V16.86L31.64 24z"></path></svg></a>
+            <a class="dcf-d-inline-block dcf-relative dcf-pl-6" href="http://instagram.com/"><svg class="dcf-icon dcf-icon-inline dcf-icon-hang museum" aria-hidden="true" focusable="false" height="48" width="48" viewBox="0 0 48 48"><path d="M24 4.33c6.41 0 7.17 0 9.7.14a13.28 13.28 0 0 1 4.46.83 7.44 7.44 0 0 1 2.76 1.79 7.44 7.44 0 0 1 1.79 2.76 13.28 13.28 0 0 1 .83 4.46c.12 2.53.14 3.29.14 9.7s0 7.17-.14 9.7a13.28 13.28 0 0 1-.83 4.46 8 8 0 0 1-4.55 4.55 13.28 13.28 0 0 1-4.46.83c-2.53.12-3.29.14-9.7.14s-7.17 0-9.7-.14a13.28 13.28 0 0 1-4.46-.83 7.44 7.44 0 0 1-2.76-1.79 7.44 7.44 0 0 1-1.79-2.76 13.28 13.28 0 0 1-.83-4.46c-.12-2.53-.14-3.29-.14-9.7s0-7.17.14-9.7a13.28 13.28 0 0 1 .83-4.46 7.44 7.44 0 0 1 1.8-2.77 7.44 7.44 0 0 1 2.76-1.79 13.28 13.28 0 0 1 4.46-.83c2.53-.12 3.29-.14 9.7-.14M24 0c-6.52 0-7.34 0-9.9.14a17.61 17.61 0 0 0-5.82 1.12A11.76 11.76 0 0 0 4 4a11.76 11.76 0 0 0-2.74 4.28 17.6 17.6 0 0 0-1.12 5.83C0 16.66 0 17.48 0 24s0 7.34.14 9.9a17.6 17.6 0 0 0 1.11 5.82A11.76 11.76 0 0 0 4 44a11.76 11.76 0 0 0 4.25 2.77 17.59 17.59 0 0 0 5.83 1.12c2.55.12 3.38.14 9.9.14s7.34 0 9.9-.14a17.56 17.56 0 0 0 5.82-1.12 12.27 12.27 0 0 0 7-7 17.59 17.59 0 0 0 1.12-5.83c.18-2.6.18-3.42.18-9.94s0-7.34-.14-9.9a17.56 17.56 0 0 0-1.12-5.82A11.76 11.76 0 0 0 44 4a11.76 11.76 0 0 0-4.25-2.77A17.6 17.6 0 0 0 33.9.15C31.34 0 30.52 0 24 0zm0 11.68A12.32 12.32 0 1 0 36.32 24 12.32 12.32 0 0 0 24 11.67zM24 32a8 8 0 1 1 8-8 8 8 0 0 1-8 8zM36.81 8.31a2.88 2.88 0 1 0 2.88 2.88 2.88 2.88 0 0 0-2.88-2.88z"></path></svg></a>
+          </dl>
+          <dd class="dcf-d-inline-block dcf-relative dcf-pl-6">
+            <svg class="dcf-icon dcf-icon-inline dcf-icon-hang" aria-hidden="true" fill="currentcolor" height="16" width="16" viewBox="0 0 48 48"><path d="M24 0A16 16 0 0 0 8 16c0 8.49 14.55 30.61 15.17 31.55a1 1 0 0 0 1.67 0C25.45 46.61 40 24.49 40 16A16 16 0 0 0 24 0zm0 23a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"></path></svg>
+            <p class="dcf-mt-0" style="margin-block-end: 0;">Parking</p>
+          </dd>
+          <dd class="dcf-d-inline-block dcf-relative dcf-pl-6">
+            <svg class="dcf-icon dcf-icon-inline dcf-icon-hang" aria-hidden="true" fill="currentcolor" height="16" width="16" viewBox="0 0 48 48"><path d="M24 0A16 16 0 0 0 8 16c0 8.49 14.55 30.61 15.17 31.55a1 1 0 0 0 1.67 0C25.45 46.61 40 24.49 40 16A16 16 0 0 0 24 0zm0 23a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"></path></svg>
+            <p class="dcf-mt-0" style="margin-block-end: 0;">Accessibility</p>
+          </dd>
+          <div itemscope="" itemtype="http://schema.org/Organization">
+          
+                <dd class="dcf-d-inline-block dcf-relative dcf-pl-6 lato-regular">
+                  <svg class="dcf-icon dcf-icon-inline dcf-icon-hang" aria-hidden="true" fill="currentcolor" height="16" width="16" viewBox="0 0 48 48"><path d="M24 0A16 16 0 0 0 8 16c0 8.49 14.55 30.61 15.17 31.55a1 1 0 0 0 1.67 0C25.45 46.61 40 24.49 40 16A16 16 0 0 0 24 0zm0 23a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"></path></svg>
+                  <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" translate="no">
+                    <span itemprop="name">Morrill Hall</span><br>
+                    <span itemprop="streetAddress"> 645 North 14th St.</span><br>
+                    <span itemprop="addressLocality">Lincoln</span>, <abbr title="Nebraska" itemprop="addressRegion">NE</abbr> <span itemprop="postalCode">65432</span> <abbr class="dcf-none" itemprop="addressCountry">US</abbr>
+                  </address>
+                </dd>
+          </div>
+            <dd class="dcf-d-inline-block dcf-relative dcf-pl-6 lato-regular">
+              <a class="dcf-d-inline-block dcf-relative" href="tel:+15555554321"></a>
+              <svg class="dcf-icon dcf-icon-inline dcf-icon-hang" aria-hidden="true" fill="currentcolor" height="16" width="16" viewBox="0 0 48 48"><path d="M10 10h28v28H10zM10 40v3a5 5 0 0 0 5 5h18a5 5 0 0 0 5-5v-3zm14 5a2 2 0 1 1 2-2 2 2 0 0 1-2 2zM38 8V5a5 5 0 0 0-5-5H15a5 5 0 0 0-5 5v3zM19 4h10a1 1 0 1 1 0 2H19a1 1 0 0 1 0-2z"></path></svg>
+              <span class="dcf-mt-0" style="margin-block-end: 0;">Contact<br>
+                <span itemprop="telephone" class="">555-555-4321</span>
+              </span></a>
+            </dd>
+          
+      </div>
+      <div class="dcf-col-100% dcf-col-50%@md dcf-d-flex dcf-flex-col  dcf-pt-4 dcf-ai-center">
+        <p class="dcf-txt-center dcf-txt-h3">Visit Our Museums</p>
+        <div class="dcf-grid-thirds@md dcf-col-gap-4 dcf-row-gap-4">
+          <div><a class="dcf-d-inline-block dcf-relative" href="index-ashfallbeds.html"><img src="/images/footer-ashfalll-button.jpg" alt="Ashfall museum button"></a></div>
+          <div><a class="dcf-d-inline-block dcf-relative" href="index-morrill.html"><img src="/images/footer-morrill-hall-button.jpg" alt="Morrill Hall museum button"></a></div>
+          <div><a class="dcf-d-inline-block dcf-relative" href="index-trailside.html"><img src="/images/footer-trailside-button.jpg" alt="Trailside museum button"></a></div>
+        </div>
+        <p class="dcf-txt-center dcf-txt-h3 dcf-pt-6">Our Affiliate Partners</p>
+        <div class="dcf-grid-halves dcf-grid-fifths@md dcf-col-gap-4 dcf-row-gap-4 dcf-ai-center dcf-jc-center dcf-pl-6 dcf-pr-6">
+          <div><a class="dcf-d-inline-block dcf-relative" href="https://www.aam-us.org/"><img src="/images/aam-logo.jpg" alt="AAM Logo button"></a></div>
+          <div><a class="dcf-d-inline-block dcf-relative" href="https://www.si.edu/"><img src="/images/Smiths-logo.png" alt="Smithsonian Logo button"></a></div>
+          <div><a class="dcf-d-inline-block dcf-relative" href="https://www.astc.org/membership/find-an-astc-member/passport/"><img src="/images/ASTC_PASSPORT_RED.png" alt="Association of Science and Technology Centers button"></a></div>
+          <div><a class="dcf-d-inline-block dcf-relative" href="https://museums4all.org/"><img src="/images/footer-affiliate-museum-for-all.jpg" alt="AAM Logo button"></a></div>
+          <div><a class="dcf-d-inline-block dcf-relative" href="https://www.arts.gov/initiatives/blue-star-museums"><img src="/images/footer-affiliate-bluestar.jpg" alt="Blue Star Museums Logo button"></a></div>
+        </div>
+        
+      </div>
+      <div class="dcf-col-100% dcf-col-25%-end@md dcf-d-flex dcf-flex-col dcf-pt-4 dcf-pb-4">
+        <form class="dcf-form" action="?" method="post">
+            <legend class="dcf-txt-h5 lato-regular">Sign up for E-news</legend>
+            <div class="dcf-form-group">
+              <label for="example-components-form-name" class="lato-regular">Name <small class="dcf-required museum">Required</small></label>
+              <input id="example-components-form-name" type="text" required=""  class="dcf-w-100%">
+            </div>
+            <div class="dcf-form-group">
+              <label for="example-components-form-email" class="lato-regular">Email <small class="dcf-required museum">Required</small></label>
+              <input id="example-components-form-email" type="email" required=""  class="dcf-w-100%">
+            </div>
+            <div class="dcf-form-group">
+              <label for="example-components-form-password" class="lato-regular">Password <small class="dcf-required museum">Required</small></label>
+              <input id="example-components-form-password" type="password" required="" aria-describedby="example-components-form-pwd-help" class="dcf-w-100%">
+            </div>
+            <input class="dcf-btn dcf-btn-primary lato-regular dcf-w-100% dcf-mt-4" name="submit" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <p class="dcf-txt-center dcf-txt-sm dcf-pb-2">UNL does not discriminate based upon protected status. Visit go.unl.edu/nondiscrimination</p>
   </footer>
   <script src="js/starter-main.js"></script>
 </body>
