@@ -13,7 +13,7 @@
       top: 0;
       z-index: 998;
     }
-    .museum, .morrill .museum {
+    .museum, .group-2 .museum {
       color:#fff ;
       text-decoration: none;
       position: relative;
@@ -22,22 +22,22 @@
 .background-morrill {
   background-color: #700949;
 }
-.morrill-card .dcf-card {
+.group-2-card .dcf-card {
   background-color: #700949;
   color: #fff;
 }
-a.morrill-card .dcf-card:hover {
+a.group-2-card .dcf-card:hover {
   box-shadow: none;
 }
 .theme .dcf-card.edu-block:hover {
   box-shadow: none;
 }
-a.morrill-card {
+a.group-2-card {
   text-decoration: none;
   position:relative;
   transition: opacity 0.3s ease-in-out;
 }
-a.morrill-card::after {
+a.group-2-card::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -49,15 +49,15 @@ a.morrill-card::after {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-a.morrill-card:hover::after {
+a.group-2-card:hover::after {
   box-shadow: 0px 0px 0px 1em #700949;
   opacity: 1;
 }
-a.morrill-card .museum {
+a.group-2-card .museum {
       text-decoration: none;
       position: relative;
     }
-a.morrill-card .museum::after {
+a.group-2-card .museum::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -68,26 +68,26 @@ a.morrill-card .museum::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-a.morrill-card .museum:hover::after {
+a.group-2-card .museum:hover::after {
   width: 100%; /* Expand to full width on hover */
 } 
 
 .background-ashfall {
   background-color: #99031e;
 }
-.ashfall-card .dcf-card {
+.group-12-card .dcf-card {
   background-color: #99031e;
   color: #fff;
 }
-a.ashfall-card .dcf-card:hover {
+a.group-12-card .dcf-card:hover {
   box-shadow: none;
 }
-a.ashfall-card {
+a.group-12-card {
   text-decoration: none;
   position:relative;
   transition: opacity 0.3s ease-in-out;
 }
-a.ashfall-card::after {
+a.group-12-card::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -99,15 +99,15 @@ a.ashfall-card::after {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-a.ashfall-card:hover::after {
+a.group-12-card:hover::after {
   box-shadow: 0px 0px 0px 1em #99031e;
   opacity: 1;
 }
-a.ashfall-card .museum {
+a.group-12-card .museum {
       text-decoration: none;
       position: relative;
     }
-a.ashfall-card .museum::after {
+a.group-12-card .museum::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -118,26 +118,26 @@ a.ashfall-card .museum::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-a.ashfall-card .museum:hover::after {
+a.group-12-card .museum:hover::after {
   width: 100%; /* Expand to full width on hover */
 } 
 
 .background-trailside {
   background-color: #09406c;
 }
-.trailside-card .dcf-card {
+.group-7-card .dcf-card {
   background-color: #09406c;
   color: #fff;
 }
-a.trailside-card .dcf-card:hover {
+a.group-7-card .dcf-card:hover {
   box-shadow: none;
 }
-a.trailside-card {
+a.group-7-card {
   text-decoration: none;
   position:relative;
   transition: opacity 0.3s ease-in-out;
 }
-a.trailside-card::after {
+a.group-7-card::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -149,16 +149,16 @@ a.trailside-card::after {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-a.trailside-card:hover::after {
+a.group-7-card:hover::after {
   box-shadow: 0px 0px 0px 1em #09406c;
   opacity: 1;
 }
 
-a.trailside-card .museum {
+a.group-7-card .museum {
       text-decoration: none;
       position: relative;
     }
-a.trailside-card .museum::after {
+a.group-7-card .museum::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -169,29 +169,29 @@ a.trailside-card .museum::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-a.trailside-card .museum:hover::after {
+a.group-7-card .museum:hover::after {
   width: 100%; /* Expand to full width on hover */
 } 
 .Our-Family-Museums-nav {
  
 }
-.Our-Family-Museums-nav a.morrill-color {
+.Our-Family-Museums-nav a.group-2-color {
   color:#700949;
   text-decoration: none;
   position: relative;
 }
-.Our-Family-Museums-nav a.ashfall-color {
+.Our-Family-Museums-nav a.group-12-color {
   color:#99031e;
   text-decoration: none;
   position: relative;
 }
-.Our-Family-Museums-nav a.trailside-color {
+.Our-Family-Museums-nav a.group-7-color {
   color:#09406c;
   text-decoration: none;
   position: relative;
 }
 
-.Our-Family-Museums-nav a.morrill-color::after {
+.Our-Family-Museums-nav a.group-2-color::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -202,10 +202,10 @@ a.trailside-card .museum:hover::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-.Our-Family-Museums-nav a.morrill-color:hover::after {
+.Our-Family-Museums-nav a.group-2-color:hover::after {
   width: 100%; /* Expand to full width on hover */
 }
-.Our-Family-Museums-nav a.ashfall-color::after {
+.Our-Family-Museums-nav a.group-12-color::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -217,10 +217,10 @@ a.trailside-card .museum:hover::after {
 }
 
 /* Animate the underline on hover */
-.Our-Family-Museums-nav a.ashfall-color:hover::after {
+.Our-Family-Museums-nav a.group-12-color:hover::after {
   width: 100%; /* Expand to full width on hover */
 }
-.Our-Family-Museums-nav a.trailside-color::after {
+.Our-Family-Museums-nav a.group-7-color::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -232,7 +232,7 @@ a.trailside-card .museum:hover::after {
 }
 
 /* Animate the underline on hover */
-.Our-Family-Museums-nav a.trailside-color:hover::after {
+.Our-Family-Museums-nav a.group-7-color:hover::after {
   width: 100%; /* Expand to full width on hover test */
 }
  
@@ -253,7 +253,7 @@ a.trailside-card .museum:hover::after {
   right: 69%;
   background-size: contain;
 } */
-/* .morrill .top-nav-right::before {
+/* .group-2 .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo5.png");
   z-index: 999;
@@ -267,7 +267,7 @@ a.trailside-card .museum:hover::after {
   right: 69%;
   background-size: contain;
 } */
-/* .trailside .top-nav-right::before {
+/* .group-7 .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo3.png");
   z-index: 999;
@@ -281,7 +281,7 @@ a.trailside-card .museum:hover::after {
   right: 69%;
   background-size: contain;
 }
-.ashfall .top-nav-right::before {
+.group-12 .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo6.png");
   z-index: 999;
@@ -333,21 +333,21 @@ a.trailside-card .museum:hover::after {
   justify-content: flex-end;
   width: inherit;
 }
-.morrill .nav-bot-row {
+.group-2 .nav-bot-row {
   background-color:#700949 ;
   display: inline-flex;
   align-items: flex-end;
   justify-content: flex-end;
   width: inherit;
 }
-.trailside .nav-bot-row {
+.group-7 .nav-bot-row {
   background-color:#08406b ;
   display: inline-flex;
   align-items: flex-end;
   justify-content: flex-end;
   width: inherit;
 }
-.ashfall .nav-bot-row {
+.group-12 .nav-bot-row {
   background-color:#9a031e ;
   display: inline-flex;
   align-items: flex-end;
@@ -656,14 +656,14 @@ a .research-overlay h4:hover::after {
 }
 /* //////Menu banner/flag shape END////// */
 
-.dcf-btn .dcf-btn-secondary:hover {
+/* .dcf-btn .dcf-btn-secondary:hover {
   background-color: #3d3a3a;
   color:#fff;
 } 
 .theme .dcf-btn-secondary:not(:disabled):hover, .theme .dcf-btn-secondary:not(:disabled):active, .theme .dcf-btn-tertiary:not(:disabled):hover, .theme .dcf-btn-tertiary:not(:disabled):active {
     background-color: var(--bg-btn-secondary-tertiary-hover);
     color: #fff;
-}
+} */
 .edu-block {
   background-color: transparent;
 }
@@ -950,7 +950,7 @@ a .research-overlay h4:hover::after {
     }
     }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-.morrill-planetarium {
+.group-2-planetarium {
   background-image: url("/images/planetarium_bg_01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -985,13 +985,13 @@ a .research-overlay h4:hover::after {
         padding-right: 0;
     }
 }
-.morrill .nav-bot-row .dcf-nav-menu {
+.group-2 .nav-bot-row .dcf-nav-menu {
   background-color:#700949 ;
 }
-.ashfall .nav-bot-row .dcf-nav-menu {
+.group-12 .nav-bot-row .dcf-nav-menu {
   background-color:#9a031e ;
 }
-.trailside .nav-bot-row .dcf-nav-menu {
+.group-7 .nav-bot-row .dcf-nav-menu {
   background-color:#08406b ;
 }
 
@@ -1000,13 +1000,13 @@ a .research-overlay h4:hover::after {
   display: inherit;
   padding: 0;
 }
-.morrill .dcf-nav-menu-child .dcf-nav-local ul {
+.group-2 .dcf-nav-menu-child .dcf-nav-local ul {
   background-color:#700949 ;
 }
-.ashfall .dcf-nav-menu-child .dcf-nav-local ul {
+.group-12 .dcf-nav-menu-child .dcf-nav-local ul {
   background-color:#9a031e ;
 }
-.trailside .dcf-nav-menu-child .dcf-nav-local ul {
+.group-7 .dcf-nav-menu-child .dcf-nav-local ul {
   background-color:#08406b ;
 }
 .dcf-nav-local ul ul {
@@ -1022,13 +1022,13 @@ a .research-overlay h4:hover::after {
 .theme .dcf-nav-toggle-btn {
   flex-basis: inherit;
 }
-.theme.morrill .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+.theme.group-2 .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
   background-color:#700949 ;
 }
-.theme.trailside .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+.theme.group-7 .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
   background-color:#08406b ;
 }
-.theme.ashfall .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
+.theme.group-12 .dcf-nav-toggle-btn-menu ~ .dcf-nav-local {
   background-color:#9a031e ;
 }  
 .dcf-nav-local>ul:first-child {
@@ -1081,7 +1081,7 @@ a .research-overlay h4:hover::after {
     width: 200vw;
     z-index: -1;
   }
-  .morrill .dcf-nav-local ul ul:before {
+  .group-2 .dcf-nav-local ul ul:before {
       background-color: #700949;
       content: "";
       height: 100%;
@@ -1093,7 +1093,7 @@ a .research-overlay h4:hover::after {
       width: 200vw;
       z-index: -1;
   }
-  .ashfall .dcf-nav-local ul ul:before {
+  .group-12 .dcf-nav-local ul ul:before {
     background-color: #9a031e;
     content: "";
     height: 100%;
@@ -1105,7 +1105,7 @@ a .research-overlay h4:hover::after {
     width: 200vw;
     z-index: -1;
   }
-  .trailside .dcf-nav-local ul ul:before {
+  .group-7 .dcf-nav-local ul ul:before {
     background-color: #08406b;
     content: "";
     height: 100%;
@@ -1117,7 +1117,7 @@ a .research-overlay h4:hover::after {
     width: 200vw;
     z-index: -1;
   }
-.umbrella .nav-top-row-mobile, .morrill .nav-bot-row-mobile, .ashfall .nav-bot-row-mobile, .trailside .nav-bot-row-mobile, .museum-mobile-menu {
+.group-20 .nav-top-row-mobile, .group-2 .nav-bot-row-mobile, .group-12 .nav-bot-row-mobile, .group-7 .nav-bot-row-mobile, .museum-mobile-menu {
     display: none;
   }
 }
@@ -1127,7 +1127,7 @@ a .research-overlay h4:hover::after {
     margin-left: 0;
 }
 
-  .top-level .nav-bot-row, .morrill .nav-bot-row {
+  .top-level .nav-bot-row, .group-2 .nav-bot-row {
     justify-content: flex-start;
     width: 100%;
     /* opacity: 1;
@@ -1137,7 +1137,7 @@ a .research-overlay h4:hover::after {
     width: 100vw;
     max-width: 1282px;
 }
-.mobile-logo-hide, .nav-block-logo, .nav-bot-row, .museum-button-catch, .Button-menu-holder, .top-level .top-nav-right::before, .morrill .top-nav-right::before, .ashfall .top-nav-right::before, .trailside .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
+.mobile-logo-hide, .nav-block-logo, .nav-bot-row, .museum-button-catch, .Button-menu-holder, .top-level .top-nav-right::before, .group-2 .top-nav-right::before, .group-12 .top-nav-right::before, .group-7 .top-nav-right::before, .top-level .nav-top-row, .top-level .nav-mid-row  {
     opacity: 0;
     visibility: hidden;
     display: none!important;
@@ -1146,7 +1146,7 @@ a .research-overlay h4:hover::after {
     flex-basis: 25%;
   }
 
-  .umbrella .nav-top-row-mobile, .morrill .nav-top-row-mobile, .ashfall .nav-top-row-mobile, .trailside .nav-top-row-mobile {
+  .group-20 .nav-top-row-mobile, .group-2 .nav-top-row-mobile, .group-12 .nav-top-row-mobile, .group-7 .nav-top-row-mobile {
   background-color: #e5e5e5;
   box-shadow: 0 4px 2px -2px rgba(63, 63, 63, 0.333);
   z-index: 998;
@@ -1154,7 +1154,7 @@ a .research-overlay h4:hover::after {
   justify-content: center;
   position: relative;
   }
-.umbrella .nav-bot-row-mobile {
+.group-20 .nav-bot-row-mobile {
     background-color: #d00000;
       display: flex;
       justify-content: center;
@@ -1162,7 +1162,7 @@ a .research-overlay h4:hover::after {
       height: 134px;
       position: relative;
     }
-.morrill .nav-bot-row-mobile {
+.group-2 .nav-bot-row-mobile {
   background-color: #700949;
     display: flex;
     justify-content: center;
@@ -1170,7 +1170,7 @@ a .research-overlay h4:hover::after {
     height: 134px;
     position: relative;
   }
-.trailside .nav-bot-row-mobile {
+.group-7 .nav-bot-row-mobile {
   background-color: #08406B;
     display: flex;
     justify-content: center;
@@ -1178,7 +1178,7 @@ a .research-overlay h4:hover::after {
     height: 134px;
     position: relative;
   }
-  .ashfall .nav-bot-row-mobile {
+  .group-12 .nav-bot-row-mobile {
   background-color: #9A041E;
     display: flex;
     justify-content: center;
@@ -1196,7 +1196,7 @@ a .research-overlay h4:hover::after {
     width: 100%;
     z-index: 998;
 }
-  .morrill .dcf-nav-menu-child {
+  .group-2 .dcf-nav-menu-child {
     -webkit-overflow-scrolling: touch;
     background-color: var(--bg-brand-alpha);
     bottom: 4.2139917643em;
