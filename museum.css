@@ -22,22 +22,22 @@
 .background-morrill {
   background-color: #700949;
 }
-.group-2-card .dcf-card {
+.morrill-card .dcf-card {
   background-color: #700949;
   color: #fff;
 }
-a.group-2-card .dcf-card:hover {
+a.morrill-card .dcf-card:hover {
   box-shadow: none;
 }
 .theme .dcf-card.edu-block:hover {
   box-shadow: none;
 }
-a.group-2-card {
+a.morrill-card {
   text-decoration: none;
   position:relative;
   transition: opacity 0.3s ease-in-out;
 }
-a.group-2-card::after {
+a.morrill-card::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -49,15 +49,15 @@ a.group-2-card::after {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-a.group-2-card:hover::after {
+a.morrill-card:hover::after {
   box-shadow: 0px 0px 0px 1em #700949;
   opacity: 1;
 }
-a.group-2-card .museum {
+a.morrill-card .museum {
       text-decoration: none;
       position: relative;
     }
-a.group-2-card .museum::after {
+a.morrill-card .museum::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -68,26 +68,26 @@ a.group-2-card .museum::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-a.group-2-card .museum:hover::after {
+a.morrill-card .museum:hover::after {
   width: 100%; /* Expand to full width on hover */
 } 
 
 .background-ashfall {
   background-color: #99031e;
 }
-.group-12-card .dcf-card {
+.ashfall-card .dcf-card {
   background-color: #99031e;
   color: #fff;
 }
-a.group-12-card .dcf-card:hover {
+a.ashfall-card .dcf-card:hover {
   box-shadow: none;
 }
-a.group-12-card {
+a.ashfall-card {
   text-decoration: none;
   position:relative;
   transition: opacity 0.3s ease-in-out;
 }
-a.group-12-card::after {
+a.ashfall-card::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -99,15 +99,15 @@ a.group-12-card::after {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-a.group-12-card:hover::after {
+a.ashfall-card:hover::after {
   box-shadow: 0px 0px 0px 1em #99031e;
   opacity: 1;
 }
-a.group-12-card .museum {
+a.ashfall-card .museum {
       text-decoration: none;
       position: relative;
     }
-a.group-12-card .museum::after {
+a.ashfall-card .museum::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -118,26 +118,26 @@ a.group-12-card .museum::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-a.group-12-card .museum:hover::after {
+a.ashfall-card .museum:hover::after {
   width: 100%; /* Expand to full width on hover */
 } 
 
 .background-trailside {
   background-color: #09406c;
 }
-.group-7-card .dcf-card {
+.trailside-card .dcf-card {
   background-color: #09406c;
   color: #fff;
 }
-a.group-7-card .dcf-card:hover {
+a.trailside-card .dcf-card:hover {
   box-shadow: none;
 }
-a.group-7-card {
+a.trailside-card {
   text-decoration: none;
   position:relative;
   transition: opacity 0.3s ease-in-out;
 }
-a.group-7-card::after {
+a.trailside-card::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -149,16 +149,16 @@ a.group-7-card::after {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-a.group-7-card:hover::after {
+a.trailside-card:hover::after {
   box-shadow: 0px 0px 0px 1em #09406c;
   opacity: 1;
 }
 
-a.group-7-card .museum {
+a.trailside-card .museum {
       text-decoration: none;
       position: relative;
     }
-a.group-7-card .museum::after {
+a.trailside-card .museum::after {
   content: "";
   position: absolute; /* Position relative to the parent */
   width: 0; /* Initially invisible */
@@ -169,7 +169,7 @@ a.group-7-card .museum::after {
   transition: width 0.3s ease; /* Smooth animation */
 }
 /* Animate the underline on hover */
-a.group-7-card .museum:hover::after {
+a.trailside-card .museum:hover::after {
   width: 100%; /* Expand to full width on hover */
 } 
 .Our-Family-Museums-nav {
@@ -239,7 +239,8 @@ a.group-7-card .museum:hover::after {
 .top-nav-left {
   z-index: 998;
 }
-/* .top-level .top-nav-right::before {
+/* */
+.top-level .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo4.png");
   z-index: 999;
@@ -252,8 +253,9 @@ a.group-7-card .museum:hover::after {
   top:0;
   right: 69%;
   background-size: contain;
-} */
-/* .group-2 .top-nav-right::before {
+} 
+/* */
+/* */.group-2 .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo5.png");
   z-index: 999;
@@ -266,8 +268,10 @@ a.group-7-card .museum:hover::after {
   top:0;
   right: 69%;
   background-size: contain;
-} */
-/* .group-7 .top-nav-right::before {
+} 
+/* */
+/* */
+.group-12 .top-nav-right::before {
   content: "";
   background-image: url("images/state-museum-logo3.png");
   z-index: 999;
@@ -294,7 +298,9 @@ a.group-7-card .museum:hover::after {
   top:0;
   right: 69%;
   background-size: contain;
-} */
+}
+  
+/*  */
 .nav-block-logo {
     position: absolute;
     right: calc(69vw);
