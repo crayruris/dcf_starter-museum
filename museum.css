@@ -2,6 +2,10 @@
     :root {
       font-size: 1em;
     }
+    body {
+      font-family: "Lato", serif;
+}
+    }
     .dcf-header, #main-museum-nav {
       z-index: 998;
       background-color: transparent;
